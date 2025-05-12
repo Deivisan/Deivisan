@@ -4,7 +4,7 @@
   </a>
 </p>
 
-<h1 align="center">DEIVISON SANTANA</h1>
+<h1 align="center">Deivison Santana</h1>
 <h3 align="center">🛠️ Técnico de Infraestrutura & Desenvolvedor em Transição 🚀</h3>
 
 <p align="center">
