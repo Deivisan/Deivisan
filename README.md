@@ -142,25 +142,43 @@ Fique atento aos meus repositórios para acompanhar o progresso! 🚧
 ## 🛍️ Minha Loja
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/74038190/176201804-6827062b-8c6c-48cd-a53f-3e32148a7402.gif" alt="Em Construção" width="300"/>
+  <a href="#">  <img src="https://user-images.githubusercontent.com/74038190/176201804-6827062b-8c6c-48cd-a53f-3e32148a7402.gif" alt="Em Construção" width="300"/>
+  </a>
   <br>
   Em breve, um espaço dedicado à tecnologia e soluções inovadoras!
 </p>
 
+### Marketplaces e Plataformas de Venda
+
+* 🛒 **OLX:** [Perfil DeiviTech](https://www.olx.com.br/perfil/deivitech-ffc5d005)
+* 📦 **Mercado Livre:** Em Desenvolvimento
+* 🛍️ **Shopee:** Em Desenvolvimento
+* 📘 **Facebook Marketplace:** Em Desenvolvimento
+* 🌐 **Site Pessoal da Loja:** Em Desenvolvimento
+* 🏘️ **Grupo WhatsApp Condominial:** Em Desenvolvimento
+
 ---
 
-## 🤝 Vamos Conectar!
+## 📱 Contato Direto
 
-Sua rede é meu próximo aprendizado. Sinta-se à vontade para entrar em contato!
+Conecte-se comigo através das minhas redes sociais e aplicativos de mensagem:
 
-<p align="center">
-  <a href="https://www.linkedin.com/in/deivisonlsantana/" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&link=https://www.linkedin.com/in/deivisonlsantana/" alt="LinkedIn Profile">
-  </a>
-  <a href="mailto:DeiviLSantana@outlook.com">
-    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email Address">
-  </a>
-</p>
+* 📸 **Instagram:** [@deivilsan](https://www.instagram.com/deivilsan/)
+    <a href="https://www.instagram.com/deivilsan/" target="_blank">
+      <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram">
+    </a>
+
+* ✈️ **Telegram:** [@deivilsan](https://t.me/deivilsan)
+    <a href="https://t.me/deivilsan" target="_blank">
+      <img src="https://img.shields.io/badge/Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram">
+    </a>
+    (Clique no badge para iniciar uma conversa!)
+
+* 💬 **WhatsApp:** (75) 98123-1019
+    <a href="https://wa.me/5575981231019?text=acabei+de+ver+seu+repositorio+do+github+e+achei+bem+daoha%2C+principalmente+porque+colocou+a+op%C3%A7%C3%A3o+para+falar+contigo+diretamente%2C+ent%C3%A3o...+Ol%C3%A1%2C+como+vai%3F++%3D%29+%2C+me+chamo+___" target="_blank">
+      <img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp">
+    </a>
+    (Clique no badge para enviar uma mensagem pré-preenchida!)
 
 ---
 <p align="center">
