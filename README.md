@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://github.com/Deivisan">
+  <a href="https://github.com/Deivisan" target="_blank">
     <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=F70000&random=false&width=435&lines=Ol%C3%A1%2C+sou+o+Deivison+Santana!;Bem-vindo+ao+meu+perfil+GitHub!;Vamos+conectar!" alt="Typing SVG" />
   </a>
 </p>
@@ -11,7 +11,7 @@
   <a href="https://www.linkedin.com/in/deivisonlsantana/" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
   </a>
-  <a href="mailto:DeiviLSantana@outlook.com">
+  <a href="mailto:DeiviLSantana@outlook.com" target="_blank">
     <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
   </a>
    <a href="https://wa.me/5575981231019?text=acabei+de+ver+seu+repositorio+do+github+e+achei+bem+daoha%2C+principalmente+porque+colocou+a+op%C3%A7%C3%A3o+para+falar+contigo+diretamente%2C+ent%C3%A3o...+Ol%C3%A1%2C+como+vai%3F++%3D%29+%2C+me+chamo+___" target="_blank">
@@ -26,7 +26,7 @@
    <a href="https://github.com/Deivisan?tab=repositories" target="_blank">
     <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Repositories">
   </a>
-  <a href="#" target="_blank"> <img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube (Em Desenvolvimento)">
+  <a href="https://www.youtube.com/@Deivi-Tech" target="_blank"> <img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube (Em Desenvolvimento)">
   </a>
 </p>
 
@@ -97,8 +97,12 @@ Pronto para novos desafios, tenho **total flexibilidade para atuar em Feira de S
 ## 🔥 Minhas Estatísticas no GitHub
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Deivisan&show_icons=true&theme=radical&hide_border=true&count_private=true" alt="GitHub Stats" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Deivisan&theme=radical&hide_border=true" alt="GitHub Streak" />
+  <a href="https://github.com/Deivisan" target="_blank">
+    <img src="https://github-readme-stats.vercel.app/api?username=Deivisan&show_icons=true&theme=radical&hide_border=true&count_private=true" alt="GitHub Stats" />
+  </a>
+  <a href="https://github.com/Deivisan" target="_blank">
+    <img src="https://github-readme-streak-stats.herokuapp.com/?user=Deivisan&theme=radical&hide_border=true" alt="GitHub Streak" />
+  </a>
 </p>
 
 ---
@@ -160,7 +164,7 @@ Fique atento aos meus repositórios para acompanhar o progresso! 🚧
 ## 🛍️ Minha Loja
 
 <p align="center">
-  <a href="#">  <img src="https://user-images.githubusercontent.com/74038190/176201804-6827062b-8c6c-48cd-a53f-3e32148a7402.gif" alt="Em Construção" width="300"/>
+  <a href="#" target="_blank">  <img src="https://user-images.githubusercontent.com/74038190/176201804-6827062b-8c6c-48cd-a53f-3e32148a7402.gif" alt="Em Construção" width="300"/>
   </a>
   <br>
   Em breve, um espaço dedicado à tecnologia e soluções inovadoras!
@@ -168,7 +172,7 @@ Fique atento aos meus repositórios para acompanhar o progresso! 🚧
 
 ### Marketplaces e Plataformas de Venda
 
-* 🛒 **OLX:** [Perfil DeiviTech](https://www.olx.com.br/perfil/deivitech-ffc5d005)
+* 🛒 **OLX:** <a href="https://www.olx.com.br/perfil/deivitech-ffc5d005" target="_blank">Perfil DeiviTech</a>
 * 📦 **Mercado Livre:** Em Desenvolvimento
 * 🛍️ **Shopee:** Em Desenvolvimento
 * 📘 **Facebook Marketplace:** Em Desenvolvimento
