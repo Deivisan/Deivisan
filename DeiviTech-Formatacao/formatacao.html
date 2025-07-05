@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formatação - DeiviTech</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <style>
+      .hero-bg {
+        background: linear-gradient(
+          135deg,
+          #1e3a8a 0%,
+          #3b82f6 50%,
+          #06b6d4 100%
+        );
+      }
+      .card-hover {
+        transition: all 0.3s ease;
+      }
+      .card-hover:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+      }
+      .selected {
+        border: 2px solid #3b82f6 !important;
+        background: rgba(59, 130, 246, 0.1);
+      }
+    </style>
+  </head>
+  <body class="bg-gray-900 text-white font-sans">
+    <!-- Header -->
+    <header class="hero-bg py-8">
+      <div class="container mx-auto px-6">
+        <nav class="flex justify-between items-center mb-6">
+          <a
+            href="index.html"
+            class="flex items-center text-white hover:text-blue-200"
+          >
+            <i class="fas fa-arrow-left mr-2"></i>
+            <span>Voltar</span>
+          </a>
+          <div class="flex space-x-4">
+            <a
+              href="hardware.html"
+              class="bg-green-500 hover:bg-green-600 px-4 py-2 rounded"
+              >Hardware</a
+            >
+            <a
+              href="sistemas.html"
+              class="bg-purple-500 hover:bg-purple-600 px-4 py-2 rounded"
+              >Sistemas</a
+            >
+          </div>
+        </nav>
+
+        <div class="text-center">
+          <i class="fas fa-desktop text-5xl text-white mb-4"></i>
+          <h1 class="text-4xl font-bold mb-4">Formatação Completa</h1>
+          <p class="text-xl opacity-90">
+            Reinstalação profissional do sistema operacional
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <!-- Seleção de Sistema -->
+    <section class="py-12">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-8">
+          Escolha seu Sistema Operacional
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+          <!-- Windows 10 -->
+          <div
+            class="bg-gray-800 rounded-xl p-6 card-hover cursor-pointer system-option"
+            data-system="win10"
+            data-price="50"
+          >
+            <div class="text-center">
+              <i class="fab fa-windows text-4xl text-blue-400 mb-4"></i>
+              <h3 class="text-xl font-bold mb-2">Windows 10</h3>
+              <div class="text-blue-400 text-lg font-bold mb-3">R$ 50,00</div>
+              <ul class="text-sm text-gray-300 text-left">
+                <li>• Máxima compatibilidade</li>
+                <li>• Interface clássica</li>
+                <li>• Suporte até 2025</li>
+                <li>• Ideal para trabalho</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Windows 11 -->
+          <div
+            class="bg-gray-800 rounded-xl p-6 card-hover cursor-pointer system-option"
+            data-system="win11"
+            data-price="60"
+          >
+            <div class="text-center">
+              <i class="fab fa-windows text-4xl text-blue-500 mb-4"></i>
+              <h3 class="text-xl font-bold mb-2">Windows 11</h3>
+              <div class="text-blue-500 text-lg font-bold mb-3">R$ 60,00</div>
+              <ul class="text-sm text-gray-300 text-left">
+                <li>• Interface moderna</li>
+                <li>• Melhor segurança</li>
+                <li>• Suporte até 2031</li>
+                <li>• Widgets integrados</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Ghost Spectre -->
+          <div
+            class="bg-gray-800 rounded-xl p-6 card-hover cursor-pointer system-option"
+            data-system="ghost"
+            data-price="50"
+          >
+            <div class="text-center">
+              <i class="fas fa-ghost text-4xl text-purple-400 mb-4"></i>
+              <h3 class="text-xl font-bold mb-2">Ghost Spectre</h3>
+              <div class="text-purple-400 text-lg font-bold mb-3">R$ 50,00</div>
+              <ul class="text-sm text-gray-300 text-left">
+                <li>• Windows super otimizado</li>
+                <li>• 70% menos RAM</li>
+                <li>• Boot em 15 segundos</li>
+                <li>• Ideal para gaming</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Linux -->
+          <div
+            class="bg-gray-800 rounded-xl p-6 card-hover cursor-pointer system-option"
+            data-system="linux"
+            data-price="50"
+          >
+            <div class="text-center">
+              <i class="fab fa-linux text-4xl text-green-400 mb-4"></i>
+              <h3 class="text-xl font-bold mb-2">Linux Ubuntu</h3>
+              <div class="text-green-400 text-lg font-bold mb-3">R$ 50,00</div>
+              <ul class="text-sm text-gray-300 text-left">
+                <li>• Sistema gratuito</li>
+                <li>• Máxima segurança</li>
+                <li>• Super rápido</li>
+                <li>• Ideal para estudos</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Detalhes do Ghost Spectre -->
+        <div class="bg-gray-800 rounded-xl p-6 mb-8">
+          <h3 class="text-2xl font-bold mb-4 text-center">
+            <i class="fas fa-ghost text-purple-400 mr-2"></i>
+            O que é o Ghost Spectre?
+          </h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <h4 class="text-lg font-bold mb-3 text-purple-400">
+                Características:
+              </h4>
+              <ul class="space-y-2 text-sm">
+                <li>• <strong>Versão modificada</strong> do Windows 10/11</li>
+                <li>
+                  • <strong>Telemetria removida</strong> - zero espionagem
+                </li>
+                <li>
+                  • <strong>Bloatwares eliminados</strong> - só o essencial
+                </li>
+                <li>
+                  • <strong>Serviços otimizados</strong> - máxima performance
+                </li>
+                <li>• <strong>Registry ajustado</strong> para gaming</li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="text-lg font-bold mb-3 text-green-400">
+                Performance:
+              </h4>
+              <ul class="space-y-2 text-sm">
+                <li>• <strong>1,1GB RAM</strong> vs 2,8GB Windows normal</li>
+                <li>• <strong>45 serviços</strong> vs 120 Windows normal</li>
+                <li>• <strong>15 segundos</strong> de boot vs 35 segundos</li>
+                <li>
+                  • <strong>Ideal para PCs antigos</strong> ou com pouca RAM
+                </li>
+                <li>• <strong>Melhor FPS</strong> em jogos</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mt-4 p-4 bg-yellow-600 rounded-lg">
+            <p class="text-sm text-gray-900">
+              <strong>⚠️ Importante:</strong> Por ser uma versão modificada,
+              alguns programas específicos podem não funcionar. Recomendado para
+              usuários que buscam máxima performance.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pacotes de Software -->
+    <section class="py-12 bg-gray-800">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-8">
+          Pacotes de Software Inclusos
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Básico -->
+          <div class="bg-gray-700 rounded-xl p-6">
+            <h3 class="text-xl font-bold mb-4 text-green-400">
+              📦 Básico (Gratuito)
+            </h3>
+            <ul class="space-y-2 text-sm">
+              <li>✓ Google Chrome atualizado</li>
+              <li>✓ Adobe Reader DC</li>
+              <li>✓ VLC Media Player</li>
+              <li>✓ WinRAR</li>
+              <li>✓ Antivírus Avast</li>
+              <li>✓ Windows Defender</li>
+            </ul>
+          </div>
+
+          <!-- Produtividade -->
+          <div class="bg-gray-700 rounded-xl p-6">
+            <h3 class="text-xl font-bold mb-4 text-blue-400">
+              💼 Produtividade (+R$ 30)
+            </h3>
+            <ul class="space-y-2 text-sm">
+              <li>✓ LibreOffice Complete</li>
+              <li>✓ Zoom + Microsoft Teams</li>
+              <li>✓ 7-Zip + WinRAR</li>
+              <li>✓ Backup automático configurado</li>
+              <li>✓ Skype + WhatsApp Desktop</li>
+              <li>✓ Notepad++</li>
+            </ul>
+          </div>
+
+          <!-- Gaming -->
+          <div class="bg-gray-700 rounded-xl p-6">
+            <h3 class="text-xl font-bold mb-4 text-red-400">
+              🎮 Gaming (+R$ 50)
+            </h3>
+            <ul class="space-y-2 text-sm">
+              <li>✓ Steam + Epic Games Store</li>
+              <li>✓ Discord + OBS Studio</li>
+              <li>✓ Drivers gaming otimizados</li>
+              <li>✓ MSI Afterburner</li>
+              <li>✓ Game Mode ativado</li>
+              <li>✓ Otimizações de FPS</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Processo de Formatação -->
+    <section class="py-12">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-8">Como Funciona</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+          <div class="text-center">
+            <div
+              class="bg-blue-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <span class="text-2xl font-bold">1</span>
+            </div>
+            <h3 class="text-lg font-bold mb-2">Backup dos Dados</h3>
+            <p class="text-sm text-gray-300">
+              Salvamos seus arquivos importantes
+            </p>
+          </div>
+
+          <div class="text-center">
+            <div
+              class="bg-green-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <span class="text-2xl font-bold">2</span>
+            </div>
+            <h3 class="text-lg font-bold mb-2">Formatação</h3>
+            <p class="text-sm text-gray-300">Limpeza completa do HD/SSD</p>
+          </div>
+
+          <div class="text-center">
+            <div
+              class="bg-purple-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <span class="text-2xl font-bold">3</span>
+            </div>
+            <h3 class="text-lg font-bold mb-2">Instalação</h3>
+            <p class="text-sm text-gray-300">Sistema + drivers + programas</p>
+          </div>
+
+          <div class="text-center">
+            <div
+              class="bg-yellow-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <span class="text-2xl font-bold">4</span>
+            </div>
+            <h3 class="text-lg font-bold mb-2">Entrega</h3>
+            <p class="text-sm text-gray-300">PC otimizado e pronto para uso</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Checkout -->
+    <section class="py-12 bg-gray-800">
+      <div class="container mx-auto px-6">
+        <div class="max-w-md mx-auto text-center">
+          <h2 class="text-2xl font-bold mb-6">Finalizar Pedido</h2>
+
+          <div id="orderSummary" class="bg-gray-700 rounded-lg p-6 mb-6">
+            <p class="text-gray-300 mb-4">
+              Selecione um sistema operacional acima
+            </p>
+            <div class="text-2xl font-bold" id="totalPrice">R$ 0,00</div>
+          </div>
+
+          <button
+            id="checkoutBtn"
+            disabled
+            class="w-full bg-green-500 hover:bg-green-600 disabled:bg-gray-600 disabled:cursor-not-allowed py-4 rounded-lg text-lg font-bold"
+          >
+            <i class="fab fa-whatsapp mr-2"></i>
+            Solicitar Orçamento
+          </button>
+
+          <div class="mt-4 text-sm text-gray-400">
+            <p><i class="fas fa-clock mr-2"></i>Prazo: até 24 horas</p>
+            <p><i class="fas fa-shield-alt mr-2"></i>Garantia: 30 dias</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      let selectedSystem = null;
+      let selectedPackage = "basico";
+
+      // Seleção de sistema
+      document.querySelectorAll(".system-option").forEach((option) => {
+        option.addEventListener("click", () => {
+          document
+            .querySelectorAll(".system-option")
+            .forEach((o) => o.classList.remove("selected"));
+          option.classList.add("selected");
+
+          selectedSystem = {
+            name: option.querySelector("h3").textContent,
+            system: option.dataset.system,
+            price: parseFloat(option.dataset.price),
+          };
+
+          updateOrderSummary();
+        });
+      });
+
+      function updateOrderSummary() {
+        const orderSummary = document.getElementById("orderSummary");
+        const totalPrice = document.getElementById("totalPrice");
+        const checkoutBtn = document.getElementById("checkoutBtn");
+
+        if (selectedSystem) {
+          let packagePrice = 0;
+          let packageName = "Básico";
+
+          // Se implementar seleção de pacotes no futuro
+          const total = selectedSystem.price + packagePrice;
+
+          orderSummary.innerHTML = `
+            <div class="text-left">
+              <div class="flex justify-between mb-2">
+                <span>Sistema: ${selectedSystem.name}</span>
+                <span>R$ ${selectedSystem.price
+                  .toFixed(2)
+                  .replace(".", ",")}</span>
+              </div>
+              <div class="flex justify-between mb-2">
+                <span>Pacote: ${packageName}</span>
+                <span>R$ ${packagePrice.toFixed(2).replace(".", ",")}</span>
+              </div>
+              <hr class="my-2 border-gray-600">
+              <div class="flex justify-between font-bold">
+                <span>Total:</span>
+                <span>R$ ${total.toFixed(2).replace(".", ",")}</span>
+              </div>
+            </div>
+          `;
+
+          totalPrice.textContent = `R$ ${total.toFixed(2).replace(".", ",")}`;
+          checkoutBtn.disabled = false;
+        } else {
+          orderSummary.innerHTML =
+            '<p class="text-gray-300">Selecione um sistema operacional acima</p>';
+          totalPrice.textContent = "R$ 0,00";
+          checkoutBtn.disabled = true;
+        }
+      }
+
+      // Checkout
+      document.getElementById("checkoutBtn").addEventListener("click", () => {
+        if (!selectedSystem) return;
+
+        let message = `🖥️ *Solicitação de Formatação - DeiviTech*\n\n`;
+        message += `💻 *Sistema:* ${selectedSystem.name}\n`;
+        message += `💰 *Valor:* R$ ${selectedSystem.price
+          .toFixed(2)
+          .replace(".", ",")}\n\n`;
+        message += `📦 *Incluso:* Pacote Básico\n`;
+        message += `⏰ *Prazo:* Até 24 horas\n`;
+        message += `🛡️ *Garantia:* 30 dias\n\n`;
+        message += `📍 *Local:* Feira de Santana, BA`;
+
+        const whatsappUrl = `https://wa.me/5575981231019?text=${encodeURIComponent(
+          message
+        )}`;
+        window.open(whatsappUrl, "_blank");
+      });
+    </script>
+  </body>
+</html>

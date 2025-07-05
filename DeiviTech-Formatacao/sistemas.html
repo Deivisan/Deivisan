@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistemas - DeiviTech</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+      .hero-bg {
+        background: linear-gradient(
+          135deg,
+          #7c3aed 0%,
+          #a855f7 50%,
+          #c084fc 100%
+        );
+      }
+      .card-hover {
+        transition: all 0.3s ease;
+      }
+      .card-hover:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+      }
+    </style>
+  </head>
+  <body class="bg-gray-900 text-white font-sans">
+    <!-- Header -->
+    <header class="hero-bg py-8">
+      <div class="container mx-auto px-6">
+        <nav class="flex justify-between items-center mb-6">
+          <a
+            href="index.html"
+            class="flex items-center text-white hover:text-purple-200"
+          >
+            <i class="fas fa-arrow-left mr-2"></i>
+            <span>Voltar</span>
+          </a>
+          <div class="flex space-x-4">
+            <a
+              href="formatacao.html"
+              class="bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded"
+              >Formatação</a
+            >
+            <a
+              href="hardware.html"
+              class="bg-green-500 hover:bg-green-600 px-4 py-2 rounded"
+              >Hardware</a
+            >
+          </div>
+        </nav>
+
+        <div class="text-center">
+          <i class="fas fa-cog text-5xl text-white mb-4"></i>
+          <h1 class="text-4xl font-bold mb-4">Sistemas Operacionais</h1>
+          <p class="text-xl opacity-90">
+            Conheça as diferenças e escolha o melhor para você
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <!-- Comparação Visual -->
+    <section class="py-12">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-8">
+          Performance Comparativa
+        </h2>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+          <!-- Gráfico de RAM -->
+          <div class="bg-gray-800 rounded-xl p-6">
+            <h3 class="text-xl font-bold mb-4 text-center">
+              Uso de RAM (8GB total)
+            </h3>
+            <canvas id="ramChart" width="400" height="200"></canvas>
+          </div>
+
+          <!-- Gráfico de Boot -->
+          <div class="bg-gray-800 rounded-xl p-6">
+            <h3 class="text-xl font-bold mb-4 text-center">
+              Tempo de Boot (segundos)
+            </h3>
+            <canvas id="bootChart" width="400" height="200"></canvas>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sistemas Detalhados -->
+    <section class="py-12 bg-gray-800">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-12">
+          Sistemas Disponíveis
+        </h2>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <!-- Windows 10 -->
+          <div class="bg-gray-700 rounded-xl p-8 card-hover">
+            <div class="flex items-center mb-6">
+              <i class="fab fa-windows text-4xl text-blue-400 mr-4"></i>
+              <div>
+                <h3 class="text-2xl font-bold">Windows 10 Pro</h3>
+                <div class="text-blue-400 text-lg">Sistema Corporativo</div>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-4 mb-6">
+              <div class="bg-gray-600 p-3 rounded">
+                <div class="text-sm text-gray-300">RAM em uso</div>
+                <div class="text-xl font-bold">2,8GB</div>
+              </div>
+              <div class="bg-gray-600 p-3 rounded">
+                <div class="text-sm text-gray-300">Boot</div>
+                <div class="text-xl font-bold">35s</div>
+              </div>
+              <div class="bg-gray-600 p-3 rounded">
+                <div class="text-sm text-gray-300">Serviços</div>
+                <div class="text-xl font-bold">120</div>
+              </div>
+              <div class="bg-gray-600 p-3 rounded">
+                <div class="text-sm text-gray-300">Compatibilidade</div>
+                <div class="text-xl font-bold">100%</div>
+              </div>
+            </div>
+
+            <h4 class="font-bold mb-3">✅ Ideal para:</h4>
+            <ul class="text-sm space-y-1 mb-6">
+              <li>• Trabalho corporativo</li>
+              <li>• Máxima compatibilidade</li>
+              <li>• Usuários tradicionais</li>
+              <li>• Programas antigos</li>
+            </ul>
+
+            <div class="text-green-400 text-2xl font-bold">R$ 50,00</div>
+          </div>
+
+          <!-- Windows 11 -->
+          <div class="bg-gray-700 rounded-xl p-8 card-hover">
+            <div class="flex items-center mb-6">
+              <i class="fab fa-windows text-4xl text-blue-500 mr-4"></i>
+              <div>
+                <h3 class="text-2xl font-bold">Windows 11 Pro</h3>
+                <div class="text-blue-500 text-lg">Sistema Moderno</div>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-4 mb-6">
+              <div class="bg-gray-600 p-3 rounded">
+                <div class="text-sm text-gray-300">RAM em uso</div>
+                <div class="text-xl font-bold">3,2GB</div>
+              </div>
+              <div class="bg-gray-600 p-3 rounded">
+                <div class="text-sm text-gray-300">Boot</div>
+                <div class="text-xl font-bold">30s</div>
+              </div>
+              <div class="bg-gray-600 p-3 rounded">
+                <div class="text-sm text-gray-300">Serviços</div>
+                <div class="text-xl font-bold">130</div>
+              </div>
+              <div class="bg-gray-600 p-3 rounded">
+                <div class="text-sm text-gray-300">Segurança</div>
+                <div class="text-xl font-bold">Máxima</div>
+              </div>
+            </div>
+
+            <h4 class="font-bold mb-3">✅ Ideal para:</h4>
+            <ul class="text-sm space-y-1 mb-6">
+              <li>• Interface moderna</li>
+              <li>• Máxima segurança</li>
+              <li>• Microsoft 365</li>
+              <li>• PCs novos</li>
+            </ul>
+
+            <div class="text-green-400 text-2xl font-bold">R$ 60,00</div>
+          </div>
+
+          <!-- Ghost Spectre -->
+          <div
+            class="bg-gray-700 rounded-xl p-8 card-hover border-2 border-purple-400"
+          >
+            <div class="flex items-center mb-6">
+              <i class="fas fa-ghost text-4xl text-purple-400 mr-4"></i>
+              <div>
+                <h3 class="text-2xl font-bold">Ghost Spectre</h3>
+                <div class="text-purple-400 text-lg">
+                  Windows Ultra Otimizado
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-purple-600 text-white px-3 py-1 rounded text-sm font-bold mb-4 inline-block"
+            >
+              MAIS PERFORMÁTICO
+            </div>
+
+            <div class="grid grid-cols-2 gap-4 mb-6">
+              <div class="bg-gray-600 p-3 rounded">
+                <div class="text-sm text-gray-300">RAM em uso</div>
+                <div class="text-xl font-bold text-green-400">1,1GB</div>
+              </div>
+              <div class="bg-gray-600 p-3 rounded">
+                <div class="text-sm text-gray-300">Boot</div>
+                <div class="text-xl font-bold text-green-400">15s</div>
+              </div>
+              <div class="bg-gray-600 p-3 rounded">
+                <div class="text-sm text-gray-300">Serviços</div>
+                <div class="text-xl font-bold text-green-400">45</div>
+              </div>
+              <div class="bg-gray-600 p-3 rounded">
+                <div class="text-sm text-gray-300">FPS Gaming</div>
+                <div class="text-xl font-bold text-green-400">+15%</div>
+              </div>
+            </div>
+
+            <h4 class="font-bold mb-3">🚀 O que foi removido:</h4>
+            <ul class="text-sm space-y-1 mb-4">
+              <li>• Telemetria da Microsoft</li>
+              <li>• Cortana e publicidades</li>
+              <li>• Apps desnecessários</li>
+              <li>• Serviços em segundo plano</li>
+            </ul>
+
+            <h4 class="font-bold mb-3">✅ Ideal para:</h4>
+            <ul class="text-sm space-y-1 mb-6">
+              <li>• PCs antigos (4GB RAM ou menos)</li>
+              <li>• Gaming com máximo FPS</li>
+              <li>• Usuários avançados</li>
+              <li>• Máxima privacidade</li>
+            </ul>
+
+            <div class="bg-yellow-600 p-3 rounded mb-4">
+              <p class="text-sm text-gray-900">
+                <strong>⚠️ Atenção:</strong> Alguns programas específicos podem
+                não funcionar. Ideal para usuários que buscam performance
+                máxima.
+              </p>
+            </div>
+
+            <div class="text-green-400 text-2xl font-bold">R$ 50,00</div>
+          </div>
+
+          <!-- Linux -->
+          <div class="bg-gray-700 rounded-xl p-8 card-hover">
+            <div class="flex items-center mb-6">
+              <i class="fab fa-linux text-4xl text-green-400 mr-4"></i>
+              <div>
+                <h3 class="text-2xl font-bold">Linux Ubuntu</h3>
+                <div class="text-green-400 text-lg">Sistema Livre</div>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-4 mb-6">
+              <div class="bg-gray-600 p-3 rounded">
+                <div class="text-sm text-gray-300">RAM em uso</div>
+                <div class="text-xl font-bold text-green-400">800MB</div>
+              </div>
+              <div class="bg-gray-600 p-3 rounded">
+                <div class="text-sm text-gray-300">Boot</div>
+                <div class="text-xl font-bold text-green-400">12s</div>
+              </div>
+              <div class="bg-gray-600 p-3 rounded">
+                <div class="text-sm text-gray-300">Vírus</div>
+                <div class="text-xl font-bold text-green-400">0%</div>
+              </div>
+              <div class="bg-gray-600 p-3 rounded">
+                <div class="text-sm text-gray-300">Custo</div>
+                <div class="text-xl font-bold text-green-400">Grátis</div>
+              </div>
+            </div>
+
+            <h4 class="font-bold mb-3">✅ Ideal para:</h4>
+            <ul class="text-sm space-y-1 mb-6">
+              <li>• Estudantes de TI</li>
+              <li>• Uso básico (internet, office)</li>
+              <li>• Máxima segurança</li>
+              <li>• Ressurreição de PCs antigos</li>
+            </ul>
+
+            <div class="text-green-400 text-2xl font-bold">R$ 50,00</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Qual Sistema Escolher? -->
+    <section class="py-12">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-8">
+          🤔 Qual Sistema Escolher?
+        </h2>
+
+        <div class="max-w-4xl mx-auto">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="bg-blue-600 rounded-xl p-6 text-center">
+              <i class="fas fa-briefcase text-3xl mb-3"></i>
+              <h3 class="font-bold mb-2">Para Trabalho</h3>
+              <p class="text-sm mb-3">
+                Office, navegação, programas corporativos
+              </p>
+              <div class="font-bold">Windows 10</div>
+            </div>
+
+            <div class="bg-purple-600 rounded-xl p-6 text-center">
+              <i class="fas fa-rocket text-3xl mb-3"></i>
+              <h3 class="font-bold mb-2">PC Antigo</h3>
+              <p class="text-sm mb-3">4GB RAM ou menos, quer mais velocidade</p>
+              <div class="font-bold">Ghost Spectre</div>
+            </div>
+
+            <div class="bg-red-600 rounded-xl p-6 text-center">
+              <i class="fas fa-gamepad text-3xl mb-3"></i>
+              <h3 class="font-bold mb-2">Para Gaming</h3>
+              <p class="text-sm mb-3">Máximo FPS, menor uso de RAM</p>
+              <div class="font-bold">Ghost Spectre</div>
+            </div>
+
+            <div class="bg-green-600 rounded-xl p-6 text-center">
+              <i class="fas fa-graduation-cap text-3xl mb-3"></i>
+              <h3 class="font-bold mb-2">Estudos TI</h3>
+              <p class="text-sm mb-3">Programação, segurança, gratuito</p>
+              <div class="font-bold">Linux Ubuntu</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-12 bg-gray-800">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold mb-4">Pronto para Escolher?</h2>
+        <p class="text-xl text-gray-300 mb-8">
+          Ainda tem dúvidas? Entre em contato para uma consultoria gratuita!
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a
+            href="formatacao.html"
+            class="bg-blue-500 hover:bg-blue-600 px-8 py-4 rounded-lg text-lg font-bold"
+          >
+            <i class="fas fa-desktop mr-2"></i>Solicitar Formatação
+          </a>
+
+          <a
+            href="https://wa.me/5575981231019?text=Olá! Gostaria de uma consultoria sobre qual sistema escolher."
+            class="bg-green-500 hover:bg-green-600 px-8 py-4 rounded-lg text-lg font-bold"
+          >
+            <i class="fab fa-whatsapp mr-2"></i>Consultoria Gratuita
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      // Gráfico de uso de RAM
+      const ramCtx = document.getElementById("ramChart").getContext("2d");
+      new Chart(ramCtx, {
+        type: "doughnut",
+        data: {
+          labels: ["Windows 10", "Windows 11", "Ghost Spectre", "Linux"],
+          datasets: [
+            {
+              data: [2.8, 3.2, 1.1, 0.8],
+              backgroundColor: ["#3b82f6", "#6366f1", "#a855f7", "#10b981"],
+              borderWidth: 0,
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              position: "bottom",
+              labels: {
+                color: "#ffffff",
+                usePointStyle: true,
+              },
+            },
+          },
+        },
+      });
+
+      // Gráfico de tempo de boot
+      const bootCtx = document.getElementById("bootChart").getContext("2d");
+      new Chart(bootCtx, {
+        type: "bar",
+        data: {
+          labels: ["Windows 10", "Windows 11", "Ghost Spectre", "Linux"],
+          datasets: [
+            {
+              data: [35, 30, 15, 12],
+              backgroundColor: ["#3b82f6", "#6366f1", "#a855f7", "#10b981"],
+              borderWidth: 0,
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              display: false,
+            },
+          },
+          scales: {
+            y: {
+              beginAtZero: true,
+              ticks: {
+                color: "#ffffff",
+              },
+              grid: {
+                color: "#374151",
+              },
+            },
+            x: {
+              ticks: {
+                color: "#ffffff",
+              },
+              grid: {
+                color: "#374151",
+              },
+            },
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

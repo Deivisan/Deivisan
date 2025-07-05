@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DeiviTech Formatação - Loja Virtual Especializada</title>
+    <title>DeiviTech Formatação - Serviços Especializados</title>
     <link
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
@@ -11,12 +11,7 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <style>
-      .gradient-bg {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      }
+    />    <style>
       .hero-bg {
         background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #06b6d4 100%);
       }
@@ -27,721 +22,167 @@
         transform: translateY(-5px);
         box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
       }
-      .price-badge {
-        background: linear-gradient(45deg, #10b981, #34d399);
-      }
-      .cart-floating {
+      .section-nav {
         position: fixed;
-        bottom: 20px;
+        top: 20px;
         right: 20px;
         z-index: 1000;
-      }
-      .modal {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.8);
-        z-index: 2000;
-      }
-      .modal-content {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background: #1f2937;
-        border-radius: 12px;
-        padding: 2rem;
-        max-width: 90%;
-        max-height: 90%;
-        overflow-y: auto;
-      }
-      .student-discount {
-        background: linear-gradient(135deg, #fbbf24, #f59e0b);
-      }
-      .system-comparison {
-        background: rgba(15, 23, 42, 0.95);
-        border: 1px solid #334155;
-        border-radius: 12px;
-      }
-      @keyframes pulse {
-        0%, 100% { transform: scale(1); }
-        50% { transform: scale(1.05); }
-      }
-      .pulse-animation {
-        animation: pulse 2s infinite;
       }
     </style>
   </head>
   <body class="bg-gray-900 text-white font-sans">
-    <!-- Background Music -->
-    <audio id="bgMusic" loop>
-      <source src="https://www.soundjay.com/misc/sounds/beep-01a.wav" type="audio/wav">
-    </audio>
+
+    <!-- Navegação Seções -->
+    <div class="section-nav">
+      <div class="bg-gray-800 rounded-lg p-4 space-y-2">
+        <a href="formatacao.html" class="block bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded text-center text-sm">
+          <i class="fas fa-desktop mr-2"></i>Formatação
+        </a>
+        <a href="hardware.html" class="block bg-green-500 hover:bg-green-600 px-4 py-2 rounded text-center text-sm">
+          <i class="fas fa-microchip mr-2"></i>Hardware
+        </a>
+        <a href="sistemas.html" class="block bg-purple-500 hover:bg-purple-600 px-4 py-2 rounded text-center text-sm">
+          <i class="fas fa-cog mr-2"></i>Sistemas
+        </a>
+      </div>
+    </div>
 
     <!-- Header -->
-    <header class="hero-bg py-8">
-      <div class="container mx-auto px-6">
-        <nav class="flex justify-between items-center mb-8">
-          <div class="flex items-center">
-            <i class="fas fa-microchip text-3xl text-white mr-3"></i>
-            <h1 class="text-2xl font-bold">DeiviTech Formatação</h1>
-          </div>
-          <div class="flex items-center space-x-4">
-            <button id="musicToggle" class="bg-white bg-opacity-20 px-4 py-2 rounded-lg hover:bg-opacity-30 transition-all">
-              <i class="fas fa-music mr-2"></i>Música
-            </button>
-            <div class="text-right">
-              <div class="text-sm">Feira de Santana, BA</div>
-              <div class="text-xs opacity-75">Formatação Profissional</div>
-            </div>
-          </div>
-        </nav>
+    <header class="hero-bg py-12">
+      <div class="container mx-auto px-6 text-center">
+        <div class="flex items-center justify-center mb-6">
+          <i class="fas fa-microchip text-4xl text-white mr-4"></i>
+          <h1 class="text-4xl font-bold">DeiviTech Formatação</h1>
+        </div>
 
-        <div class="text-center">
-          <h2 class="text-5xl font-bold mb-4">🚀 Acelere seu PC</h2>
-          <p class="text-xl opacity-90 mb-8">Formatação profissional com garantia de 30 dias</p>
-          <div class="flex justify-center space-x-8 text-center">
-            <div>
-              <div class="text-3xl font-bold text-green-400">200+</div>
-              <div class="text-sm opacity-75">PCs Formatados</div>
-            </div>
-            <div>
-              <div class="text-3xl font-bold text-blue-400">24h</div>
-              <div class="text-sm opacity-75">Entrega Máxima</div>
-            </div>
-            <div>
-              <div class="text-3xl font-bold text-purple-400">98%</div>
-              <div class="text-sm opacity-75">Satisfação</div>
-            </div>
+        <h2 class="text-2xl mb-4">🚀 Serviços Especializados em TI</h2>
+        <p class="text-lg opacity-90 mb-8">Formatação • Hardware • Sistemas Otimizados</p>
+
+        <div class="flex justify-center space-x-8 text-center">
+          <div>
+            <div class="text-2xl font-bold text-green-400">200+</div>
+            <div class="text-sm opacity-75">PCs Formatados</div>
+          </div>
+          <div>
+            <div class="text-2xl font-bold text-blue-400">24h</div>
+            <div class="text-sm opacity-75">Entrega Máxima</div>
+          </div>
+          <div>
+            <div class="text-2xl font-bold text-purple-400">30 dias</div>
+            <div class="text-sm opacity-75">Garantia</div>
           </div>
         </div>
       </div>
     </header>
 
-    <!-- Storage Selection -->
-    <section class="py-12 bg-gray-800">
-      <div class="container mx-auto px-6">
-        <h2 class="text-3xl font-bold text-center mb-8">
-          <i class="fas fa-hdd mr-3 text-yellow-400"></i>
-          1️⃣ Escolha seu Armazenamento
-        </h2>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          <!-- HD 500GB -->
-          <div class="bg-gray-700 rounded-xl p-6 border-2 border-transparent hover:border-yellow-400 cursor-pointer card-hover storage-option" data-type="hd" data-size="500" data-price="80">
-            <div class="text-center">
-              <i class="fas fa-hdd text-4xl text-yellow-400 mb-4"></i>
-              <h3 class="text-xl font-bold mb-2">HD 500GB</h3>
-              <div class="price-badge text-gray-900 px-4 py-2 rounded-full inline-block font-bold">
-                R$ 80,00
-              </div>
-              <p class="text-sm text-gray-300 mt-2">Tradicional e confiável</p>
-            </div>
-          </div>
-
-          <!-- HD 1TB -->
-          <div class="bg-gray-700 rounded-xl p-6 border-2 border-transparent hover:border-yellow-400 cursor-pointer card-hover storage-option" data-type="hd" data-size="1000" data-price="100">
-            <div class="text-center">
-              <i class="fas fa-hdd text-4xl text-yellow-400 mb-4"></i>
-              <h3 class="text-xl font-bold mb-2">HD 1TB</h3>
-              <div class="price-badge text-gray-900 px-4 py-2 rounded-full inline-block font-bold">
-                R$ 100,00
-              </div>
-              <p class="text-sm text-gray-300 mt-2">Mais espaço</p>
-            </div>
-          </div>
-
-          <!-- SSD 240GB -->
-          <div class="bg-gray-700 rounded-xl p-6 border-2 border-transparent hover:border-blue-400 cursor-pointer card-hover storage-option" data-type="ssd" data-size="240" data-price="120">
-            <div class="text-center">
-              <i class="fas fa-microchip text-4xl text-blue-400 mb-4"></i>
-              <h3 class="text-xl font-bold mb-2">SSD 240GB</h3>
-              <div class="price-badge text-gray-900 px-4 py-2 rounded-full inline-block font-bold">
-                R$ 120,00
-              </div>
-              <p class="text-sm text-gray-300 mt-2">5x mais rápido</p>
-            </div>
-          </div>
-
-          <!-- Usar HD/SSD Existente -->
-          <div class="bg-gray-700 rounded-xl p-6 border-2 border-transparent hover:border-green-400 cursor-pointer card-hover storage-option" data-type="existing" data-size="0" data-price="0">
-            <div class="text-center">
-              <i class="fas fa-recycle text-4xl text-green-400 mb-4"></i>
-              <h3 class="text-xl font-bold mb-2">HD/SSD Atual</h3>
-              <div class="price-badge text-gray-900 px-4 py-2 rounded-full inline-block font-bold">
-                R$ 0,00
-              </div>
-              <p class="text-sm text-gray-300 mt-2">Usar o existente</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Sistema Operacional -->
+    <!-- Serviços Principais -->
     <section class="py-12">
       <div class="container mx-auto px-6">
-        <h2 class="text-3xl font-bold text-center mb-8">
-          <i class="fab fa-windows mr-3 text-blue-400"></i>
-          2️⃣ Sistema Operacional
-        </h2>
+        <h2 class="text-3xl font-bold text-center mb-12">Nossos Serviços</h2>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <!-- Windows 10 Pro -->
-          <div class="bg-gray-800 rounded-xl p-6 border-2 border-transparent hover:border-blue-400 cursor-pointer card-hover os-option" data-os="win10" data-price="50">
-            <div class="flex items-center mb-4">
-              <i class="fab fa-windows text-3xl text-blue-400 mr-3"></i>
-              <div>
-                <h3 class="text-xl font-bold">Windows 10 Pro</h3>
-                <div class="price-badge text-gray-900 px-3 py-1 rounded-full text-sm font-bold inline-block">
-                  R$ 50,00
-                </div>
-              </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+          <!-- Formatação -->
+          <div class="bg-gray-800 rounded-xl p-8 card-hover cursor-pointer" onclick="window.location='formatacao.html'">
+            <div class="text-center">
+              <i class="fas fa-desktop text-5xl text-blue-400 mb-6"></i>
+              <h3 class="text-2xl font-bold mb-4">Formatação Completa</h3>
+              <p class="text-gray-300 mb-6">Reinstalação do sistema operacional com otimizações e programas essenciais</p>
+              <div class="text-3xl font-bold text-blue-400 mb-4">A partir de R$ 50</div>
+              <button class="bg-blue-500 hover:bg-blue-600 px-6 py-3 rounded-lg w-full">
+                Ver Opções
+              </button>
             </div>
-            <div class="bg-gray-700 p-4 rounded-lg mb-4">
-              <h4 class="font-semibold mb-2">📊 Especificações:</h4>
-              <ul class="text-sm space-y-1 text-gray-300">
-                <li>• RAM: ~2,8GB em uso</li>
-                <li>• Serviços: ~120 ativos</li>
-                <li>• Boot: ~35 segundos</li>
-                <li>• Estável e compatível</li>
-              </ul>
-            </div>
-            <button class="info-btn bg-blue-500 text-white px-4 py-2 rounded-lg text-sm hover:bg-blue-600" data-info="win10">
-              Ver Detalhes
-            </button>
           </div>
 
-          <!-- Windows 11 Pro -->
-          <div class="bg-gray-800 rounded-xl p-6 border-2 border-transparent hover:border-blue-500 cursor-pointer card-hover os-option" data-os="win11" data-price="60">
-            <div class="flex items-center mb-4">
-              <i class="fab fa-windows text-3xl text-blue-500 mr-3"></i>
-              <div>
-                <h3 class="text-xl font-bold">Windows 11 Pro</h3>
-                <div class="price-badge text-gray-900 px-3 py-1 rounded-full text-sm font-bold inline-block">
-                  R$ 60,00
-                </div>
-              </div>
+          <!-- Hardware -->
+          <div class="bg-gray-800 rounded-xl p-8 card-hover cursor-pointer" onclick="window.location='hardware.html'">
+            <div class="text-center">
+              <i class="fas fa-microchip text-5xl text-green-400 mb-6"></i>
+              <h3 class="text-2xl font-bold mb-4">Upgrade Hardware</h3>
+              <p class="text-gray-300 mb-6">SSD, RAM, HD e componentes para acelerar seu computador</p>
+              <div class="text-3xl font-bold text-green-400 mb-4">A partir de R$ 80</div>
+              <button class="bg-green-500 hover:bg-green-600 px-6 py-3 rounded-lg w-full">
+                Ver Produtos
+              </button>
             </div>
-            <div class="bg-gray-700 p-4 rounded-lg mb-4">
-              <h4 class="font-semibold mb-2">📊 Especificações:</h4>
-              <ul class="text-sm space-y-1 text-gray-300">
-                <li>• RAM: ~3,2GB em uso</li>
-                <li>• Serviços: ~130 ativos</li>
-                <li>• Boot: ~30 segundos</li>
-                <li>• Interface moderna</li>
-              </ul>
-            </div>
-            <button class="info-btn bg-blue-500 text-white px-4 py-2 rounded-lg text-sm hover:bg-blue-600" data-info="win11">
-              Ver Detalhes
-            </button>
           </div>
 
-          <!-- Ghost Spectre -->
-          <div class="bg-gray-800 rounded-xl p-6 border-2 border-transparent hover:border-purple-400 cursor-pointer card-hover os-option" data-os="ghost" data-price="50">
-            <div class="flex items-center mb-4">
-              <i class="fas fa-ghost text-3xl text-purple-400 mr-3"></i>
-              <div>
-                <h3 class="text-xl font-bold">Ghost Spectre</h3>
-                <div class="price-badge text-gray-900 px-3 py-1 rounded-full text-sm font-bold inline-block">
-                  R$ 50,00
-                </div>
-              </div>
+          <!-- Sistemas -->
+          <div class="bg-gray-800 rounded-xl p-8 card-hover cursor-pointer" onclick="window.location='sistemas.html'">
+            <div class="text-center">
+              <i class="fas fa-cog text-5xl text-purple-400 mb-6"></i>
+              <h3 class="text-2xl font-bold mb-4">Sistemas Personalizados</h3>
+              <p class="text-gray-300 mb-6">Windows 10/11, Ghost Spectre e Linux otimizados</p>
+              <div class="text-3xl font-bold text-purple-400 mb-4">Incluído</div>
+              <button class="bg-purple-500 hover:bg-purple-600 px-6 py-3 rounded-lg w-full">
+                Conhecer Sistemas
+              </button>
             </div>
-            <div class="bg-gray-700 p-4 rounded-lg mb-4">
-              <h4 class="font-semibold mb-2">📊 Especificações:</h4>
-              <ul class="text-sm space-y-1 text-gray-300">
-                <li>• RAM: ~1,1GB em uso</li>
-                <li>• Serviços: ~45 ativos</li>
-                <li>• Boot: ~15 segundos</li>
-                <li>• Ultra otimizado</li>
-              </ul>
-            </div>
-            <button class="info-btn bg-purple-500 text-white px-4 py-2 rounded-lg text-sm hover:bg-purple-600" data-info="ghost">
-              Ver Detalhes
-            </button>
-          </div>
-
-          <!-- Linux -->
-          <div class="bg-gray-800 rounded-xl p-6 border-2 border-transparent hover:border-green-400 cursor-pointer card-hover os-option" data-os="linux" data-price="50">
-            <div class="flex items-center mb-4">
-              <i class="fab fa-linux text-3xl text-green-400 mr-3"></i>
-              <div>
-                <h3 class="text-xl font-bold">Linux (Ubuntu/Mint)</h3>
-                <div class="price-badge text-gray-900 px-3 py-1 rounded-full text-sm font-bold inline-block">
-                  R$ 50,00
-                </div>
-              </div>
-            </div>
-            <div class="bg-gray-700 p-4 rounded-lg mb-4">
-              <h4 class="font-semibold mb-2">📊 Especificações:</h4>
-              <ul class="text-sm space-y-1 text-gray-300">
-                <li>• RAM: ~800MB em uso</li>
-                <li>• Serviços: ~25 ativos</li>
-                <li>• Boot: ~12 segundos</li>
-                <li>• Gratuito e seguro</li>
-              </ul>
-            </div>
-            <button class="info-btn bg-green-500 text-white px-4 py-2 rounded-lg text-sm hover:bg-green-600" data-info="linux">
-              Ver Detalhes
-            </button>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Perfil de Uso -->
+    <!-- Diferenciais -->
     <section class="py-12 bg-gray-800">
       <div class="container mx-auto px-6">
-        <h2 class="text-3xl font-bold text-center mb-8">
-          <i class="fas fa-user-cog mr-3 text-green-400"></i>
-          3️⃣ Perfil de Uso
-        </h2>
+        <h2 class="text-3xl font-bold text-center mb-12">Por que escolher a DeiviTech?</h2>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          <!-- Básico -->
-          <div class="bg-gray-700 rounded-xl p-6 border-2 border-transparent hover:border-green-400 cursor-pointer card-hover profile-option" data-profile="basico" data-price="0">
-            <div class="text-center mb-4">
-              <i class="fas fa-laptop text-4xl text-green-400 mb-2"></i>
-              <h3 class="text-xl font-bold">Básico</h3>
-              <div class="text-green-400 font-bold">Gratuito</div>
-            </div>
-            <ul class="text-sm space-y-1 text-gray-300">
-              <li>✓ Navegador atualizado</li>
-              <li>✓ Leitor de PDF</li>
-              <li>✓ Media player</li>
-              <li>✓ Antivírus gratuito</li>
-            </ul>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+          <div class="text-center">
+            <i class="fas fa-clock text-3xl text-yellow-400 mb-4"></i>
+            <h3 class="text-lg font-bold mb-2">Rapidez</h3>
+            <p class="text-sm text-gray-300">Serviço em até 24 horas</p>
           </div>
 
-          <!-- Produtividade -->
-          <div class="bg-gray-700 rounded-xl p-6 border-2 border-transparent hover:border-blue-400 cursor-pointer card-hover profile-option" data-profile="produtividade" data-price="30">
-            <div class="text-center mb-4">
-              <i class="fas fa-briefcase text-4xl text-blue-400 mb-2"></i>
-              <h3 class="text-xl font-bold">Produtividade</h3>
-              <div class="text-blue-400 font-bold">+R$ 30</div>
-            </div>
-            <ul class="text-sm space-y-1 text-gray-300">
-              <li>✓ LibreOffice Complete</li>
-              <li>✓ Zoom/Teams</li>
-              <li>✓ Compactadores</li>
-              <li>✓ Backup automático</li>
-            </ul>
+          <div class="text-center">
+            <i class="fas fa-shield-alt text-3xl text-green-400 mb-4"></i>
+            <h3 class="text-lg font-bold mb-2">Garantia</h3>
+            <p class="text-sm text-gray-300">30 dias de garantia</p>
           </div>
 
-          <!-- Desenvolvimento -->
-          <div class="bg-gray-700 rounded-xl p-6 border-2 border-transparent hover:border-purple-400 cursor-pointer card-hover profile-option" data-profile="dev" data-price="40">
-            <div class="text-center mb-4">
-              <i class="fas fa-code text-4xl text-purple-400 mb-2"></i>
-              <h3 class="text-xl font-bold">Desenvolvedor</h3>
-              <div class="text-purple-400 font-bold">+R$ 40</div>
-            </div>
-            <ul class="text-sm space-y-1 text-gray-300">
-              <li>✓ VS Code + Extensões</li>
-              <li>✓ Git configurado</li>
-              <li>✓ Node.js + Python</li>
-              <li>✓ Docker Desktop</li>
-            </ul>
+          <div class="text-center">
+            <i class="fas fa-tools text-3xl text-blue-400 mb-4"></i>
+            <h3 class="text-lg font-bold mb-2">Experiência</h3>
+            <p class="text-sm text-gray-300">Mais de 200 PCs formatados</p>
           </div>
 
-          <!-- Gaming -->
-          <div class="bg-gray-700 rounded-xl p-6 border-2 border-transparent hover:border-red-400 cursor-pointer card-hover profile-option" data-profile="gaming" data-price="50">
-            <div class="text-center mb-4">
-              <i class="fas fa-gamepad text-4xl text-red-400 mb-2"></i>
-              <h3 class="text-xl font-bold">Gaming</h3>
-              <div class="text-red-400 font-bold">+R$ 50</div>
-            </div>
-            <ul class="text-sm space-y-1 text-gray-300">
-              <li>✓ Steam + Epic Games</li>
-              <li>✓ Discord + OBS</li>
-              <li>✓ Drivers gaming</li>
-              <li>✓ Otimizações FPS</li>
-            </ul>
+          <div class="text-center">
+            <i class="fas fa-home text-3xl text-purple-400 mb-4"></i>
+            <h3 class="text-lg font-bold mb-2">Atendimento</h3>
+            <p class="text-sm text-gray-300">Domicílio ou balcão</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Desconto Estudante -->
-    <section class="py-8">
-      <div class="container mx-auto px-6">
-        <div class="student-discount rounded-xl p-6 text-center text-gray-900">
-          <h2 class="text-2xl font-bold mb-4">
-            <i class="fas fa-graduation-cap mr-2"></i>
-            🎓 Sou estudante e usarei isso para melhorar o mundo
-          </h2>
-          <p class="mb-4">Ganhe 50% de desconto em todo o pedido!</p>
-          <label class="flex items-center justify-center cursor-pointer">
-            <input type="checkbox" id="studentDiscount" class="mr-3 scale-150">
-            <span class="font-semibold">Aplicar desconto estudantil</span>
-          </label>
+    <!-- Contato -->
+    <section class="py-12">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold mb-8">Entre em Contato</h2>
+
+        <div class="max-w-md mx-auto space-y-4">
+          <a href="https://wa.me/5575981231019?text=Olá! Gostaria de solicitar um orçamento para formatação."
+             class="block bg-green-500 hover:bg-green-600 px-8 py-4 rounded-lg text-lg font-bold">
+            <i class="fab fa-whatsapp mr-3"></i>WhatsApp
+          </a>
+
+          <div class="text-gray-300">
+            <p><i class="fas fa-map-marker-alt mr-2"></i>Feira de Santana, BA</p>
+            <p><i class="fas fa-clock mr-2"></i>Segunda a Sábado: 8h às 18h</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Carrinho Flutuante -->
-    <div class="cart-floating">
-      <button id="cartBtn" class="bg-blue-500 hover:bg-blue-600 w-16 h-16 rounded-full flex items-center justify-center text-2xl pulse-animation">
-        <i class="fas fa-shopping-cart"></i>
-        <span id="cartCount" class="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full w-6 h-6 flex items-center justify-center">0</span>
-      </button>
-    </div>
-
-    <!-- Modal do Carrinho -->
-    <div id="cartModal" class="modal">
-      <div class="modal-content">
-        <div class="flex justify-between items-center mb-6">
-          <h2 class="text-2xl font-bold">🛒 Seu Pedido</h2>
-          <button id="closeCart" class="text-2xl hover:text-red-400">
-            <i class="fas fa-times"></i>
-          </button>
-        </div>
-
-        <div id="cartItems" class="space-y-4 mb-6">
-          <!-- Itens do carrinho serão inseridos aqui -->
-        </div>
-
-        <div class="border-t border-gray-600 pt-4">
-          <div class="flex justify-between items-center text-xl font-bold mb-4">
-            <span>Total:</span>
-            <span id="totalPrice">R$ 0,00</span>
-          </div>
-
-          <button id="checkoutBtn" class="w-full bg-green-500 hover:bg-green-600 py-4 rounded-lg text-lg font-bold">
-            <i class="fab fa-whatsapp mr-2"></i>
-            Finalizar Pedido no WhatsApp
-          </button>
-        </div>
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-6">
+      <div class="container mx-auto px-6 text-center">
+        <p class="text-gray-400">© 2025 DeiviTech Formatação - Feira de Santana, BA</p>
       </div>
-    </div>
+    </footer>
 
-    <!-- Modal de Informações -->
-    <div id="infoModal" class="modal">
-      <div class="modal-content">
-        <div class="flex justify-between items-center mb-6">
-          <h2 class="text-2xl font-bold" id="infoTitle">Informações</h2>
-          <button id="closeInfo" class="text-2xl hover:text-red-400">
-            <i class="fas fa-times"></i>
-          </button>
-        </div>
-        <div id="infoContent">
-          <!-- Conteúdo das informações -->
-        </div>
-      </div>
-    </div>
-
-    <script>
-      // Variáveis globais
-      let cart = {
-        storage: null,
-        os: null,
-        profile: null,
-        isStudent: false
-      };
-
-      let prices = {
-        storage: 0,
-        os: 0,
-        profile: 0
-      };
-
-      // Música de fundo
-      const bgMusic = document.getElementById('bgMusic');
-      const musicToggle = document.getElementById('musicToggle');
-      let musicPlaying = false;
-
-      musicToggle.addEventListener('click', () => {
-        if (musicPlaying) {
-          bgMusic.pause();
-          musicToggle.innerHTML = '<i class="fas fa-music mr-2"></i>Música';
-        } else {
-          bgMusic.play();
-          musicToggle.innerHTML = '<i class="fas fa-pause mr-2"></i>Pausar';
-        }
-        musicPlaying = !musicPlaying;
-      });
-
-      // Seleção de itens
-      document.querySelectorAll('.storage-option').forEach(option => {
-        option.addEventListener('click', () => {
-          document.querySelectorAll('.storage-option').forEach(o => o.classList.remove('border-yellow-400'));
-          option.classList.add('border-yellow-400');
-
-          cart.storage = {
-            type: option.dataset.type,
-            size: option.dataset.size,
-            price: parseFloat(option.dataset.price)
-          };
-          prices.storage = cart.storage.price;
-          updateCart();
-        });
-      });
-
-      document.querySelectorAll('.os-option').forEach(option => {
-        option.addEventListener('click', () => {
-          document.querySelectorAll('.os-option').forEach(o => o.classList.remove('border-blue-400', 'border-blue-500', 'border-purple-400', 'border-green-400'));
-          option.classList.add('border-blue-400');
-
-          cart.os = {
-            name: option.querySelector('h3').textContent,
-            price: parseFloat(option.dataset.price)
-          };
-          prices.os = cart.os.price;
-          updateCart();
-        });
-      });
-
-      document.querySelectorAll('.profile-option').forEach(option => {
-        option.addEventListener('click', () => {
-          document.querySelectorAll('.profile-option').forEach(o => o.classList.remove('border-green-400', 'border-blue-400', 'border-purple-400', 'border-red-400'));
-          option.classList.add('border-green-400');
-
-          cart.profile = {
-            name: option.querySelector('h3').textContent,
-            price: parseFloat(option.dataset.price)
-          };
-          prices.profile = cart.profile.price;
-          updateCart();
-        });
-      });
-
-      // Desconto estudante
-      document.getElementById('studentDiscount').addEventListener('change', (e) => {
-        cart.isStudent = e.target.checked;
-        updateCart();
-      });
-
-      // Atualizar carrinho
-      function updateCart() {
-        const count = (cart.storage ? 1 : 0) + (cart.os ? 1 : 0) + (cart.profile ? 1 : 0);
-        document.getElementById('cartCount').textContent = count;
-
-        let total = prices.storage + prices.os + prices.profile;
-        if (cart.isStudent) {
-          total = total * 0.5;
-        }
-
-        document.getElementById('totalPrice').textContent = `R$ ${total.toFixed(2).replace('.', ',')}`;
-      }
-
-      // Modal do carrinho
-      document.getElementById('cartBtn').addEventListener('click', () => {
-        showCartModal();
-      });
-
-      document.getElementById('closeCart').addEventListener('click', () => {
-        document.getElementById('cartModal').style.display = 'none';
-      });
-
-      function showCartModal() {
-        const cartItems = document.getElementById('cartItems');
-        cartItems.innerHTML = '';
-
-        if (cart.storage) {
-          cartItems.innerHTML += `
-            <div class="bg-gray-700 p-4 rounded-lg">
-              <div class="flex justify-between">
-                <span>${cart.storage.type.toUpperCase()} ${cart.storage.size}GB</span>
-                <span>R$ ${cart.storage.price.toFixed(2).replace('.', ',')}</span>
-              </div>
-            </div>
-          `;
-        }
-
-        if (cart.os) {
-          cartItems.innerHTML += `
-            <div class="bg-gray-700 p-4 rounded-lg">
-              <div class="flex justify-between">
-                <span>${cart.os.name}</span>
-                <span>R$ ${cart.os.price.toFixed(2).replace('.', ',')}</span>
-              </div>
-            </div>
-          `;
-        }
-
-        if (cart.profile) {
-          cartItems.innerHTML += `
-            <div class="bg-gray-700 p-4 rounded-lg">
-              <div class="flex justify-between">
-                <span>Perfil ${cart.profile.name}</span>
-                <span>R$ ${cart.profile.price.toFixed(2).replace('.', ',')}</span>
-              </div>
-            </div>
-          `;
-        }
-
-        if (cart.isStudent) {
-          cartItems.innerHTML += `
-            <div class="bg-yellow-600 p-4 rounded-lg">
-              <div class="flex justify-between">
-                <span>🎓 Desconto Estudantil</span>
-                <span>-50%</span>
-              </div>
-            </div>
-          `;
-        }
-
-        document.getElementById('cartModal').style.display = 'block';
-      }
-
-      // Checkout
-      document.getElementById('checkoutBtn').addEventListener('click', () => {
-        let message = `🚀 *Pedido DeiviTech Formatação*\n\n`;
-
-        if (cart.storage) {
-          message += `💾 *Armazenamento:* ${cart.storage.type.toUpperCase()} ${cart.storage.size}GB - R$ ${cart.storage.price.toFixed(2).replace('.', ',')}\n`;
-        }
-
-        if (cart.os) {
-          message += `💻 *Sistema:* ${cart.os.name} - R$ ${cart.os.price.toFixed(2).replace('.', ',')}\n`;
-        }
-
-        if (cart.profile) {
-          message += `⚙️ *Perfil:* ${cart.profile.name} - R$ ${cart.profile.price.toFixed(2).replace('.', ',')}\n`;
-        }
-
-        let total = prices.storage + prices.os + prices.profile;
-
-        if (cart.isStudent) {
-          message += `\n🎓 *Desconto Estudantil:* -50%\n`;
-          total = total * 0.5;
-        }
-
-        message += `\n💰 *Total:* R$ ${total.toFixed(2).replace('.', ',')}\n`;
-        message += `\n📍 *Local:* Feira de Santana, BA`;
-        message += `\n⏰ *Prazo:* Até 24 horas`;
-        message += `\n🛡️ *Garantia:* 30 dias`;
-
-        const whatsappUrl = `https://wa.me/5575981231019?text=${encodeURIComponent(message)}`;
-        window.open(whatsappUrl, '_blank');
-      });
-
-      // Informações dos sistemas
-      const systemInfo = {
-        win10: {
-          title: 'Windows 10 Pro - Especificações Detalhadas',
-          content: `
-            <div class="space-y-4">
-              <div class="bg-gray-700 p-4 rounded-lg">
-                <h3 class="font-bold mb-2">📊 Uso de Recursos</h3>
-                <ul class="space-y-1 text-sm">
-                  <li>• RAM em uso: ~2,8GB (35% em 8GB)</li>
-                  <li>• Serviços ativos: ~120</li>
-                  <li>• Tempo de boot: 30-40 segundos</li>
-                  <li>• Uso de CPU idle: 5-8%</li>
-                </ul>
-              </div>
-              <div class="bg-gray-700 p-4 rounded-lg">
-                <h3 class="font-bold mb-2">✅ Vantagens</h3>
-                <ul class="space-y-1 text-sm">
-                  <li>• Máxima compatibilidade com programas</li>
-                  <li>• Suporte estendido até 2025</li>
-                  <li>• Interface familiar</li>
-                  <li>• Drivers automáticos</li>
-                </ul>
-              </div>
-            </div>
-          `
-        },
-        win11: {
-          title: 'Windows 11 Pro - Especificações Detalhadas',
-          content: `
-            <div class="space-y-4">
-              <div class="bg-gray-700 p-4 rounded-lg">
-                <h3 class="font-bold mb-2">📊 Uso de Recursos</h3>
-                <ul class="space-y-1 text-sm">
-                  <li>• RAM em uso: ~3,2GB (40% em 8GB)</li>
-                  <li>• Serviços ativos: ~130</li>
-                  <li>• Tempo de boot: 25-35 segundos</li>
-                  <li>• Uso de CPU idle: 6-10%</li>
-                </ul>
-              </div>
-              <div class="bg-gray-700 p-4 rounded-lg">
-                <h3 class="font-bold mb-2">✅ Vantagens</h3>
-                <ul class="space-y-1 text-sm">
-                  <li>• Interface moderna e intuitiva</li>
-                  <li>• Melhor integração com Microsoft 365</li>
-                  <li>• Widgets e Snap layouts</li>
-                  <li>• Suporte até 2031</li>
-                </ul>
-              </div>
-            </div>
-          `
-        },
-        ghost: {
-          title: 'Ghost Spectre - Ultra Otimizado',
-          content: `
-            <div class="space-y-4">
-              <div class="bg-gray-700 p-4 rounded-lg">
-                <h3 class="font-bold mb-2">📊 Uso de Recursos</h3>
-                <ul class="space-y-1 text-sm">
-                  <li>• RAM em uso: ~1,1GB (14% em 8GB)</li>
-                  <li>• Serviços ativos: ~45</li>
-                  <li>• Tempo de boot: 12-18 segundos</li>
-                  <li>• Uso de CPU idle: 1-3%</li>
-                </ul>
-              </div>
-              <div class="bg-gray-700 p-4 rounded-lg">
-                <h3 class="font-bold mb-2">🚀 Otimizações</h3>
-                <ul class="space-y-1 text-sm">
-                  <li>• Telemetria completamente removida</li>
-                  <li>• Bloatwares eliminados</li>
-                  <li>• Registry otimizado para gaming</li>
-                  <li>• Ideal para PCs mais antigos</li>
-                </ul>
-              </div>
-              <div class="bg-yellow-600 p-4 rounded-lg">
-                <p class="text-sm"><strong>Nota:</strong> Versão modificada do Windows com máxima performance. Pode ter incompatibilidade com alguns programas específicos.</p>
-              </div>
-            </div>
-          `
-        },
-        linux: {
-          title: 'Linux - Sistema Livre',
-          content: `
-            <div class="space-y-4">
-              <div class="bg-gray-700 p-4 rounded-lg">
-                <h3 class="font-bold mb-2">📊 Uso de Recursos</h3>
-                <ul class="space-y-1 text-sm">
-                  <li>• RAM em uso: ~800MB (10% em 8GB)</li>
-                  <li>• Serviços ativos: ~25</li>
-                  <li>• Tempo de boot: 8-15 segundos</li>
-                  <li>• Uso de CPU idle: 1-2%</li>
-                </ul>
-              </div>
-              <div class="bg-gray-700 p-4 rounded-lg">
-                <h3 class="font-bold mb-2">🛡️ Vantagens</h3>
-                <ul class="space-y-1 text-sm">
-                  <li>• Totalmente gratuito</li>
-                  <li>• Máxima segurança</li>
-                  <li>• Atualizações automáticas</li>
-                  <li>• Ideal para desenvolvedores</li>
-                </ul>
-              </div>
-            </div>
-          `
-        }
-      };
-
-      document.querySelectorAll('.info-btn').forEach(btn => {
-        btn.addEventListener('click', (e) => {
-          e.stopPropagation();
-          const infoType = btn.dataset.info;
-          const info = systemInfo[infoType];
-
-          document.getElementById('infoTitle').textContent = info.title;
-          document.getElementById('infoContent').innerHTML = info.content;
-          document.getElementById('infoModal').style.display = 'block';
-        });
-      });
-
-      document.getElementById('closeInfo').addEventListener('click', () => {
-        document.getElementById('infoModal').style.display = 'none';
-      });
-    </script>
   </body>
 </html>
     <!-- Sidebar Navigation -->

@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hardware - DeiviTech</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <style>
+      .hero-bg {
+        background: linear-gradient(
+          135deg,
+          #059669 0%,
+          #10b981 50%,
+          #34d399 100%
+        );
+      }
+      .card-hover {
+        transition: all 0.3s ease;
+      }
+      .card-hover:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+      }
+      .cart-floating {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 1000;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-900 text-white font-sans">
+    <!-- Header -->
+    <header class="hero-bg py-8">
+      <div class="container mx-auto px-6">
+        <nav class="flex justify-between items-center mb-6">
+          <a
+            href="index.html"
+            class="flex items-center text-white hover:text-green-200"
+          >
+            <i class="fas fa-arrow-left mr-2"></i>
+            <span>Voltar</span>
+          </a>
+          <div class="flex space-x-4">
+            <a
+              href="formatacao.html"
+              class="bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded"
+              >Formatação</a
+            >
+            <a
+              href="sistemas.html"
+              class="bg-purple-500 hover:bg-purple-600 px-4 py-2 rounded"
+              >Sistemas</a
+            >
+          </div>
+        </nav>
+
+        <div class="text-center">
+          <i class="fas fa-microchip text-5xl text-white mb-4"></i>
+          <h1 class="text-4xl font-bold mb-4">Hardware & Componentes</h1>
+          <p class="text-xl opacity-90">
+            Acelere seu computador com os melhores componentes
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <!-- Armazenamento -->
+    <section class="py-12">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-8">
+          <i class="fas fa-hdd mr-3 text-yellow-400"></i>
+          Armazenamento
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- HD 500GB -->
+          <div class="bg-gray-800 rounded-xl p-6 card-hover">
+            <div class="text-center">
+              <i class="fas fa-hdd text-4xl text-yellow-400 mb-4"></i>
+              <h3 class="text-xl font-bold mb-2">HD 500GB</h3>
+              <div class="text-2xl font-bold text-green-400 mb-3">R$ 80,00</div>
+              <p class="text-sm text-gray-300 mb-4">
+                Tradicional e confiável para armazenamento básico
+              </p>
+              <ul class="text-sm text-gray-300 text-left mb-4">
+                <li>• 500GB de espaço</li>
+                <li>• 7200 RPM</li>
+                <li>• Interface SATA</li>
+                <li>• Garantia: 1 ano</li>
+              </ul>
+              <button
+                class="add-to-cart bg-green-500 hover:bg-green-600 px-4 py-2 rounded w-full"
+                data-name="HD 500GB"
+                data-price="80"
+              >
+                <i class="fas fa-cart-plus mr-2"></i>Adicionar
+              </button>
+            </div>
+          </div>
+
+          <!-- HD 1TB -->
+          <div class="bg-gray-800 rounded-xl p-6 card-hover">
+            <div class="text-center">
+              <i class="fas fa-hdd text-4xl text-yellow-400 mb-4"></i>
+              <h3 class="text-xl font-bold mb-2">HD 1TB</h3>
+              <div class="text-2xl font-bold text-green-400 mb-3">
+                R$ 100,00
+              </div>
+              <p class="text-sm text-gray-300 mb-4">
+                Mais espaço para seus arquivos
+              </p>
+              <ul class="text-sm text-gray-300 text-left mb-4">
+                <li>• 1TB de espaço</li>
+                <li>• 7200 RPM</li>
+                <li>• Interface SATA</li>
+                <li>• Garantia: 1 ano</li>
+              </ul>
+              <button
+                class="add-to-cart bg-green-500 hover:bg-green-600 px-4 py-2 rounded w-full"
+                data-name="HD 1TB"
+                data-price="100"
+              >
+                <i class="fas fa-cart-plus mr-2"></i>Adicionar
+              </button>
+            </div>
+          </div>
+
+          <!-- SSD 240GB -->
+          <div
+            class="bg-gray-800 rounded-xl p-6 card-hover border-2 border-blue-400"
+          >
+            <div class="text-center">
+              <div
+                class="bg-blue-500 text-white px-2 py-1 rounded text-xs font-bold mb-2"
+              >
+                RECOMENDADO
+              </div>
+              <i class="fas fa-microchip text-4xl text-blue-400 mb-4"></i>
+              <h3 class="text-xl font-bold mb-2">SSD 240GB</h3>
+              <div class="text-2xl font-bold text-green-400 mb-3">
+                R$ 120,00
+              </div>
+              <p class="text-sm text-gray-300 mb-4">
+                5x mais rápido que HD tradicional
+              </p>
+              <ul class="text-sm text-gray-300 text-left mb-4">
+                <li>• 240GB de espaço</li>
+                <li>• Velocidade: 550MB/s</li>
+                <li>• Interface SATA</li>
+                <li>• Garantia: 2 anos</li>
+              </ul>
+              <button
+                class="add-to-cart bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded w-full"
+                data-name="SSD 240GB"
+                data-price="120"
+              >
+                <i class="fas fa-cart-plus mr-2"></i>Adicionar
+              </button>
+            </div>
+          </div>
+
+          <!-- SSD 480GB -->
+          <div class="bg-gray-800 rounded-xl p-6 card-hover">
+            <div class="text-center">
+              <i class="fas fa-microchip text-4xl text-blue-400 mb-4"></i>
+              <h3 class="text-xl font-bold mb-2">SSD 480GB</h3>
+              <div class="text-2xl font-bold text-green-400 mb-3">
+                R$ 180,00
+              </div>
+              <p class="text-sm text-gray-300 mb-4">
+                Máxima velocidade e espaço
+              </p>
+              <ul class="text-sm text-gray-300 text-left mb-4">
+                <li>• 480GB de espaço</li>
+                <li>• Velocidade: 560MB/s</li>
+                <li>• Interface SATA</li>
+                <li>• Garantia: 3 anos</li>
+              </ul>
+              <button
+                class="add-to-cart bg-green-500 hover:bg-green-600 px-4 py-2 rounded w-full"
+                data-name="SSD 480GB"
+                data-price="180"
+              >
+                <i class="fas fa-cart-plus mr-2"></i>Adicionar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Memória RAM -->
+    <section class="py-12 bg-gray-800">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-8">
+          <i class="fas fa-memory mr-3 text-purple-400"></i>
+          Memória RAM
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- RAM 4GB -->
+          <div class="bg-gray-700 rounded-xl p-6 card-hover">
+            <div class="text-center">
+              <i class="fas fa-memory text-4xl text-purple-400 mb-4"></i>
+              <h3 class="text-xl font-bold mb-2">4GB DDR4</h3>
+              <div class="text-2xl font-bold text-green-400 mb-3">R$ 60,00</div>
+              <p class="text-sm text-gray-300 mb-4">Ideal para uso básico</p>
+              <ul class="text-sm text-gray-300 text-left mb-4">
+                <li>• 4GB DDR4</li>
+                <li>• 2400MHz</li>
+                <li>• Desktop</li>
+                <li>• Garantia: 1 ano</li>
+              </ul>
+              <button
+                class="add-to-cart bg-green-500 hover:bg-green-600 px-4 py-2 rounded w-full"
+                data-name="RAM 4GB DDR4"
+                data-price="60"
+              >
+                <i class="fas fa-cart-plus mr-2"></i>Adicionar
+              </button>
+            </div>
+          </div>
+
+          <!-- RAM 8GB -->
+          <div
+            class="bg-gray-700 rounded-xl p-6 card-hover border-2 border-purple-400"
+          >
+            <div class="text-center">
+              <div
+                class="bg-purple-500 text-white px-2 py-1 rounded text-xs font-bold mb-2"
+              >
+                MAIS VENDIDO
+              </div>
+              <i class="fas fa-memory text-4xl text-purple-400 mb-4"></i>
+              <h3 class="text-xl font-bold mb-2">8GB DDR4</h3>
+              <div class="text-2xl font-bold text-green-400 mb-3">
+                R$ 100,00
+              </div>
+              <p class="text-sm text-gray-300 mb-4">
+                Perfeito para multitarefas
+              </p>
+              <ul class="text-sm text-gray-300 text-left mb-4">
+                <li>• 8GB DDR4</li>
+                <li>• 2666MHz</li>
+                <li>• Desktop</li>
+                <li>• Garantia: 2 anos</li>
+              </ul>
+              <button
+                class="add-to-cart bg-purple-500 hover:bg-purple-600 px-4 py-2 rounded w-full"
+                data-name="RAM 8GB DDR4"
+                data-price="100"
+              >
+                <i class="fas fa-cart-plus mr-2"></i>Adicionar
+              </button>
+            </div>
+          </div>
+
+          <!-- RAM 16GB -->
+          <div class="bg-gray-700 rounded-xl p-6 card-hover">
+            <div class="text-center">
+              <i class="fas fa-memory text-4xl text-purple-400 mb-4"></i>
+              <h3 class="text-xl font-bold mb-2">16GB DDR4</h3>
+              <div class="text-2xl font-bold text-green-400 mb-3">
+                R$ 180,00
+              </div>
+              <p class="text-sm text-gray-300 mb-4">
+                Para gaming e trabalho pesado
+              </p>
+              <ul class="text-sm text-gray-300 text-left mb-4">
+                <li>• 16GB DDR4</li>
+                <li>• 3200MHz</li>
+                <li>• Desktop</li>
+                <li>• Garantia: 3 anos</li>
+              </ul>
+              <button
+                class="add-to-cart bg-green-500 hover:bg-green-600 px-4 py-2 rounded w-full"
+                data-name="RAM 16GB DDR4"
+                data-price="180"
+              >
+                <i class="fas fa-cart-plus mr-2"></i>Adicionar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Serviços de Instalação -->
+    <section class="py-12">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-8">
+          <i class="fas fa-tools mr-3 text-blue-400"></i>
+          Serviços de Instalação
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Instalação Hardware -->
+          <div class="bg-gray-800 rounded-xl p-6">
+            <div class="text-center">
+              <i
+                class="fas fa-screwdriver-wrench text-4xl text-blue-400 mb-4"
+              ></i>
+              <h3 class="text-xl font-bold mb-2">Instalação de Hardware</h3>
+              <div class="text-2xl font-bold text-green-400 mb-3">R$ 30,00</div>
+              <p class="text-sm text-gray-300 mb-4">
+                Montagem e configuração profissional
+              </p>
+              <ul class="text-sm text-gray-300 text-left mb-4">
+                <li>✓ Abertura do gabinete</li>
+                <li>✓ Instalação do componente</li>
+                <li>✓ Teste de funcionamento</li>
+                <li>✓ Limpeza interna</li>
+              </ul>
+              <button
+                class="add-to-cart bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded w-full"
+                data-name="Instalação Hardware"
+                data-price="30"
+              >
+                <i class="fas fa-cart-plus mr-2"></i>Adicionar
+              </button>
+            </div>
+          </div>
+
+          <!-- Diagnóstico -->
+          <div class="bg-gray-800 rounded-xl p-6">
+            <div class="text-center">
+              <i class="fas fa-search text-4xl text-orange-400 mb-4"></i>
+              <h3 class="text-xl font-bold mb-2">Diagnóstico Completo</h3>
+              <div class="text-2xl font-bold text-green-400 mb-3">R$ 25,00</div>
+              <p class="text-sm text-gray-300 mb-4">
+                Identificação de problemas
+              </p>
+              <ul class="text-sm text-gray-300 text-left mb-4">
+                <li>✓ Teste de componentes</li>
+                <li>✓ Análise de performance</li>
+                <li>✓ Relatório detalhado</li>
+                <li>✓ Recomendações de upgrade</li>
+              </ul>
+              <button
+                class="add-to-cart bg-orange-500 hover:bg-orange-600 px-4 py-2 rounded w-full"
+                data-name="Diagnóstico Completo"
+                data-price="25"
+              >
+                <i class="fas fa-cart-plus mr-2"></i>Adicionar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Por que Upgrade? -->
+    <section class="py-12 bg-gray-800">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-8">
+          Por que fazer Upgrade?
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="text-center">
+            <i class="fas fa-rocket text-4xl text-blue-400 mb-4"></i>
+            <h3 class="text-xl font-bold mb-2">Mais Velocidade</h3>
+            <p class="text-gray-300">
+              SSD pode deixar seu PC até 5x mais rápido
+            </p>
+          </div>
+
+          <div class="text-center">
+            <i class="fas fa-tasks text-4xl text-green-400 mb-4"></i>
+            <h3 class="text-xl font-bold mb-2">Multitarefas</h3>
+            <p class="text-gray-300">
+              Mais RAM = mais programas abertos sem travamento
+            </p>
+          </div>
+
+          <div class="text-center">
+            <i class="fas fa-dollar-sign text-4xl text-yellow-400 mb-4"></i>
+            <h3 class="text-xl font-bold mb-2">Custo-Benefício</h3>
+            <p class="text-gray-300">Mais barato que comprar um PC novo</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Carrinho Flutuante -->
+    <div class="cart-floating">
+      <button
+        id="cartBtn"
+        class="bg-green-500 hover:bg-green-600 w-16 h-16 rounded-full flex items-center justify-center text-2xl"
+      >
+        <i class="fas fa-shopping-cart"></i>
+        <span
+          id="cartCount"
+          class="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full w-6 h-6 flex items-center justify-center"
+          >0</span
+        >
+      </button>
+    </div>
+
+    <!-- Modal do Carrinho -->
+    <div
+      id="cartModal"
+      class="hidden fixed inset-0 bg-black bg-opacity-80 z-50"
+    >
+      <div
+        class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gray-800 rounded-xl p-6 max-w-md w-full mx-4"
+      >
+        <div class="flex justify-between items-center mb-6">
+          <h2 class="text-2xl font-bold">🛒 Carrinho</h2>
+          <button id="closeCart" class="text-2xl hover:text-red-400">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+
+        <div id="cartItems" class="space-y-4 mb-6">
+          <p class="text-gray-400">Carrinho vazio</p>
+        </div>
+
+        <div class="border-t border-gray-600 pt-4">
+          <div class="flex justify-between items-center text-xl font-bold mb-4">
+            <span>Total:</span>
+            <span id="totalPrice">R$ 0,00</span>
+          </div>
+
+          <button
+            id="checkoutBtn"
+            class="w-full bg-green-500 hover:bg-green-600 disabled:bg-gray-600 disabled:cursor-not-allowed py-3 rounded-lg font-bold"
+          >
+            <i class="fab fa-whatsapp mr-2"></i>
+            Solicitar Orçamento
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let cart = [];
+
+      // Adicionar ao carrinho
+      document.querySelectorAll(".add-to-cart").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const name = btn.dataset.name;
+          const price = parseFloat(btn.dataset.price);
+
+          const existingItem = cart.find((item) => item.name === name);
+          if (existingItem) {
+            existingItem.quantity += 1;
+          } else {
+            cart.push({ name, price, quantity: 1 });
+          }
+
+          updateCartDisplay();
+          btn.innerHTML = '<i class="fas fa-check mr-2"></i>Adicionado';
+          btn.classList.remove("bg-green-500", "hover:bg-green-600");
+          btn.classList.add("bg-gray-600");
+
+          setTimeout(() => {
+            btn.innerHTML = '<i class="fas fa-cart-plus mr-2"></i>Adicionar';
+            btn.classList.add("bg-green-500", "hover:bg-green-600");
+            btn.classList.remove("bg-gray-600");
+          }, 2000);
+        });
+      });
+
+      function updateCartDisplay() {
+        const cartCount = document.getElementById("cartCount");
+        const cartItems = document.getElementById("cartItems");
+        const totalPrice = document.getElementById("totalPrice");
+        const checkoutBtn = document.getElementById("checkoutBtn");
+
+        const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+        const total = cart.reduce(
+          (sum, item) => sum + item.price * item.quantity,
+          0
+        );
+
+        cartCount.textContent = totalItems;
+
+        if (cart.length === 0) {
+          cartItems.innerHTML = '<p class="text-gray-400">Carrinho vazio</p>';
+          checkoutBtn.disabled = true;
+        } else {
+          cartItems.innerHTML = cart
+            .map(
+              (item) => `
+            <div class="bg-gray-700 p-3 rounded-lg flex justify-between items-center">
+              <div>
+                <div class="font-semibold">${item.name}</div>
+                <div class="text-sm text-gray-300">Qtd: ${item.quantity}</div>
+              </div>
+              <div class="text-green-400 font-bold">
+                R$ ${(item.price * item.quantity).toFixed(2).replace(".", ",")}
+              </div>
+            </div>
+          `
+            )
+            .join("");
+          checkoutBtn.disabled = false;
+        }
+
+        totalPrice.textContent = `R$ ${total.toFixed(2).replace(".", ",")}`;
+      }
+
+      // Modal do carrinho
+      document.getElementById("cartBtn").addEventListener("click", () => {
+        document.getElementById("cartModal").classList.remove("hidden");
+      });
+
+      document.getElementById("closeCart").addEventListener("click", () => {
+        document.getElementById("cartModal").classList.add("hidden");
+      });
+
+      // Checkout
+      document.getElementById("checkoutBtn").addEventListener("click", () => {
+        if (cart.length === 0) return;
+
+        let message = `🔧 *Pedido Hardware - DeiviTech*\n\n`;
+
+        cart.forEach((item) => {
+          message += `• ${item.name} (${item.quantity}x) - R$ ${(
+            item.price * item.quantity
+          )
+            .toFixed(2)
+            .replace(".", ",")}\n`;
+        });
+
+        const total = cart.reduce(
+          (sum, item) => sum + item.price * item.quantity,
+          0
+        );
+
+        message += `\n💰 *Total:* R$ ${total.toFixed(2).replace(".", ",")}\n\n`;
+        message += `📍 *Local:* Feira de Santana, BA\n`;
+        message += `🛡️ *Garantia:* Conforme especificação de cada item`;
+
+        const whatsappUrl = `https://wa.me/5575981231019?text=${encodeURIComponent(
+          message
+        )}`;
+        window.open(whatsappUrl, "_blank");
+      });
+    </script>
+  </body>
+</html>
