@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DeiviTech Formatação - Especialistas em Sistemas</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+      .gradient-bg {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      }
+      .tech-grid {
+        background: radial-gradient(
+            circle at 25% 25%,
+            #4f46e5 2px,
+            transparent 2px
+          ),
+          radial-gradient(circle at 75% 75%, #06b6d4 2px, transparent 2px);
+        background-size: 40px 40px;
+      }
+      .performance-bar {
+        transition: width 2s ease-in-out;
+      }
+      .glitch {
+        animation: glitch 2s infinite;
+      }
+      @keyframes glitch {
+        0% {
+          transform: translateX(0);
+        }
+        10% {
+          transform: translateX(-2px);
+        }
+        20% {
+          transform: translateX(2px);
+        }
+        30% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+      .sidebar {
+        background: linear-gradient(180deg, #1f2937 0%, #111827 100%);
+        min-height: 100vh;
+      }
+      .chart-container {
+        background: rgba(15, 23, 42, 0.95);
+        border: 1px solid #334155;
+        border-radius: 12px;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-900 text-white font-mono">
+    <!-- Sidebar Navigation -->
+    <div
+      class="fixed left-0 top-0 w-64 sidebar z-40 transform transition-transform duration-300"
+      id="sidebar"
+    >
+      <div class="p-6">
+        <div class="flex items-center mb-8">
+          <i class="fas fa-microchip text-3xl text-blue-400 mr-3"></i>
+          <h1 class="text-xl font-bold">DeiviTech Format</h1>
+        </div>
+
+        <nav class="space-y-2">
+          <a
+            href="#overview"
+            class="flex items-center p-3 rounded-lg bg-blue-600 text-white"
+          >
+            <i class="fas fa-tachometer-alt mr-3"></i> Overview
+          </a>
+          <a
+            href="#sistemas"
+            class="flex items-center p-3 rounded-lg hover:bg-gray-700 transition-colors"
+          >
+            <i class="fab fa-windows mr-3"></i> Sistemas
+          </a>
+          <a
+            href="#performance"
+            class="flex items-center p-3 rounded-lg hover:bg-gray-700 transition-colors"
+          >
+            <i class="fas fa-chart-line mr-3"></i> Performance
+          </a>
+          <a
+            href="#servicos"
+            class="flex items-center p-3 rounded-lg hover:bg-gray-700 transition-colors"
+          >
+            <i class="fas fa-tools mr-3"></i> Serviços
+          </a>
+          <a
+            href="#precos"
+            class="flex items-center p-3 rounded-lg hover:bg-gray-700 transition-colors"
+          >
+            <i class="fas fa-dollar-sign mr-3"></i> Preços
+          </a>
+          <a
+            href="#contato"
+            class="flex items-center p-3 rounded-lg hover:bg-gray-700 transition-colors"
+          >
+            <i class="fas fa-phone mr-3"></i> Contato
+          </a>
+        </nav>
+      </div>
+
+      <!-- Performance Monitor Sidebar -->
+      <div class="p-6 border-t border-gray-700">
+        <h3 class="text-sm font-semibold mb-4 text-gray-300">
+          MONITOR DO SISTEMA
+        </h3>
+        <div class="space-y-4">
+          <div>
+            <div class="flex justify-between text-xs text-gray-400 mb-1">
+              <span>CPU Usage</span>
+              <span id="cpu-usage">24%</span>
+            </div>
+            <div class="w-full bg-gray-800 rounded-full h-2">
+              <div
+                class="bg-green-500 h-2 rounded-full performance-bar"
+                style="width: 24%"
+              ></div>
+            </div>
+          </div>
+          <div>
+            <div class="flex justify-between text-xs text-gray-400 mb-1">
+              <span>RAM</span>
+              <span id="ram-usage">67%</span>
+            </div>
+            <div class="w-full bg-gray-800 rounded-full h-2">
+              <div
+                class="bg-yellow-500 h-2 rounded-full performance-bar"
+                style="width: 67%"
+              ></div>
+            </div>
+          </div>
+          <div>
+            <div class="flex justify-between text-xs text-gray-400 mb-1">
+              <span>Storage</span>
+              <span id="storage-usage">43%</span>
+            </div>
+            <div class="w-full bg-gray-800 rounded-full h-2">
+              <div
+                class="bg-blue-500 h-2 rounded-full performance-bar"
+                style="width: 43%"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="ml-64 min-h-screen">
+      <!-- Header -->
+      <header class="bg-gray-800 border-b border-gray-700 p-6">
+        <div class="flex items-center justify-between">
+          <div>
+            <h1 class="text-3xl font-bold mb-2">
+              <span class="glitch">DeiviTech Formatação</span>
+            </h1>
+            <p class="text-gray-400">
+              Especialistas em Windows 11 Pro, Arch Linux e Ghost Spectre
+            </p>
+          </div>
+          <div class="flex items-center space-x-4">
+            <div class="text-right">
+              <div class="text-2xl font-bold text-green-400" id="clock"></div>
+              <div class="text-sm text-gray-400">Feira de Santana, BA</div>
+            </div>
+            <div
+              class="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center"
+            >
+              <i class="fas fa-user text-white"></i>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Overview Section -->
+      <section id="overview" class="p-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+          <!-- Stats Cards -->
+          <div class="bg-gray-800 p-6 rounded-xl border border-gray-700">
+            <div class="flex items-center justify-between">
+              <div>
+                <p class="text-gray-400 text-sm">PCs Formatados</p>
+                <p class="text-3xl font-bold text-green-400">150+</p>
+              </div>
+              <i class="fas fa-desktop text-3xl text-green-400"></i>
+            </div>
+          </div>
+
+          <div class="bg-gray-800 p-6 rounded-xl border border-gray-700">
+            <div class="flex items-center justify-between">
+              <div>
+                <p class="text-gray-400 text-sm">Tempo Médio</p>
+                <p class="text-3xl font-bold text-blue-400">24h</p>
+              </div>
+              <i class="fas fa-clock text-3xl text-blue-400"></i>
+            </div>
+          </div>
+
+          <div class="bg-gray-800 p-6 rounded-xl border border-gray-700">
+            <div class="flex items-center justify-between">
+              <div>
+                <p class="text-gray-400 text-sm">Satisfação</p>
+                <p class="text-3xl font-bold text-purple-400">98%</p>
+              </div>
+              <i class="fas fa-heart text-3xl text-purple-400"></i>
+            </div>
+          </div>
+
+          <div class="bg-gray-800 p-6 rounded-xl border border-gray-700">
+            <div class="flex items-center justify-between">
+              <div>
+                <p class="text-gray-400 text-sm">Garantia</p>
+                <p class="text-3xl font-bold text-yellow-400">30d</p>
+              </div>
+              <i class="fas fa-shield-alt text-3xl text-yellow-400"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sistemas Section -->
+      <section id="sistemas" class="p-6">
+        <h2 class="text-2xl font-bold mb-6 flex items-center">
+          <i class="fab fa-windows mr-3 text-blue-400"></i>
+          Sistemas Operacionais Especializados
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Windows 11 Pro -->
+          <div class="bg-gray-800 rounded-xl p-6 border border-blue-500">
+            <div class="flex items-center mb-4">
+              <i class="fab fa-windows text-3xl text-blue-400 mr-3"></i>
+              <h3 class="text-xl font-bold">Windows 11 Pro</h3>
+            </div>
+            <ul class="space-y-2 text-gray-300 text-sm">
+              <li class="flex items-center">
+                <i class="fas fa-check text-green-400 mr-2"></i> Versão Original
+                Microsoft
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-check text-green-400 mr-2"></i> Drivers
+                Atualizados
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-check text-green-400 mr-2"></i> Microsoft
+                Office
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-check text-green-400 mr-2"></i> Antivírus
+                Premium
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-check text-green-400 mr-2"></i> Programas
+                Essenciais
+              </li>
+            </ul>
+            <div class="mt-4 text-center">
+              <span class="text-2xl font-bold text-blue-400">R$ 120,00</span>
+            </div>
+          </div>
+
+          <!-- Windows 10 Pro -->
+          <div class="bg-gray-800 rounded-xl p-6 border border-green-500">
+            <div class="flex items-center mb-4">
+              <i class="fab fa-windows text-3xl text-green-400 mr-3"></i>
+              <h3 class="text-xl font-bold">Windows 10 Pro</h3>
+            </div>
+            <ul class="space-y-2 text-gray-300 text-sm">
+              <li class="flex items-center">
+                <i class="fas fa-check text-green-400 mr-2"></i> Estável e
+                Confiável
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-check text-green-400 mr-2"></i> Drivers
+                Automáticos
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-check text-green-400 mr-2"></i> Suporte
+                Estendido
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-check text-green-400 mr-2"></i> Office 2021
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-check text-green-400 mr-2"></i> Games
+                Otimizados
+              </li>
+            </ul>
+            <div class="mt-4 text-center">
+              <span class="text-2xl font-bold text-green-400">R$ 100,00</span>
+            </div>
+          </div>
+
+          <!-- Ghost Spectre -->
+          <div class="bg-gray-800 rounded-xl p-6 border border-purple-500">
+            <div class="flex items-center mb-4">
+              <i class="fas fa-ghost text-3xl text-purple-400 mr-3"></i>
+              <h3 class="text-xl font-bold">Ghost Spectre</h3>
+            </div>
+            <ul class="space-y-2 text-gray-300 text-sm">
+              <li class="flex items-center">
+                <i class="fas fa-check text-green-400 mr-2"></i> Ultra Otimizado
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-check text-green-400 mr-2"></i> Máxima
+                Performance
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-check text-green-400 mr-2"></i> Sem Bloatwares
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-check text-green-400 mr-2"></i> Gaming Focus
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-check text-green-400 mr-2"></i> Low Latency
+              </li>
+            </ul>
+            <div class="mt-4 text-center">
+              <span class="text-2xl font-bold text-purple-400">R$ 150,00</span>
+            </div>
+          </div>
+
+          <!-- Arch Linux -->
+          <div class="bg-gray-800 rounded-xl p-6 border border-cyan-500">
+            <div class="flex items-center mb-4">
+              <i class="fab fa-linux text-3xl text-cyan-400 mr-3"></i>
+              <h3 class="text-xl font-bold">Arch Linux</h3>
+            </div>
+            <ul class="space-y-2 text-gray-300 text-sm">
+              <li class="flex items-center">
+                <i class="fas fa-check text-green-400 mr-2"></i> Rolling Release
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-check text-green-400 mr-2"></i> Customização
+                Total
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-check text-green-400 mr-2"></i> AUR Repository
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-check text-green-400 mr-2"></i> Performance
+                Máxima
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-check text-green-400 mr-2"></i> Para
+                Desenvolvedores
+              </li>
+            </ul>
+            <div class="mt-4 text-center">
+              <span class="text-2xl font-bold text-cyan-400">R$ 180,00</span>
+            </div>
+          </div>
+
+          <!-- Dual Boot -->
+          <div class="bg-gray-800 rounded-xl p-6 border border-yellow-500">
+            <div class="flex items-center mb-4">
+              <i class="fas fa-sync-alt text-3xl text-yellow-400 mr-3"></i>
+              <h3 class="text-xl font-bold">Dual Boot</h3>
+            </div>
+            <ul class="space-y-2 text-gray-300 text-sm">
+              <li class="flex items-center">
+                <i class="fas fa-check text-green-400 mr-2"></i> Windows + Linux
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-check text-green-400 mr-2"></i> Boot Loader
+                Seguro
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-check text-green-400 mr-2"></i> Partições
+                Otimizadas
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-check text-green-400 mr-2"></i> Treinamento
+                Incluso
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-check text-green-400 mr-2"></i> Melhor dos 2
+                Mundos
+              </li>
+            </ul>
+            <div class="mt-4 text-center">
+              <span class="text-2xl font-bold text-yellow-400">R$ 250,00</span>
+            </div>
+          </div>
+
+          <!-- Recovery & Backup -->
+          <div class="bg-gray-800 rounded-xl p-6 border border-red-500">
+            <div class="flex items-center mb-4">
+              <i class="fas fa-life-ring text-3xl text-red-400 mr-3"></i>
+              <h3 class="text-xl font-bold">Recovery & Backup</h3>
+            </div>
+            <ul class="space-y-2 text-gray-300 text-sm">
+              <li class="flex items-center">
+                <i class="fas fa-check text-green-400 mr-2"></i> Recuperação de
+                Dados
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-check text-green-400 mr-2"></i> Backup Completo
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-check text-green-400 mr-2"></i> Clonagem de HD
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-check text-green-400 mr-2"></i> Migração SSD
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-check text-green-400 mr-2"></i> Dados Seguros
+              </li>
+            </ul>
+            <div class="mt-4 text-center">
+              <span class="text-2xl font-bold text-red-400">R$ 80,00</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Performance Charts -->
+      <section id="performance" class="p-6">
+        <h2 class="text-2xl font-bold mb-6 flex items-center">
+          <i class="fas fa-chart-line mr-3 text-green-400"></i>
+          Análise de Performance
+        </h2>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <div class="chart-container p-6">
+            <h3 class="text-lg font-semibold mb-4">Boot Time Comparison</h3>
+            <canvas id="bootChart" width="400" height="200"></canvas>
+          </div>
+
+          <div class="chart-container p-6">
+            <h3 class="text-lg font-semibold mb-4">System Resource Usage</h3>
+            <canvas id="resourceChart" width="400" height="200"></canvas>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contato" class="p-6 bg-gray-800">
+        <div class="max-w-4xl mx-auto text-center">
+          <h2 class="text-3xl font-bold mb-4">Pronto para Acelerar seu PC?</h2>
+          <p class="text-gray-300 mb-8">
+            Formatação profissional com garantia de 30 dias
+          </p>
+
+          <div class="flex flex-wrap justify-center gap-4">
+            <a
+              href="https://wa.me/5575981231019?text=Olá!%20Gostaria%20de%20agendar%20uma%20formatação%20DeiviTech."
+              class="bg-green-500 hover:bg-green-600 px-8 py-3 rounded-lg font-semibold transition-colors flex items-center"
+            >
+              <i class="fab fa-whatsapp mr-2"></i> WhatsApp
+            </a>
+            <a
+              href="mailto:deivilsantana@outlook.com"
+              class="bg-blue-500 hover:bg-blue-600 px-8 py-3 rounded-lg font-semibold transition-colors flex items-center"
+            >
+              <i class="fas fa-envelope mr-2"></i> Email
+            </a>
+            <a
+              href="tel:+5575981231019"
+              class="bg-purple-500 hover:bg-purple-600 px-8 py-3 rounded-lg font-semibold transition-colors flex items-center"
+            >
+              <i class="fas fa-phone mr-2"></i> Ligar
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      // Clock
+      function updateClock() {
+        const now = new Date();
+        const time = now.toLocaleTimeString("pt-BR");
+        document.getElementById("clock").textContent = time;
+      }
+      setInterval(updateClock, 1000);
+      updateClock();
+
+      // Performance monitoring simulation
+      function updatePerformance() {
+        const cpu = Math.floor(Math.random() * 30) + 20;
+        const ram = Math.floor(Math.random() * 40) + 60;
+        const storage = Math.floor(Math.random() * 20) + 40;
+
+        document.getElementById("cpu-usage").textContent = cpu + "%";
+        document.getElementById("ram-usage").textContent = ram + "%";
+        document.getElementById("storage-usage").textContent = storage + "%";
+      }
+      setInterval(updatePerformance, 3000);
+
+      // Charts
+      const bootCtx = document.getElementById("bootChart").getContext("2d");
+      new Chart(bootCtx, {
+        type: "bar",
+        data: {
+          labels: [
+            "Windows Original",
+            "Windows 11 Pro",
+            "Ghost Spectre",
+            "Arch Linux",
+          ],
+          datasets: [
+            {
+              label: "Boot Time (segundos)",
+              data: [45, 25, 15, 12],
+              backgroundColor: ["#6b7280", "#3b82f6", "#8b5cf6", "#06b6d4"],
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          scales: {
+            y: { beginAtZero: true },
+          },
+        },
+      });
+
+      const resourceCtx = document
+        .getElementById("resourceChart")
+        .getContext("2d");
+      new Chart(resourceCtx, {
+        type: "doughnut",
+        data: {
+          labels: ["RAM Livre", "RAM Usada", "Storage Livre", "Storage Usado"],
+          datasets: [
+            {
+              data: [60, 40, 70, 30],
+              backgroundColor: ["#10b981", "#ef4444", "#3b82f6", "#f59e0b"],
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+        },
+      });
+
+      // Smooth scrolling
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
