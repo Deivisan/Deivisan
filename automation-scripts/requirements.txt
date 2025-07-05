@@ -1,0 +1,9 @@
+requests
+beautifulsoup4
+pandas
+selenium
+schedule
+python-telegram-bot
+openpyxl
+matplotlib
+pillow
