@@ -1,0 +1,6 @@
+theme: jekyll-theme-minimal
+title: "DeiviTech - Portfólio & Soluções Digitais"
+description: "Desenvolvedor Junior • Soluções Digitais • Fundador da DeiviTech"
+show_downloads: false
+github:
+  is_project_page: false
