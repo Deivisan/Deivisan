@@ -1,8 +1,23 @@
-# 🤖 Automações & Scripts Python
+# 🤖 Automation Scripts - DeiviTech
 
-## 📝 Visão Geral
+<div align="center">
 
-Coleção de scripts Python para automação de tarefas, otimização de processos e aumento de produtividade no ambiente de trabalho e desenvolvimento.
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Automation](https://img.shields.io/badge/Automation-FF6B35?style=for-the-badge&logo=automation&logoColor=white)
+![Scripts](https://img.shields.io/badge/Scripts-4A90E2?style=for-the-badge&logo=script&logoColor=white)
+
+**🚀 FASE 2 - Coleção expandida de scripts Python para automação e produtividade**
+
+[![Licença MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+
+</div>
+
+---
+
+## 📋 **Sobre o Projeto - FASE 2 Atualizada**
+
+**Repositório expandido** com scripts de automação Python desenvolvidos para otimizar tarefas repetitivas, demonstrar aplicações práticas e compartilhar soluções úteis com a comunidade.
 
 ## 🚀 Scripts Disponíveis
 

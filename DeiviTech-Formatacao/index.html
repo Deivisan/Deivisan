@@ -22,6 +22,34 @@
         transform: translateY(-5px);
         box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
       }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .animate-fadeInUp {
+        animation: fadeInUp 0.6s ease-out;
+      }
+
+      .animate-delay-200 {
+        animation-delay: 0.2s;
+      }
+
+      .animate-delay-400 {
+        animation-delay: 0.4s;
+      }
+
+      .animate-delay-600 {
+        animation-delay: 0.6s;
+      }
+
       .section-nav {
         position: fixed;
         top: 20px;
@@ -43,6 +71,12 @@
         </a>
         <a href="sistemas.html" class="block bg-purple-500 hover:bg-purple-600 px-4 py-2 rounded text-center text-sm">
           <i class="fas fa-cog mr-2"></i>Sistemas
+        </a>
+        <a href="analise.html" class="block bg-orange-500 hover:bg-orange-600 px-4 py-2 rounded text-center text-sm">
+          <i class="fas fa-brain mr-2"></i>Análise IA
+        </a>
+        <a href="agendamento.html" class="block bg-purple-600 hover:bg-purple-700 px-4 py-2 rounded text-center text-sm">
+          <i class="fas fa-calendar-check mr-2"></i>Agendar
         </a>
       </div>
     </div>
@@ -80,15 +114,31 @@
       <div class="container mx-auto px-6">
         <h2 class="text-3xl font-bold text-center mb-12">Nossos Serviços</h2>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
 
           <!-- Formatação -->
-          <div class="bg-gray-800 rounded-xl p-8 card-hover cursor-pointer" onclick="window.location='formatacao.html'">
+          <div class="bg-gray-800 rounded-xl p-8 card-hover cursor-pointer animate-fadeInUp" onclick="window.location='formatacao.html'">
             <div class="text-center">
               <i class="fas fa-desktop text-5xl text-blue-400 mb-6"></i>
               <h3 class="text-2xl font-bold mb-4">Formatação Completa</h3>
-              <p class="text-gray-300 mb-6">Reinstalação do sistema operacional com otimizações e programas essenciais</p>
-              <div class="text-3xl font-bold text-blue-400 mb-4">A partir de R$ 50</div>
+              <p class="text-gray-300 mb-4">Reinstalação do sistema operacional com otimizações e programas essenciais</p>
+
+              <div class="space-y-2 mb-6">
+                <div class="bg-gray-700 p-2 rounded text-sm">
+                  <span class="text-green-400">✓</span> Windows 10/11 Original
+                </div>
+                <div class="bg-gray-700 p-2 rounded text-sm">
+                  <span class="text-purple-400">⚡</span> Ghost Spectre (Super Rápido)
+                </div>
+                <div class="bg-gray-700 p-2 rounded text-sm">
+                  <span class="text-green-400">🆓</span> Chrome OS Flex (Gratuito)
+                </div>
+                <div class="bg-gray-700 p-2 rounded text-sm">
+                  <span class="text-orange-400">🐧</span> Linux Ubuntu
+                </div>
+              </div>
+
+              <div class="text-3xl font-bold text-blue-400 mb-4">A partir de R$ 30</div>
               <button class="bg-blue-500 hover:bg-blue-600 px-6 py-3 rounded-lg w-full">
                 Ver Opções
               </button>
@@ -96,12 +146,31 @@
           </div>
 
           <!-- Hardware -->
-          <div class="bg-gray-800 rounded-xl p-8 card-hover cursor-pointer" onclick="window.location='hardware.html'">
+          <div class="bg-gray-800 rounded-xl p-8 card-hover cursor-pointer border-2 border-green-400 animate-fadeInUp animate-delay-200" onclick="window.location='hardware.html'">
             <div class="text-center">
+              <div class="bg-green-500 text-white px-3 py-1 rounded text-sm font-bold mb-4">
+                🤖 COM IA
+              </div>
               <i class="fas fa-microchip text-5xl text-green-400 mb-6"></i>
-              <h3 class="text-2xl font-bold mb-4">Upgrade Hardware</h3>
-              <p class="text-gray-300 mb-6">SSD, RAM, HD e componentes para acelerar seu computador</p>
-              <div class="text-3xl font-bold text-green-400 mb-4">A partir de R$ 80</div>
+              <h3 class="text-2xl font-bold mb-4">Hardware & Upgrades</h3>
+              <p class="text-gray-300 mb-4">Turbine seu PC com componentes de qualidade e análise inteligente</p>
+
+              <div class="space-y-2 mb-6">
+                <div class="bg-gray-700 p-2 rounded text-sm">
+                  <span class="text-blue-400">🧠</span> Análise IA personalizada
+                </div>
+                <div class="bg-gray-700 p-2 rounded text-sm">
+                  <span class="text-purple-400">💾</span> RAM DDR2/3/4/5 (Desktop/Notebook)
+                </div>
+                <div class="bg-gray-700 p-2 rounded text-sm">
+                  <span class="text-yellow-400">💿</span> SSD/HD de alta qualidade
+                </div>
+                <div class="bg-gray-700 p-2 rounded text-sm">
+                  <span class="text-green-400">🔧</span> Instalação profissional
+                </div>
+              </div>
+
+              <div class="text-3xl font-bold text-green-400 mb-4">A partir de R$ 15</div>
               <button class="bg-green-500 hover:bg-green-600 px-6 py-3 rounded-lg w-full">
                 Ver Produtos
               </button>
@@ -109,14 +178,94 @@
           </div>
 
           <!-- Sistemas -->
-          <div class="bg-gray-800 rounded-xl p-8 card-hover cursor-pointer" onclick="window.location='sistemas.html'">
+          <div class="bg-gray-800 rounded-xl p-8 card-hover cursor-pointer animate-fadeInUp animate-delay-400" onclick="window.location='sistemas.html'">
             <div class="text-center">
               <i class="fas fa-cog text-5xl text-purple-400 mb-6"></i>
-              <h3 class="text-2xl font-bold mb-4">Sistemas Personalizados</h3>
-              <p class="text-gray-300 mb-6">Windows 10/11, Ghost Spectre e Linux otimizados</p>
-              <div class="text-3xl font-bold text-purple-400 mb-4">Incluído</div>
+              <h3 class="text-2xl font-bold mb-4">Sistemas & Overclocking</h3>
+              <p class="text-gray-300 mb-4">Conheça as diferenças entre sistemas e extraia 100% do seu hardware</p>
+
+              <div class="space-y-2 mb-6">
+                <div class="bg-gray-700 p-2 rounded text-sm">
+                  <span class="text-blue-400">📊</span> Comparação detalhada
+                </div>
+                <div class="bg-gray-700 p-2 rounded text-sm">
+                  <span class="text-red-400">🔥</span> Guia de overclocking seguro
+                </div>
+                <div class="bg-gray-700 p-2 rounded text-sm">
+                  <span class="text-green-400">⚡</span> +30% performance
+                </div>
+                <div class="bg-gray-700 p-2 rounded text-sm">
+                  <span class="text-purple-400">🛡️</span> Limites de segurança
+                </div>
+              </div>
+
+              <div class="text-3xl font-bold text-purple-400 mb-4">Consultoria Gratuita</div>
               <button class="bg-purple-500 hover:bg-purple-600 px-6 py-3 rounded-lg w-full">
-                Conhecer Sistemas
+                Explorar Sistemas
+              </button>
+            </div>
+          </div>
+
+          <!-- Análise IA -->
+          <div class="bg-gray-800 rounded-xl p-8 card-hover cursor-pointer border-2 border-orange-400 animate-fadeInUp animate-delay-600" onclick="window.location='analise.html'">
+            <div class="text-center">
+              <div class="bg-orange-500 text-white px-3 py-1 rounded text-sm font-bold mb-4">
+                🧠 NOVO
+              </div>
+              <i class="fas fa-brain text-5xl text-orange-400 mb-6"></i>
+              <h3 class="text-2xl font-bold mb-4">Análise IA Inteligente</h3>
+              <p class="text-gray-300 mb-4">3 formas de analisar seu PC e receber recomendações personalizadas</p>
+
+              <div class="space-y-2 mb-6">
+                <div class="bg-gray-700 p-2 rounded text-sm">
+                  <span class="text-green-400">🤖</span> Detecção automática
+                </div>
+                <div class="bg-gray-700 p-2 rounded text-sm">
+                  <span class="text-blue-400">📝</span> Análise manual
+                </div>
+                <div class="bg-gray-700 p-2 rounded text-sm">
+                  <span class="text-purple-400">📄</span> Upload de relatório
+                </div>
+                <div class="bg-gray-700 p-2 rounded text-sm">
+                  <span class="text-yellow-400">🎯</span> Recomendações personalizadas
+                </div>
+              </div>
+
+              <div class="text-3xl font-bold text-orange-400 mb-4">Gratuito</div>
+              <button class="bg-orange-500 hover:bg-orange-600 px-6 py-3 rounded-lg w-full">
+                Analisar PC
+              </button>
+            </div>
+          </div>
+
+          <!-- Agendamento Online -->
+          <div class="bg-gray-800 rounded-xl p-8 card-hover cursor-pointer border-2 border-purple-600 animate-fadeInUp animate-delay-800" onclick="window.location='agendamento.html'">
+            <div class="text-center">
+              <div class="bg-purple-600 text-white px-3 py-1 rounded text-sm font-bold mb-4">
+                📱 NOVO
+              </div>
+              <i class="fas fa-calendar-check text-5xl text-purple-400 mb-6"></i>
+              <h3 class="text-2xl font-bold mb-4">Agendamento Online</h3>
+              <p class="text-gray-300 mb-4">Agende seu atendimento de forma rápida e prática pelo site</p>
+
+              <div class="space-y-2 mb-6">
+                <div class="bg-gray-700 p-2 rounded text-sm">
+                  <span class="text-green-400">📅</span> Escolha data e horário
+                </div>
+                <div class="bg-gray-700 p-2 rounded text-sm">
+                  <span class="text-blue-400">🏠</span> Atendimento domiciliar
+                </div>
+                <div class="bg-gray-700 p-2 rounded text-sm">
+                  <span class="text-yellow-400">💰</span> Preços transparentes
+                </div>
+                <div class="bg-gray-700 p-2 rounded text-sm">
+                  <span class="text-purple-400">✅</span> Confirmação instantânea
+                </div>
+              </div>
+
+              <div class="text-3xl font-bold text-purple-400 mb-4">Fácil e Rápido</div>
+              <button class="bg-purple-600 hover:bg-purple-700 px-6 py-3 rounded-lg w-full">
+                Agendar Agora
               </button>
             </div>
           </div>

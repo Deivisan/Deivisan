@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Análise IA - DeiviTech</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <style>
+      .hero-bg {
+        background: linear-gradient(
+          135deg,
+          #f59e0b 0%,
+          #f97316 50%,
+          #ea580c 100%
+        );
+      }
+      .card-hover {
+        transition: all 0.3s ease;
+      }
+      .card-hover:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+      }
+
+      @keyframes aiPulse {
+        0% {
+          opacity: 0.6;
+        }
+        50% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0.6;
+        }
+      }
+
+      .ai-thinking {
+        animation: aiPulse 1.5s ease-in-out infinite;
+      }
+
+      @keyframes slideInUp {
+        from {
+          transform: translateY(20px);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+
+      .slide-up {
+        animation: slideInUp 0.5s ease-out;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-900 text-white font-sans">
+    <!-- Header -->
+    <header class="hero-bg py-8">
+      <div class="container mx-auto px-6">
+        <nav class="flex justify-between items-center mb-6">
+          <a
+            href="index.html"
+            class="flex items-center text-white hover:text-orange-200"
+          >
+            <i class="fas fa-arrow-left mr-2"></i>
+            <span>Voltar</span>
+          </a>
+          <div class="flex space-x-4">
+            <a
+              href="formatacao.html"
+              class="bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded"
+              >Formatação</a
+            >
+            <a
+              href="hardware.html"
+              class="bg-green-500 hover:bg-green-600 px-4 py-2 rounded"
+              >Hardware</a
+            >
+            <a
+              href="sistemas.html"
+              class="bg-purple-500 hover:bg-purple-600 px-4 py-2 rounded"
+              >Sistemas</a
+            >
+            <a
+              href="agendamento.html"
+              class="bg-purple-600 hover:bg-purple-700 px-4 py-2 rounded"
+              >Agendar</a
+            >
+          </div>
+        </nav>
+
+        <div class="text-center">
+          <i class="fas fa-brain text-5xl text-white mb-4 ai-thinking"></i>
+          <h1 class="text-4xl font-bold mb-4">Análise IA Inteligente</h1>
+          <p class="text-xl opacity-90">
+            3 formas de analisar seu PC e receber recomendações personalizadas
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <!-- Seletor de Modo de Análise -->
+    <section class="py-12">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-12">
+          🎯 Escolha o Método de Análise
+        </h2>
+
+        <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <!-- Análise Automática -->
+          <div
+            class="bg-gray-800 rounded-xl p-8 card-hover border-2 border-green-400 relative"
+          >
+            <div
+              class="bg-green-500 text-white px-3 py-1 rounded text-sm font-bold mb-4 inline-block"
+            >
+              RECOMENDADO
+            </div>
+            <div class="text-center">
+              <i class="fas fa-magic text-4xl text-green-400 mb-4"></i>
+              <h3 class="text-xl font-bold mb-4">Análise Automática</h3>
+              <p class="text-gray-300 mb-6">
+                Um clique e a IA detecta automaticamente as especificações do
+                seu PC
+              </p>
+
+              <div class="bg-gray-700 p-4 rounded-lg mb-6">
+                <h4 class="font-bold mb-2">✨ O que detectamos:</h4>
+                <ul class="text-sm text-left space-y-1">
+                  <li>• CPU e velocidade</li>
+                  <li>• RAM total e velocidade</li>
+                  <li>• Tipo de armazenamento</li>
+                  <li>• Sistema operacional</li>
+                  <li>• Temperatura e performance</li>
+                </ul>
+              </div>
+
+              <button
+                id="autoAnalysisBtn"
+                class="bg-green-500 hover:bg-green-600 px-6 py-3 rounded-lg font-bold w-full"
+              >
+                <i class="fas fa-play mr-2"></i>Iniciar Análise Automática
+              </button>
+            </div>
+          </div>
+
+          <!-- Análise Manual -->
+          <div class="bg-gray-800 rounded-xl p-8 card-hover">
+            <div class="text-center">
+              <i class="fas fa-keyboard text-4xl text-blue-400 mb-4"></i>
+              <h3 class="text-xl font-bold mb-4">Análise Manual</h3>
+              <p class="text-gray-300 mb-6">
+                Insira manualmente as especificações do seu computador
+              </p>
+
+              <div class="bg-gray-700 p-4 rounded-lg mb-6">
+                <h4 class="font-bold mb-2">📝 Você informa:</h4>
+                <ul class="text-sm text-left space-y-1">
+                  <li>• Processador atual</li>
+                  <li>• Quantidade de RAM</li>
+                  <li>• Tipo de HD/SSD</li>
+                  <li>• Uso principal do PC</li>
+                  <li>• Orçamento disponível</li>
+                </ul>
+              </div>
+
+              <button
+                id="manualAnalysisBtn"
+                class="bg-blue-500 hover:bg-blue-600 px-6 py-3 rounded-lg font-bold w-full"
+              >
+                <i class="fas fa-edit mr-2"></i>Análise Manual
+              </button>
+            </div>
+          </div>
+
+          <!-- Análise por Upload -->
+          <div class="bg-gray-800 rounded-xl p-8 card-hover">
+            <div class="text-center">
+              <i class="fas fa-upload text-4xl text-purple-400 mb-4"></i>
+              <h3 class="text-xl font-bold mb-4">Upload de Relatório</h3>
+              <p class="text-gray-300 mb-6">
+                Envie um arquivo DxDiag ou relatório de sistema
+              </p>
+
+              <div class="bg-gray-700 p-4 rounded-lg mb-6">
+                <h4 class="font-bold mb-2">📄 Formatos aceitos:</h4>
+                <ul class="text-sm text-left space-y-1">
+                  <li>• DxDiag (.txt)</li>
+                  <li>• MSInfo32 (.nfo)</li>
+                  <li>• Speccy (.xml)</li>
+                  <li>• CPU-Z (.txt)</li>
+                  <li>• Relatórios personalizados</li>
+                </ul>
+              </div>
+
+              <button
+                id="uploadAnalysisBtn"
+                class="bg-purple-500 hover:bg-purple-600 px-6 py-3 rounded-lg font-bold w-full"
+              >
+                <i class="fas fa-cloud-upload-alt mr-2"></i>Enviar Arquivo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Área de Análise -->
+    <section id="analysisSection" class="py-12 bg-gray-800 hidden">
+      <div class="container mx-auto px-6">
+        <!-- Análise Automática -->
+        <div id="autoAnalysis" class="hidden">
+          <h2 class="text-3xl font-bold text-center mb-8">
+            🤖 Análise Automática Inteligente
+          </h2>
+
+          <div class="max-w-4xl mx-auto">
+            <div class="bg-gray-700 rounded-xl p-8 mb-8">
+              <div id="autoProgress" class="hidden">
+                <h3 class="text-xl font-bold mb-4 text-center">
+                  <i class="fas fa-spinner fa-spin mr-2 text-green-400"></i>
+                  Analisando seu sistema...
+                </h3>
+                <div class="bg-gray-600 rounded-full h-4 mb-4">
+                  <div
+                    id="progressBar"
+                    class="bg-green-500 h-4 rounded-full transition-all duration-300"
+                    style="width: 0%"
+                  ></div>
+                </div>
+                <p id="progressText" class="text-center text-gray-300">
+                  Iniciando análise...
+                </p>
+              </div>
+
+              <div id="autoResults" class="hidden slide-up">
+                <!-- Resultados serão inseridos aqui via JavaScript -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Análise Manual -->
+        <div id="manualAnalysis" class="hidden">
+          <h2 class="text-3xl font-bold text-center mb-8">
+            📝 Análise Manual Detalhada
+          </h2>
+
+          <div class="max-w-4xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+              <div class="bg-gray-700 rounded-xl p-6">
+                <h3 class="text-xl font-bold mb-4">
+                  <i class="fas fa-desktop mr-2 text-blue-400"></i>
+                  Especificações Atuais
+                </h3>
+
+                <div class="space-y-4">
+                  <div>
+                    <label class="block text-sm font-medium mb-2"
+                      >Processador</label
+                    >
+                    <input
+                      type="text"
+                      id="manualCpu"
+                      placeholder="Ex: Intel Core i5-4460"
+                      class="w-full bg-gray-600 text-white p-3 rounded border border-gray-500 focus:border-blue-400"
+                    />
+                  </div>
+
+                  <div>
+                    <label class="block text-sm font-medium mb-2"
+                      >Memória RAM atual</label
+                    >
+                    <select
+                      id="manualRam"
+                      class="w-full bg-gray-600 text-white p-3 rounded border border-gray-500"
+                    >
+                      <option value="">Selecione</option>
+                      <option value="2">2GB</option>
+                      <option value="4">4GB</option>
+                      <option value="6">6GB</option>
+                      <option value="8">8GB</option>
+                      <option value="12">12GB</option>
+                      <option value="16">16GB</option>
+                      <option value="32">32GB ou mais</option>
+                    </select>
+                  </div>
+
+                  <div>
+                    <label class="block text-sm font-medium mb-2"
+                      >Armazenamento atual</label
+                    >
+                    <select
+                      id="manualStorage"
+                      class="w-full bg-gray-600 text-white p-3 rounded border border-gray-500"
+                    >
+                      <option value="">Selecione</option>
+                      <option value="hdd">HD Tradicional</option>
+                      <option value="ssd">SSD</option>
+                      <option value="hybrid">HD + SSD</option>
+                      <option value="nvme">SSD NVMe</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-gray-700 rounded-xl p-6">
+                <h3 class="text-xl font-bold mb-4">
+                  <i class="fas fa-target mr-2 text-orange-400"></i>
+                  Preferências de Uso
+                </h3>
+
+                <div class="space-y-4">
+                  <div>
+                    <label class="block text-sm font-medium mb-2"
+                      >Uso principal</label
+                    >
+                    <select
+                      id="manualUsage"
+                      class="w-full bg-gray-600 text-white p-3 rounded border border-gray-500"
+                    >
+                      <option value="">Selecione</option>
+                      <option value="office">Trabalho/Office</option>
+                      <option value="web">Internet/YouTube</option>
+                      <option value="gaming">Games</option>
+                      <option value="design">Design/Edição</option>
+                      <option value="programming">Programação</option>
+                      <option value="general">Uso geral</option>
+                    </select>
+                  </div>
+
+                  <div>
+                    <label class="block text-sm font-medium mb-2"
+                      >Orçamento disponível</label
+                    >
+                    <select
+                      id="manualBudget"
+                      class="w-full bg-gray-600 text-white p-3 rounded border border-gray-500"
+                    >
+                      <option value="">Selecione</option>
+                      <option value="100">Até R$ 100</option>
+                      <option value="200">R$ 100 - R$ 200</option>
+                      <option value="300">R$ 200 - R$ 300</option>
+                      <option value="500">R$ 300 - R$ 500</option>
+                      <option value="1000">R$ 500 - R$ 1000</option>
+                      <option value="unlimited">Sem limite</option>
+                    </select>
+                  </div>
+
+                  <button
+                    id="manualAnalyzeBtn"
+                    class="bg-blue-500 hover:bg-blue-600 px-6 py-3 rounded-lg font-bold w-full mt-6"
+                  >
+                    <i class="fas fa-chart-line mr-2"></i>Analisar Agora
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div id="manualResults" class="bg-gray-700 rounded-xl p-6 hidden">
+              <!-- Resultados da análise manual -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Upload Analysis -->
+        <div id="uploadAnalysis" class="hidden">
+          <h2 class="text-3xl font-bold text-center mb-8">
+            📁 Upload de Relatório de Sistema
+          </h2>
+
+          <div class="max-w-2xl mx-auto">
+            <div class="bg-gray-700 rounded-xl p-8">
+              <div
+                id="uploadArea"
+                class="border-2 border-dashed border-gray-500 rounded-lg p-8 text-center mb-6"
+              >
+                <i
+                  class="fas fa-cloud-upload-alt text-4xl text-purple-400 mb-4"
+                ></i>
+                <h3 class="text-xl font-bold mb-2">
+                  Arraste e solte seu arquivo aqui
+                </h3>
+                <p class="text-gray-300 mb-4">ou clique para selecionar</p>
+                <input
+                  type="file"
+                  id="fileInput"
+                  class="hidden"
+                  accept=".txt,.nfo,.xml,.log"
+                />
+                <button
+                  id="selectFileBtn"
+                  class="bg-purple-500 hover:bg-purple-600 px-6 py-2 rounded"
+                >
+                  Selecionar Arquivo
+                </button>
+              </div>
+
+              <div id="uploadProgress" class="hidden">
+                <div class="bg-gray-600 rounded-full h-4 mb-4">
+                  <div
+                    id="uploadProgressBar"
+                    class="bg-purple-500 h-4 rounded-full transition-all duration-300"
+                    style="width: 0%"
+                  ></div>
+                </div>
+                <p class="text-center text-gray-300">Processando arquivo...</p>
+              </div>
+
+              <div id="uploadResults" class="hidden">
+                <!-- Resultados do upload -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resultados e Recomendações -->
+    <section id="recommendationsSection" class="py-12 hidden">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-8">
+          🎯 Recomendações Personalizadas
+        </h2>
+
+        <div id="recommendations" class="max-w-6xl mx-auto">
+          <!-- Recomendações serão inseridas via JavaScript -->
+        </div>
+
+        <div class="text-center mt-8">
+          <button
+            id="addToCartBtn"
+            class="bg-green-500 hover:bg-green-600 px-8 py-4 rounded-lg text-lg font-bold"
+          >
+            <i class="fas fa-cart-plus mr-2"></i>Adicionar Recomendações ao
+            Carrinho
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      // Estado da aplicação
+      let currentAnalysis = null;
+      let recommendations = [];
+
+      // Event Listeners
+      document
+        .getElementById("autoAnalysisBtn")
+        .addEventListener("click", startAutoAnalysis);
+      document
+        .getElementById("manualAnalysisBtn")
+        .addEventListener("click", showManualAnalysis);
+      document
+        .getElementById("uploadAnalysisBtn")
+        .addEventListener("click", showUploadAnalysis);
+      document
+        .getElementById("manualAnalyzeBtn")
+        .addEventListener("click", startManualAnalysis);
+      document.getElementById("selectFileBtn").addEventListener("click", () => {
+        document.getElementById("fileInput").click();
+      });
+      document
+        .getElementById("fileInput")
+        .addEventListener("change", handleFileUpload);
+
+      // Análise Automática
+      function startAutoAnalysis() {
+        currentAnalysis = "auto";
+        showAnalysisSection();
+        document.getElementById("autoAnalysis").classList.remove("hidden");
+        document.getElementById("autoProgress").classList.remove("hidden");
+
+        simulateAutoAnalysis();
+      }
+
+      function simulateAutoAnalysis() {
+        const progressBar = document.getElementById("progressBar");
+        const progressText = document.getElementById("progressText");
+
+        const steps = [
+          { progress: 20, text: "Detectando CPU e arquitetura..." },
+          { progress: 40, text: "Analisando memória RAM..." },
+          { progress: 60, text: "Verificando armazenamento..." },
+          { progress: 80, text: "Avaliando performance geral..." },
+          { progress: 100, text: "Gerando recomendações..." },
+        ];
+
+        let currentStep = 0;
+
+        const interval = setInterval(() => {
+          if (currentStep < steps.length) {
+            const step = steps[currentStep];
+            progressBar.style.width = step.progress + "%";
+            progressText.textContent = step.text;
+            currentStep++;
+          } else {
+            clearInterval(interval);
+            setTimeout(showAutoResults, 500);
+          }
+        }, 1000);
+      }
+
+      function showAutoResults() {
+        document.getElementById("autoProgress").classList.add("hidden");
+        document.getElementById("autoResults").classList.remove("hidden");
+
+        // Simular dados detectados
+        const detectedSpecs = {
+          cpu: "Intel Core i5-4460 @ 3.20GHz",
+          ram: "8GB DDR3",
+          storage: "HD 500GB",
+          os: "Windows 10 Home",
+          performance: "Médio",
+        };
+
+        document.getElementById("autoResults").innerHTML = `
+          <h3 class="text-xl font-bold mb-4 text-green-400">
+            <i class="fas fa-check-circle mr-2"></i>Sistema Detectado com Sucesso!
+          </h3>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+            <div class="bg-gray-600 p-4 rounded-lg">
+              <h4 class="font-bold mb-3">🖥️ Especificações Detectadas:</h4>
+              <ul class="space-y-2 text-sm">
+                <li><strong>CPU:</strong> ${detectedSpecs.cpu}</li>
+                <li><strong>RAM:</strong> ${detectedSpecs.ram}</li>
+                <li><strong>Armazenamento:</strong> ${detectedSpecs.storage}</li>
+                <li><strong>Sistema:</strong> ${detectedSpecs.os}</li>
+              </ul>
+            </div>
+
+            <div class="bg-gray-600 p-4 rounded-lg">
+              <h4 class="font-bold mb-3">📊 Análise de Performance:</h4>
+              <div class="space-y-3">
+                <div class="flex justify-between items-center">
+                  <span>CPU:</span>
+                  <div class="bg-yellow-500 text-black px-2 py-1 rounded text-sm">Médio</div>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span>RAM:</span>
+                  <div class="bg-green-500 text-white px-2 py-1 rounded text-sm">Bom</div>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span>Armazenamento:</span>
+                  <div class="bg-red-500 text-white px-2 py-1 rounded text-sm">Lento</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button onclick="generateRecommendations('auto')" class="bg-orange-500 hover:bg-orange-600 px-6 py-3 rounded-lg font-bold w-full">
+            <i class="fas fa-magic mr-2"></i>Gerar Recomendações Inteligentes
+          </button>
+        `;
+      }
+
+      // Análise Manual
+      function showManualAnalysis() {
+        currentAnalysis = "manual";
+        showAnalysisSection();
+        document.getElementById("manualAnalysis").classList.remove("hidden");
+      }
+
+      function startManualAnalysis() {
+        const cpu = document.getElementById("manualCpu").value;
+        const ram = document.getElementById("manualRam").value;
+        const storage = document.getElementById("manualStorage").value;
+        const usage = document.getElementById("manualUsage").value;
+        const budget = document.getElementById("manualBudget").value;
+
+        if (!cpu || !ram || !storage || !usage || !budget) {
+          alert("Por favor, preencha todos os campos!");
+          return;
+        }
+
+        // Simular análise
+        const manualResults = document.getElementById("manualResults");
+        manualResults.innerHTML = `
+          <h3 class="text-xl font-bold mb-4 text-blue-400">
+            <i class="fas fa-check-circle mr-2"></i>Análise Manual Concluída!
+          </h3>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+            <div class="bg-gray-600 p-4 rounded-lg">
+              <h4 class="font-bold mb-3">📋 Dados Informados:</h4>
+              <ul class="space-y-2 text-sm">
+                <li><strong>CPU:</strong> ${cpu}</li>
+                <li><strong>RAM:</strong> ${ram}GB</li>
+                <li><strong>Armazenamento:</strong> ${storage}</li>
+                <li><strong>Uso:</strong> ${usage}</li>
+                <li><strong>Orçamento:</strong> R$ ${budget}</li>
+              </ul>
+            </div>
+
+            <div class="bg-gray-600 p-4 rounded-lg">
+              <h4 class="font-bold mb-3">🎯 Prioridades Identificadas:</h4>
+              <ul class="space-y-2 text-sm">
+                ${
+                  storage === "hdd"
+                    ? "<li>• ⚡ Trocar HD por SSD (Prioridade ALTA)</li>"
+                    : ""
+                }
+                ${parseInt(ram) < 8 ? "<li>• 🚀 Aumentar memória RAM</li>" : ""}
+                ${usage === "gaming" ? "<li>• 🎮 Otimizar para jogos</li>" : ""}
+                ${
+                  budget !== "unlimited"
+                    ? "<li>• 💰 Soluções dentro do orçamento</li>"
+                    : ""
+                }
+              </ul>
+            </div>
+          </div>
+
+          <button onclick="generateRecommendations('manual')" class="bg-blue-500 hover:bg-blue-600 px-6 py-3 rounded-lg font-bold w-full">
+            <i class="fas fa-chart-line mr-2"></i>Gerar Recomendações Personalizadas
+          </button>
+        `;
+
+        manualResults.classList.remove("hidden");
+      }
+
+      // Upload Analysis
+      function showUploadAnalysis() {
+        currentAnalysis = "upload";
+        showAnalysisSection();
+        document.getElementById("uploadAnalysis").classList.remove("hidden");
+      }
+
+      function handleFileUpload(event) {
+        const file = event.target.files[0];
+        if (!file) return;
+
+        document.getElementById("uploadProgress").classList.remove("hidden");
+
+        // Simular upload e processamento
+        let progress = 0;
+        const interval = setInterval(() => {
+          progress += 20;
+          document.getElementById("uploadProgressBar").style.width =
+            progress + "%";
+
+          if (progress >= 100) {
+            clearInterval(interval);
+            setTimeout(showUploadResults, 500);
+          }
+        }, 300);
+      }
+
+      function showUploadResults() {
+        document.getElementById("uploadProgress").classList.add("hidden");
+        document.getElementById("uploadResults").classList.remove("hidden");
+
+        document.getElementById("uploadResults").innerHTML = `
+          <h3 class="text-xl font-bold mb-4 text-purple-400">
+            <i class="fas fa-check-circle mr-2"></i>Arquivo Processado com Sucesso!
+          </h3>
+
+          <div class="bg-gray-600 p-4 rounded-lg mb-6">
+            <h4 class="font-bold mb-3">📄 Informações Extraídas:</h4>
+            <ul class="space-y-2 text-sm">
+              <li><strong>CPU:</strong> Intel Core i7-8700K @ 3.70GHz</li>
+              <li><strong>RAM:</strong> 16GB DDR4-2400</li>
+              <li><strong>GPU:</strong> NVIDIA GTX 1060 6GB</li>
+              <li><strong>Armazenamento:</strong> SSD 240GB + HD 1TB</li>
+              <li><strong>Sistema:</strong> Windows 11 Pro</li>
+            </ul>
+          </div>
+
+          <button onclick="generateRecommendations('upload')" class="bg-purple-500 hover:bg-purple-600 px-6 py-3 rounded-lg font-bold w-full">
+            <i class="fas fa-upload mr-2"></i>Gerar Recomendações Baseadas no Arquivo
+          </button>
+        `;
+      }
+
+      // Gerar Recomendações
+      function generateRecommendations(type) {
+        document
+          .getElementById("recommendationsSection")
+          .classList.remove("hidden");
+
+        const recommendationsDiv = document.getElementById("recommendations");
+
+        // Diferentes recomendações baseadas no tipo de análise
+        let recsData = [];
+
+        if (type === "auto") {
+          recsData = [
+            {
+              name: "SSD 240GB",
+              price: 120,
+              priority: "ALTA",
+              reason: "Seu HD está limitando drasticamente a performance",
+            },
+            {
+              name: "DDR3 16GB (2x8GB)",
+              price: 110,
+              priority: "MÉDIA",
+              reason: "Mais RAM para multitarefas",
+            },
+          ];
+        } else if (type === "manual") {
+          recsData = [
+            {
+              name: "SSD 480GB",
+              price: 180,
+              priority: "ALTA",
+              reason: "Upgrade essencial para seu uso",
+            },
+            {
+              name: "DDR4 16GB",
+              price: 165,
+              priority: "ALTA",
+              reason: "RAM adequada para suas necessidades",
+            },
+          ];
+        } else {
+          recsData = [
+            {
+              name: "SSD NVMe 500GB",
+              price: 220,
+              priority: "MÉDIA",
+              reason: "Seu sistema já tem SSD, mas NVMe seria melhor",
+            },
+            {
+              name: "DDR4 32GB",
+              price: 320,
+              priority: "BAIXA",
+              reason: "Para futuras expansões",
+            },
+          ];
+        }
+
+        recommendations = recsData;
+
+        const recsHTML = recsData
+          .map((rec, index) => {
+            const priorityColor =
+              rec.priority === "ALTA"
+                ? "red"
+                : rec.priority === "MÉDIA"
+                ? "yellow"
+                : "green";
+            return `
+            <div class="bg-gray-700 rounded-xl p-6 mb-4 slide-up" style="animation-delay: ${
+              index * 0.1
+            }s">
+              <div class="flex justify-between items-start mb-4">
+                <div>
+                  <h3 class="text-xl font-bold mb-2">${rec.name}</h3>
+                  <div class="bg-${priorityColor}-500 text-white px-3 py-1 rounded text-sm font-bold inline-block mb-2">
+                    Prioridade ${rec.priority}
+                  </div>
+                  <p class="text-gray-300">${rec.reason}</p>
+                </div>
+                <div class="text-right">
+                  <div class="text-2xl font-bold text-green-400">R$ ${rec.price.toFixed(
+                    2
+                  )}</div>
+                  <button onclick="addSingleToCart('${rec.name}', ${
+              rec.price
+            })" class="bg-green-500 hover:bg-green-600 px-4 py-2 rounded mt-2">
+                    <i class="fas fa-cart-plus mr-1"></i>Adicionar
+                  </button>
+                </div>
+              </div>
+            </div>
+          `;
+          })
+          .join("");
+
+        recommendationsDiv.innerHTML = `
+          <div class="bg-gray-800 rounded-xl p-6 mb-8">
+            <h3 class="text-2xl font-bold mb-6 text-center">
+              <i class="fas fa-star mr-2 text-yellow-400"></i>Recomendações Inteligentes
+            </h3>
+            ${recsHTML}
+
+            <div class="bg-green-600 p-4 rounded-lg mt-6">
+              <h4 class="font-bold mb-2">💰 Economia Total com Combo:</h4>
+              <p class="text-lg">Total: R$ ${recsData
+                .reduce((sum, rec) => sum + rec.price, 0)
+                .toFixed(2)} |
+              Com desconto de 10%: <strong>R$ ${(
+                recsData.reduce((sum, rec) => sum + rec.price, 0) * 0.9
+              ).toFixed(2)}</strong></p>
+            </div>
+          </div>
+        `;
+
+        // Scroll para as recomendações
+        setTimeout(() => {
+          document.getElementById("recommendationsSection").scrollIntoView({
+            behavior: "smooth",
+          });
+        }, 300);
+      }
+
+      // Adicionar ao carrinho
+      function addSingleToCart(name, price) {
+        alert(`${name} adicionado ao carrinho por R$ ${price.toFixed(2)}`);
+      }
+
+      // Utility Functions
+      function showAnalysisSection() {
+        document.getElementById("analysisSection").classList.remove("hidden");
+        // Scroll para a seção
+        setTimeout(() => {
+          document.getElementById("analysisSection").scrollIntoView({
+            behavior: "smooth",
+          });
+        }, 100);
+      }
+    </script>
+  </body>
+</html>

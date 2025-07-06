@@ -35,158 +35,39 @@
         z-index: 1000;
       }
 
-      /* Animações de Combo Sutis */
+      /* Animações de Combo */
       @keyframes comboGlow {
-        0% {
-          box-shadow: 0 0 5px rgba(16, 185, 129, 0.5);
-        }
-        50% {
-          box-shadow: 0 0 20px rgba(16, 185, 129, 0.8),
-            0 0 30px rgba(16, 185, 129, 0.6);
-        }
-        100% {
-          box-shadow: 0 0 5px rgba(16, 185, 129, 0.5);
-        }
+        0% { box-shadow: 0 0 5px rgba(16, 185, 129, 0.5); }
+        50% { box-shadow: 0 0 20px rgba(16, 185, 129, 0.8), 0 0 30px rgba(16, 185, 129, 0.6); }
+        100% { box-shadow: 0 0 5px rgba(16, 185, 129, 0.5); }
       }
 
-      @keyframes cartShake {
-        0%,
-        100% {
-          transform: translateX(0);
-        }
-        25% {
-          transform: translateX(-2px);
-        }
-        75% {
-          transform: translateX(2px);
-        }
+      @keyframes shake {
+        0%, 100% { transform: translateX(0); }
+        10%, 30%, 50%, 70%, 90% { transform: translateX(-2px); }
+        20%, 40%, 60%, 80% { transform: translateX(2px); }
       }
 
-      @keyframes addToCartPulse {
-        0% {
-          transform: scale(1);
-        }
-        50% {
-          transform: scale(1.05);
-        }
-        100% {
-          transform: scale(1);
-        }
-      }
-
-      .cart-shake {
-        animation: cartShake 0.5s ease-in-out;
-      }
-
-      .add-to-cart-pulse {
-        animation: addToCartPulse 0.3s ease-in-out;
-      }
-
-      /* Loading States */
-      @keyframes spin {
-        from {
-          transform: rotate(0deg);
-        }
-        to {
-          transform: rotate(360deg);
-        }
-      }
-
-      .loading-spinner {
-        animation: spin 1s linear infinite;
-      }
-
-      @keyframes comboBounce {
-        0%,
-        20%,
-        50%,
-        80%,
-        100% {
-          transform: translateY(0);
-        }
-        40% {
-          transform: translateY(-5px);
-        }
-        60% {
-          transform: translateY(-3px);
-        }
-      }
-
-      @keyframes subtlePulse {
-        0% {
-          border-color: rgba(16, 185, 129, 0.3);
-        }
-        50% {
-          border-color: rgba(16, 185, 129, 0.8);
-        }
-        100% {
-          border-color: rgba(16, 185, 129, 0.3);
-        }
-      }
-
-      .combo-glow {
-        animation: comboGlow 2s ease-in-out infinite;
-      }
-
-      .combo-bounce {
-        animation: comboBounce 0.6s ease-in-out;
-      }
-
-      .combo-highlight {
-        border: 2px solid rgba(16, 185, 129, 0.6);
-        animation: subtlePulse 1.5s ease-in-out infinite;
-        background: linear-gradient(
-          135deg,
-          rgba(16, 185, 129, 0.05),
-          rgba(59, 130, 246, 0.05)
-        );
-      }
-
-      .slide-in-right {
-        animation: slideInRight 0.5s ease-out;
-      }
-
-      @keyframes slideInRight {
-        from {
-          transform: translateX(100%);
-          opacity: 0;
-        }
-        to {
-          transform: translateX(0);
-          opacity: 1;
-        }
+      @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.05); }
+        100% { transform: scale(1); }
       }
 
       @keyframes slideInFromTop {
-        0% {
-          transform: translateY(-100px);
-          opacity: 0;
-        }
-        100% {
-          transform: translateY(0);
-          opacity: 1;
-        }
+        0% { transform: translateY(-100px); opacity: 0; }
+        100% { transform: translateY(0); opacity: 1; }
       }
 
       @keyframes fadeInScale {
-        0% {
-          transform: scale(0.8);
-          opacity: 0;
-        }
-        100% {
-          transform: scale(1);
-          opacity: 1;
-        }
+        0% { transform: scale(0.8); opacity: 0; }
+        100% { transform: scale(1); opacity: 1; }
       }
 
       .combo-active {
         animation: comboGlow 2s infinite;
         border: 2px solid #10b981 !important;
-        background: linear-gradient(
-          45deg,
-          rgba(16, 185, 129, 0.1),
-          rgba(52, 211, 153, 0.1)
-        );
+        background: linear-gradient(45deg, rgba(16, 185, 129, 0.1), rgba(52, 211, 153, 0.1));
       }
 
       .combo-discount {
@@ -266,22 +147,14 @@
       }
 
       .loading-dots::after {
-        content: "";
+        content: '';
         animation: dots 1.5s infinite;
       }
 
       @keyframes dots {
-        0%,
-        20% {
-          content: ".";
-        }
-        40% {
-          content: "..";
-        }
-        60%,
-        100% {
-          content: "...";
-        }
+        0%, 20% { content: '.'; }
+        40% { content: '..'; }
+        60%, 100% { content: '...'; }
       }
 
       /* Efeito de gradient animado */
@@ -294,13 +167,8 @@
       }
 
       @keyframes gradientShift {
-        0%,
-        100% {
-          background-position: 0% 50%;
-        }
-        50% {
-          background-position: 100% 50%;
-        }
+        0%, 100% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
       }
     </style>
   </head>
@@ -327,16 +195,6 @@
               class="bg-purple-500 hover:bg-purple-600 px-4 py-2 rounded"
               >Sistemas</a
             >
-            <a
-              href="analise.html"
-              class="bg-orange-500 hover:bg-orange-600 px-4 py-2 rounded"
-              >Análise IA</a
-            >
-            <a
-              href="agendamento.html"
-              class="bg-purple-600 hover:bg-purple-700 px-4 py-2 rounded"
-              >Agendar</a
-            >
           </div>
         </nav>
 
@@ -350,37 +208,103 @@
       </div>
     </header>
 
-    <!-- Smart Combo Detector (Sutil e Responsivo) -->
-    <div
-      id="smart-combo-detector"
-      class="fixed top-20 right-4 z-50 hidden md:right-4 right-2 md:top-20 top-16"
-    >
-      <div
-        class="bg-gradient-to-r from-green-500 to-blue-500 text-white p-3 md:p-4 rounded-lg shadow-xl max-w-sm md:max-w-sm max-w-xs combo-bounce text-sm md:text-base"
-      >
+    <!-- Smart Combo Detector (Sutil) -->
+    <div id="smart-combo-detector" class="fixed top-20 right-4 z-50 hidden">
+      <div class="bg-gradient-to-r from-green-500 to-blue-500 text-white p-4 rounded-lg shadow-xl max-w-sm combo-bounce">
         <div class="flex items-center mb-2">
           <i class="fas fa-sparkles text-yellow-300 mr-2"></i>
           <span class="font-bold text-sm">✨ Combo Inteligente Detectado!</span>
         </div>
-        <p class="text-xs mb-3 opacity-90">
-          SSD + Memória selecionados = <strong>10% OFF</strong>
-        </p>
+        <p class="text-xs mb-3 opacity-90">SSD + Memória selecionados = <strong>10% OFF</strong></p>
         <div class="flex gap-2">
-          <button
-            id="apply-smart-combo"
-            class="bg-white text-green-600 px-3 py-1 rounded text-xs font-bold hover:bg-gray-100 flex-1"
-          >
+          <button id="apply-smart-combo" class="bg-white text-green-600 px-3 py-1 rounded text-xs font-bold hover:bg-gray-100 flex-1">
             <i class="fas fa-percent mr-1"></i>Aplicar
           </button>
-          <button
-            id="dismiss-combo"
-            class="bg-red-500 text-white px-3 py-1 rounded text-xs hover:bg-red-600"
-          >
+          <button id="dismiss-combo" class="bg-red-500 text-white px-3 py-1 rounded text-xs hover:bg-red-600">
             <i class="fas fa-times"></i>
           </button>
         </div>
       </div>
     </div>
+
+    <!-- Armazenamento -->
+    <section class="py-12">
+          <!-- Combo Básico -->
+          <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 combo-card" data-combo="basico">
+            <div class="text-center">
+              <div class="bg-green-500 text-white px-3 py-1 rounded text-sm font-bold mb-4">COMBO BÁSICO</div>
+              <div class="flex justify-center space-x-4 mb-4">
+                <i class="fas fa-microchip text-3xl text-blue-400"></i>
+                <span class="text-2xl text-white">+</span>
+                <i class="fas fa-memory text-3xl text-purple-400"></i>
+              </div>
+              <h3 class="text-xl font-bold text-white mb-2">SSD 240GB + 8GB RAM</h3>
+              <div class="bg-white/20 p-3 rounded mb-4 text-white">
+                <div class="line-through text-gray-300">De: R$ 220,00</div>
+                <div class="text-2xl font-bold text-green-300">Por: R$ 198,00</div>
+                <div class="text-sm text-yellow-200">Economia: R$ 22,00</div>
+              </div>
+              <button class="combo-btn bg-green-500 hover:bg-green-600 px-6 py-3 rounded-lg w-full font-bold text-white" data-combo="basico" data-price="198">
+                <i class="fas fa-bolt mr-2"></i>Pegar Combo
+              </button>
+            </div>
+          </div>
+
+          <!-- Combo Intermediário -->
+          <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 combo-card border-2 border-yellow-400" data-combo="intermediario">
+            <div class="text-center">
+              <div class="bg-yellow-500 text-black px-3 py-1 rounded text-sm font-bold mb-4">COMBO MAIS VENDIDO</div>
+              <div class="flex justify-center space-x-4 mb-4">
+                <i class="fas fa-microchip text-3xl text-blue-400"></i>
+                <span class="text-2xl text-white">+</span>
+                <i class="fas fa-memory text-3xl text-purple-400"></i>
+              </div>
+              <h3 class="text-xl font-bold text-white mb-2">SSD 480GB + 16GB RAM</h3>
+              <div class="bg-white/20 p-3 rounded mb-4 text-white">
+                <div class="line-through text-gray-300">De: R$ 365,00</div>
+                <div class="text-2xl font-bold text-green-300">Por: R$ 329,00</div>
+                <div class="text-sm text-yellow-200">Economia: R$ 36,00</div>
+              </div>
+              <button class="combo-btn bg-yellow-500 hover:bg-yellow-600 px-6 py-3 rounded-lg w-full font-bold text-black" data-combo="intermediario" data-price="329">
+                <i class="fas fa-star mr-2"></i>Pegar Combo
+              </button>
+            </div>
+          </div>
+
+          <!-- Combo Premium -->
+          <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 combo-card" data-combo="premium">
+            <div class="text-center">
+              <div class="bg-red-500 text-white px-3 py-1 rounded text-sm font-bold mb-4">COMBO PREMIUM</div>
+              <div class="flex justify-center space-x-4 mb-4">
+                <i class="fas fa-microchip text-3xl text-blue-400"></i>
+                <span class="text-2xl text-white">+</span>
+                <i class="fas fa-memory text-3xl text-purple-400"></i>
+              </div>
+              <h3 class="text-xl font-bold text-white mb-2">SSD 1TB + 32GB RAM</h3>
+              <div class="bg-white/20 p-3 rounded mb-4 text-white">
+                <div class="line-through text-gray-300">De: R$ 620,00</div>
+                <div class="text-2xl font-bold text-green-300">Por: R$ 558,00</div>
+                <div class="text-sm text-yellow-200">Economia: R$ 62,00</div>
+              </div>
+              <button class="combo-btn bg-red-500 hover:bg-red-600 px-6 py-3 rounded-lg w-full font-bold text-white" data-combo="premium" data-price="558">
+                <i class="fas fa-crown mr-2"></i>Pegar Combo
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Detector de Combo Automático -->
+        <div id="combo-detector" class="hidden bg-green-600 rounded-xl p-6 text-center combo-glow">
+          <h3 class="text-xl font-bold text-white mb-2">
+            <i class="fas fa-magic mr-2"></i>COMBO DETECTADO!
+          </h3>
+          <p class="text-green-100 mb-4">Você selecionou SSD + Memória. Ganhe 10% de desconto!</p>
+          <button id="apply-combo" class="bg-white text-green-600 px-6 py-3 rounded-lg font-bold hover:bg-gray-100">
+            <i class="fas fa-percent mr-2"></i>Aplicar Desconto
+          </button>
+        </div>
+      </div>
+    </section>
 
     <!-- Armazenamento -->
     <section class="py-12">
@@ -406,22 +330,13 @@
                 <li>• Interface SATA</li>
                 <li>• Garantia: 1 ano</li>
               </ul>
-              <div class="space-y-2">
-                <button
-                  class="select-for-combo bg-white text-yellow-600 border-2 border-yellow-600 px-3 py-1 rounded-lg text-sm w-full hover:bg-yellow-50 transition-colors"
-                  data-category="storage"
-                  onclick="selectProduct('HD 500GB', 'storage', this)"
-                >
-                  🎯 Selecionar para Combo
-                </button>
-                <button
-                  class="add-to-cart bg-green-500 hover:bg-green-600 px-4 py-2 rounded w-full"
-                  data-name="HD 500GB"
-                  data-price="80"
-                >
-                  <i class="fas fa-cart-plus mr-2"></i>Adicionar
-                </button>
-              </div>
+              <button
+                class="add-to-cart bg-green-500 hover:bg-green-600 px-4 py-2 rounded w-full"
+                data-name="HD 500GB"
+                data-price="80"
+              >
+                <i class="fas fa-cart-plus mr-2"></i>Adicionar
+              </button>
             </div>
           </div>
 
@@ -442,22 +357,13 @@
                 <li>• Interface SATA</li>
                 <li>• Garantia: 1 ano</li>
               </ul>
-              <div class="space-y-2">
-                <button
-                  class="select-for-combo bg-white text-yellow-600 border-2 border-yellow-600 px-3 py-1 rounded-lg text-sm w-full hover:bg-yellow-50 transition-colors"
-                  data-category="storage"
-                  onclick="selectProduct('HD 1TB', 'storage', this)"
-                >
-                  🎯 Selecionar para Combo
-                </button>
-                <button
-                  class="add-to-cart bg-green-500 hover:bg-green-600 px-4 py-2 rounded w-full"
-                  data-name="HD 1TB"
-                  data-price="100"
-                >
-                  <i class="fas fa-cart-plus mr-2"></i>Adicionar
-                </button>
-              </div>
+              <button
+                class="add-to-cart bg-green-500 hover:bg-green-600 px-4 py-2 rounded w-full"
+                data-name="HD 1TB"
+                data-price="100"
+              >
+                <i class="fas fa-cart-plus mr-2"></i>Adicionar
+              </button>
             </div>
           </div>
 
@@ -485,22 +391,13 @@
                 <li>• Interface SATA</li>
                 <li>• Garantia: 2 anos</li>
               </ul>
-              <div class="space-y-2">
-                <button
-                  class="select-for-combo bg-white text-blue-600 border-2 border-blue-600 px-3 py-1 rounded-lg text-sm w-full hover:bg-blue-50 transition-colors"
-                  data-category="storage"
-                  onclick="selectProduct('SSD 240GB', 'storage', this)"
-                >
-                  🎯 Selecionar para Combo
-                </button>
-                <button
-                  class="add-to-cart bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded w-full"
-                  data-name="SSD 240GB"
-                  data-price="120"
-                >
-                  <i class="fas fa-cart-plus mr-2"></i>Adicionar
-                </button>
-              </div>
+              <button
+                class="add-to-cart bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded w-full"
+                data-name="SSD 240GB"
+                data-price="120"
+              >
+                <i class="fas fa-cart-plus mr-2"></i>Adicionar
+              </button>
             </div>
           </div>
 
@@ -521,22 +418,13 @@
                 <li>• Interface SATA</li>
                 <li>• Garantia: 3 anos</li>
               </ul>
-              <div class="space-y-2">
-                <button
-                  class="select-for-combo bg-white text-green-600 border-2 border-green-600 px-3 py-1 rounded-lg text-sm w-full hover:bg-green-50 transition-colors"
-                  data-category="storage"
-                  onclick="selectProduct('SSD 480GB', 'storage', this)"
-                >
-                  🎯 Selecionar para Combo
-                </button>
-                <button
-                  class="add-to-cart bg-green-500 hover:bg-green-600 px-4 py-2 rounded w-full"
-                  data-name="SSD 480GB"
-                  data-price="180"
-                >
-                  <i class="fas fa-cart-plus mr-2"></i>Adicionar
-                </button>
-              </div>
+              <button
+                class="add-to-cart bg-green-500 hover:bg-green-600 px-4 py-2 rounded w-full"
+                data-name="SSD 480GB"
+                data-price="180"
+              >
+                <i class="fas fa-cart-plus mr-2"></i>Adicionar
+              </button>
             </div>
           </div>
         </div>
@@ -554,16 +442,10 @@
         <!-- Seletor de Tipo -->
         <div class="text-center mb-8">
           <div class="inline-flex bg-gray-700 rounded-lg p-1">
-            <button
-              class="ram-type-btn active px-6 py-2 rounded-md bg-purple-500 text-white"
-              data-type="desktop"
-            >
+            <button class="ram-type-btn active px-6 py-2 rounded-md bg-purple-500 text-white" data-type="desktop">
               💻 Desktop
             </button>
-            <button
-              class="ram-type-btn px-6 py-2 rounded-md text-gray-300 hover:text-white"
-              data-type="notebook"
-            >
+            <button class="ram-type-btn px-6 py-2 rounded-md text-gray-300 hover:text-white" data-type="notebook">
               💻 Notebook
             </button>
           </div>
@@ -572,11 +454,9 @@
         <!-- Desktop RAM -->
         <div id="desktop-ram" class="ram-section">
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
             <!-- DDR3 Desktop -->
-            <div
-              class="bg-gray-700 rounded-xl p-6 card-hover tooltip"
-              data-tooltip="Compatível com PCs de 2009-2016"
-            >
+            <div class="bg-gray-700 rounded-xl p-6 card-hover tooltip" data-tooltip="Compatível com PCs de 2009-2016">
               <div class="text-center">
                 <i class="fas fa-memory text-4xl text-blue-400 mb-4"></i>
                 <h4 class="text-lg font-bold mb-2">DDR3 Desktop</h4>
@@ -591,20 +471,12 @@
                   </div>
                 </div>
                 <div class="space-y-2">
-                  <select
-                    class="ram-select w-full bg-gray-600 text-white p-2 rounded"
-                    data-type="ddr3-desktop"
-                  >
+                  <select class="ram-select w-full bg-gray-600 text-white p-2 rounded" data-type="ddr3-desktop">
                     <option value="">Selecionar</option>
                     <option value="ddr3-8gb-60">8GB - R$ 60,00</option>
-                    <option value="ddr3-16gb-110">
-                      16GB (2x8GB) - R$ 110,00
-                    </option>
+                    <option value="ddr3-16gb-110">16GB (2x8GB) - R$ 110,00</option>
                   </select>
-                  <button
-                    class="add-ram-to-cart bg-green-500 hover:bg-green-600 px-4 py-2 rounded w-full"
-                    disabled
-                  >
+                  <button class="add-ram-to-cart bg-green-500 hover:bg-green-600 px-4 py-2 rounded w-full" disabled>
                     <i class="fas fa-cart-plus mr-2"></i>Adicionar
                   </button>
                 </div>
@@ -612,16 +484,9 @@
             </div>
 
             <!-- DDR4 Desktop -->
-            <div
-              class="bg-gray-700 rounded-xl p-6 card-hover border-2 border-purple-400 tooltip"
-              data-tooltip="Mais popular - Compatível com PCs modernos"
-            >
+            <div class="bg-gray-700 rounded-xl p-6 card-hover border-2 border-purple-400 tooltip" data-tooltip="Mais popular - Compatível com PCs modernos">
               <div class="text-center">
-                <div
-                  class="bg-purple-500 text-white px-2 py-1 rounded text-xs font-bold mb-2"
-                >
-                  MAIS VENDIDO
-                </div>
+                <div class="bg-purple-500 text-white px-2 py-1 rounded text-xs font-bold mb-2">MAIS VENDIDO</div>
                 <i class="fas fa-memory text-4xl text-purple-400 mb-4"></i>
                 <h4 class="text-lg font-bold mb-2">DDR4 Desktop</h4>
                 <div class="space-y-2 mb-4">
@@ -639,23 +504,13 @@
                   </div>
                 </div>
                 <div class="space-y-2">
-                  <select
-                    class="ram-select w-full bg-gray-600 text-white p-2 rounded"
-                    data-type="ddr4-desktop"
-                  >
+                  <select class="ram-select w-full bg-gray-600 text-white p-2 rounded" data-type="ddr4-desktop">
                     <option value="">Selecionar</option>
                     <option value="ddr4-8gb-90">8GB - R$ 90,00</option>
-                    <option value="ddr4-16gb-165">
-                      16GB (2x8GB) - R$ 165,00
-                    </option>
-                    <option value="ddr4-32gb-320">
-                      32GB (2x16GB) - R$ 320,00
-                    </option>
+                    <option value="ddr4-16gb-165">16GB (2x8GB) - R$ 165,00</option>
+                    <option value="ddr4-32gb-320">32GB (2x16GB) - R$ 320,00</option>
                   </select>
-                  <button
-                    class="add-ram-to-cart bg-purple-500 hover:bg-purple-600 px-4 py-2 rounded w-full"
-                    disabled
-                  >
+                  <button class="add-ram-to-cart bg-purple-500 hover:bg-purple-600 px-4 py-2 rounded w-full" disabled>
                     <i class="fas fa-cart-plus mr-2"></i>Adicionar
                   </button>
                 </div>
@@ -663,16 +518,9 @@
             </div>
 
             <!-- DDR5 Desktop -->
-            <div
-              class="bg-gray-700 rounded-xl p-6 card-hover tooltip"
-              data-tooltip="Última geração - Máximo desempenho"
-            >
+            <div class="bg-gray-700 rounded-xl p-6 card-hover tooltip" data-tooltip="Última geração - Máximo desempenho">
               <div class="text-center">
-                <div
-                  class="bg-red-500 text-white px-2 py-1 rounded text-xs font-bold mb-2"
-                >
-                  PREMIUM
-                </div>
+                <div class="bg-red-500 text-white px-2 py-1 rounded text-xs font-bold mb-2">PREMIUM</div>
                 <i class="fas fa-memory text-4xl text-red-400 mb-4"></i>
                 <h4 class="text-lg font-bold mb-2">DDR5 Desktop</h4>
                 <div class="space-y-2 mb-4">
@@ -686,22 +534,12 @@
                   </div>
                 </div>
                 <div class="space-y-2">
-                  <select
-                    class="ram-select w-full bg-gray-600 text-white p-2 rounded"
-                    data-type="ddr5-desktop"
-                  >
+                  <select class="ram-select w-full bg-gray-600 text-white p-2 rounded" data-type="ddr5-desktop">
                     <option value="">Selecionar</option>
-                    <option value="ddr5-16gb-250">
-                      16GB (2x8GB) - R$ 250,00
-                    </option>
-                    <option value="ddr5-32gb-400">
-                      32GB (2x16GB) - R$ 400,00
-                    </option>
+                    <option value="ddr5-16gb-250">16GB (2x8GB) - R$ 250,00</option>
+                    <option value="ddr5-32gb-400">32GB (2x16GB) - R$ 400,00</option>
                   </select>
-                  <button
-                    class="add-ram-to-cart bg-red-500 hover:bg-red-600 px-4 py-2 rounded w-full"
-                    disabled
-                  >
+                  <button class="add-ram-to-cart bg-red-500 hover:bg-red-600 px-4 py-2 rounded w-full" disabled>
                     <i class="fas fa-cart-plus mr-2"></i>Adicionar
                   </button>
                 </div>
@@ -709,31 +547,18 @@
             </div>
 
             <!-- Upgrade Completo -->
-            <div
-              class="bg-gradient-to-br from-yellow-600 to-orange-600 rounded-xl p-6 card-hover tooltip"
-              data-tooltip="Diagnóstico incluído"
-            >
+            <div class="bg-gradient-to-br from-yellow-600 to-orange-600 rounded-xl p-6 card-hover tooltip" data-tooltip="Diagnóstico incluído">
               <div class="text-center">
-                <div
-                  class="bg-yellow-500 text-black px-2 py-1 rounded text-xs font-bold mb-2"
-                >
-                  SERVIÇO COMPLETO
-                </div>
+                <div class="bg-yellow-500 text-black px-2 py-1 rounded text-xs font-bold mb-2">SERVIÇO COMPLETO</div>
                 <i class="fas fa-tools text-4xl text-white mb-4"></i>
-                <h4 class="text-lg font-bold mb-2 text-white">
-                  Upgrade Completo
-                </h4>
+                <h4 class="text-lg font-bold mb-2 text-white">Upgrade Completo</h4>
                 <div class="space-y-2 mb-4">
                   <div class="bg-white/20 p-2 rounded text-white">
                     <div class="text-sm">Diagnóstico + Memória</div>
-                    <div class="text-yellow-200 font-bold">
-                      A partir de R$ 115,00
-                    </div>
+                    <div class="text-yellow-200 font-bold">A partir de R$ 115,00</div>
                   </div>
                 </div>
-                <button
-                  class="bg-white text-orange-600 hover:bg-gray-100 px-4 py-2 rounded w-full font-bold"
-                >
+                <button class="bg-white text-orange-600 hover:bg-gray-100 px-4 py-2 rounded w-full font-bold">
                   <i class="fas fa-phone mr-2"></i>Consultar
                 </button>
               </div>
@@ -744,17 +569,11 @@
         <!-- Notebook RAM -->
         <div id="notebook-ram" class="ram-section hidden">
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
             <!-- DDR4 SO-DIMM -->
-            <div
-              class="bg-gray-700 rounded-xl p-6 card-hover border-2 border-green-400 tooltip"
-              data-tooltip="Mais compatível com notebooks atuais"
-            >
+            <div class="bg-gray-700 rounded-xl p-6 card-hover border-2 border-green-400 tooltip" data-tooltip="Mais compatível com notebooks atuais">
               <div class="text-center">
-                <div
-                  class="bg-green-500 text-white px-2 py-1 rounded text-xs font-bold mb-2"
-                >
-                  NOTEBOOK POPULAR
-                </div>
+                <div class="bg-green-500 text-white px-2 py-1 rounded text-xs font-bold mb-2">NOTEBOOK POPULAR</div>
                 <i class="fas fa-laptop text-4xl text-green-400 mb-4"></i>
                 <h4 class="text-lg font-bold mb-2">DDR4 SO-DIMM</h4>
                 <div class="space-y-2 mb-4">
@@ -768,18 +587,12 @@
                   </div>
                 </div>
                 <div class="space-y-2">
-                  <select
-                    class="ram-select w-full bg-gray-600 text-white p-2 rounded"
-                    data-type="ddr4-notebook"
-                  >
+                  <select class="ram-select w-full bg-gray-600 text-white p-2 rounded" data-type="ddr4-notebook">
                     <option value="">Selecionar</option>
                     <option value="ddr4-nb-8gb-100">8GB - R$ 100,00</option>
                     <option value="ddr4-nb-16gb-185">16GB - R$ 185,00</option>
                   </select>
-                  <button
-                    class="add-ram-to-cart bg-green-500 hover:bg-green-600 px-4 py-2 rounded w-full"
-                    disabled
-                  >
+                  <button class="add-ram-to-cart bg-green-500 hover:bg-green-600 px-4 py-2 rounded w-full" disabled>
                     <i class="fas fa-cart-plus mr-2"></i>Adicionar
                   </button>
                 </div>
@@ -787,16 +600,9 @@
             </div>
 
             <!-- DDR5 SO-DIMM -->
-            <div
-              class="bg-gray-700 rounded-xl p-6 card-hover tooltip"
-              data-tooltip="Para notebooks premium e gaming"
-            >
+            <div class="bg-gray-700 rounded-xl p-6 card-hover tooltip" data-tooltip="Para notebooks premium e gaming">
               <div class="text-center">
-                <div
-                  class="bg-red-500 text-white px-2 py-1 rounded text-xs font-bold mb-2"
-                >
-                  NOTEBOOK PREMIUM
-                </div>
+                <div class="bg-red-500 text-white px-2 py-1 rounded text-xs font-bold mb-2">NOTEBOOK PREMIUM</div>
                 <i class="fas fa-laptop text-4xl text-red-400 mb-4"></i>
                 <h4 class="text-lg font-bold mb-2">DDR5 SO-DIMM</h4>
                 <div class="space-y-2 mb-4">
@@ -810,18 +616,12 @@
                   </div>
                 </div>
                 <div class="space-y-2">
-                  <select
-                    class="ram-select w-full bg-gray-600 text-white p-2 rounded"
-                    data-type="ddr5-notebook"
-                  >
+                  <select class="ram-select w-full bg-gray-600 text-white p-2 rounded" data-type="ddr5-notebook">
                     <option value="">Selecionar</option>
                     <option value="ddr5-nb-16gb-290">16GB - R$ 290,00</option>
                     <option value="ddr5-nb-32gb-470">32GB - R$ 470,00</option>
                   </select>
-                  <button
-                    class="add-ram-to-cart bg-red-500 hover:bg-red-600 px-4 py-2 rounded w-full"
-                    disabled
-                  >
+                  <button class="add-ram-to-cart bg-red-500 hover:bg-red-600 px-4 py-2 rounded w-full" disabled>
                     <i class="fas fa-cart-plus mr-2"></i>Adicionar
                   </button>
                 </div>
@@ -829,31 +629,18 @@
             </div>
 
             <!-- Upgrade Notebook -->
-            <div
-              class="bg-gradient-to-br from-blue-600 to-purple-600 rounded-xl p-6 card-hover tooltip"
-              data-tooltip="Instalação especializada em notebooks"
-            >
+            <div class="bg-gradient-to-br from-blue-600 to-purple-600 rounded-xl p-6 card-hover tooltip" data-tooltip="Instalação especializada em notebooks">
               <div class="text-center">
-                <div
-                  class="bg-blue-500 text-white px-2 py-1 rounded text-xs font-bold mb-2"
-                >
-                  SERVIÇO ESPECIALIZADO
-                </div>
+                <div class="bg-blue-500 text-white px-2 py-1 rounded text-xs font-bold mb-2">SERVIÇO ESPECIALIZADO</div>
                 <i class="fas fa-laptop-medical text-4xl text-white mb-4"></i>
-                <h4 class="text-lg font-bold mb-2 text-white">
-                  Upgrade Notebook
-                </h4>
+                <h4 class="text-lg font-bold mb-2 text-white">Upgrade Notebook</h4>
                 <div class="space-y-2 mb-4">
                   <div class="bg-white/20 p-2 rounded text-white">
                     <div class="text-sm">Verificação + Instalação</div>
-                    <div class="text-blue-200 font-bold">
-                      A partir de R$ 130,00
-                    </div>
+                    <div class="text-blue-200 font-bold">A partir de R$ 130,00</div>
                   </div>
                 </div>
-                <button
-                  class="bg-white text-blue-600 hover:bg-gray-100 px-4 py-2 rounded w-full font-bold"
-                >
+                <button class="bg-white text-blue-600 hover:bg-gray-100 px-4 py-2 rounded w-full font-bold">
                   <i class="fas fa-phone mr-2"></i>Consultar
                 </button>
               </div>
@@ -871,32 +658,22 @@
           🔥 Combos Especiais SSD + Memória
         </h2>
         <p class="text-center text-green-100 mb-8 text-lg">
-          Economize
-          <span class="gradient-text font-bold text-2xl">10%</span> comprando
-          junto!
+          Economize <span class="gradient-text font-bold text-2xl">10%</span> comprando junto!
         </p>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
           <!-- Combo Econômico -->
-          <div
-            class="bg-white/10 backdrop-blur-sm rounded-xl p-6 card-hover glass-effect combo-card relative"
-            data-combo="economico"
-          >
+          <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 card-hover glass-effect combo-card relative" data-combo="economico">
             <div class="combo-discount hidden">10% OFF</div>
             <div class="text-center">
-              <div
-                class="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-bold mb-4"
-              >
-                ECONÔMICO
-              </div>
+              <div class="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-bold mb-4">ECONÔMICO</div>
               <div class="flex justify-center items-center mb-4">
                 <i class="fas fa-microchip text-3xl text-blue-300 mr-3"></i>
                 <span class="text-white text-2xl">+</span>
                 <i class="fas fa-memory text-3xl text-purple-300 ml-3"></i>
               </div>
-              <h3 class="text-xl font-bold mb-3 text-white">
-                SSD 240GB + 8GB RAM
-              </h3>
+              <h3 class="text-xl font-bold mb-3 text-white">SSD 240GB + 8GB RAM</h3>
               <div class="space-y-2 mb-4">
                 <div class="bg-white/20 p-2 rounded text-white">
                   <div class="text-sm line-through opacity-75">R$ 210,00</div>
@@ -909,36 +686,24 @@
                 <li>• Instalação incluída</li>
                 <li>• Garantia 1 ano</li>
               </ul>
-              <button
-                class="add-combo-to-cart bg-green-500 hover:bg-green-600 px-4 py-2 rounded w-full text-white font-bold"
-                data-combo="SSD 240GB + 8GB DDR4"
-                data-price="189"
-              >
+              <button class="add-combo-to-cart bg-green-500 hover:bg-green-600 px-4 py-2 rounded w-full text-white font-bold"
+                      data-combo="SSD 240GB + 8GB DDR4" data-price="189">
                 <i class="fas fa-rocket mr-2"></i>Turbinar PC
               </button>
             </div>
           </div>
 
           <!-- Combo Performance -->
-          <div
-            class="bg-white/10 backdrop-blur-sm rounded-xl p-6 card-hover glass-effect combo-card relative border-2 border-yellow-400"
-            data-combo="performance"
-          >
+          <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 card-hover glass-effect combo-card relative border-2 border-yellow-400" data-combo="performance">
             <div class="combo-discount hidden">10% OFF</div>
             <div class="text-center">
-              <div
-                class="bg-yellow-500 text-black px-3 py-1 rounded-full text-sm font-bold mb-4"
-              >
-                PERFORMANCE
-              </div>
+              <div class="bg-yellow-500 text-black px-3 py-1 rounded-full text-sm font-bold mb-4">PERFORMANCE</div>
               <div class="flex justify-center items-center mb-4">
                 <i class="fas fa-microchip text-3xl text-blue-300 mr-3"></i>
                 <span class="text-white text-2xl">+</span>
                 <i class="fas fa-memory text-3xl text-purple-300 ml-3"></i>
               </div>
-              <h3 class="text-xl font-bold mb-3 text-white">
-                SSD 480GB + 16GB RAM
-              </h3>
+              <h3 class="text-xl font-bold mb-3 text-white">SSD 480GB + 16GB RAM</h3>
               <div class="space-y-2 mb-4">
                 <div class="bg-white/20 p-2 rounded text-white">
                   <div class="text-sm line-through opacity-75">R$ 345,00</div>
@@ -951,36 +716,24 @@
                 <li>• Instalação incluída</li>
                 <li>• Garantia 2 anos</li>
               </ul>
-              <button
-                class="add-combo-to-cart bg-yellow-500 hover:bg-yellow-600 px-4 py-2 rounded w-full text-black font-bold"
-                data-combo="SSD 480GB + 16GB DDR4"
-                data-price="310.50"
-              >
+              <button class="add-combo-to-cart bg-yellow-500 hover:bg-yellow-600 px-4 py-2 rounded w-full text-black font-bold"
+                      data-combo="SSD 480GB + 16GB DDR4" data-price="310.50">
                 <i class="fas fa-bolt mr-2"></i>Máxima Velocidade
               </button>
             </div>
           </div>
 
           <!-- Combo Gamer -->
-          <div
-            class="bg-white/10 backdrop-blur-sm rounded-xl p-6 card-hover glass-effect combo-card relative"
-            data-combo="gamer"
-          >
+          <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 card-hover glass-effect combo-card relative" data-combo="gamer">
             <div class="combo-discount hidden">10% OFF</div>
             <div class="text-center">
-              <div
-                class="bg-red-500 text-white px-3 py-1 rounded-full text-sm font-bold mb-4"
-              >
-                GAMER
-              </div>
+              <div class="bg-red-500 text-white px-3 py-1 rounded-full text-sm font-bold mb-4">GAMER</div>
               <div class="flex justify-center items-center mb-4">
                 <i class="fas fa-microchip text-3xl text-blue-300 mr-3"></i>
                 <span class="text-white text-2xl">+</span>
                 <i class="fas fa-memory text-3xl text-purple-300 ml-3"></i>
               </div>
-              <h3 class="text-xl font-bold mb-3 text-white">
-                SSD 480GB + 32GB RAM
-              </h3>
+              <h3 class="text-xl font-bold mb-3 text-white">SSD 480GB + 32GB RAM</h3>
               <div class="space-y-2 mb-4">
                 <div class="bg-white/20 p-2 rounded text-white">
                   <div class="text-sm line-through opacity-75">R$ 500,00</div>
@@ -993,11 +746,8 @@
                 <li>• Otimização gamer</li>
                 <li>• Garantia 3 anos</li>
               </ul>
-              <button
-                class="add-combo-to-cart bg-red-500 hover:bg-red-600 px-4 py-2 rounded w-full text-white font-bold"
-                data-combo="SSD 480GB + 32GB DDR4 Gamer"
-                data-price="450"
-              >
+              <button class="add-combo-to-cart bg-red-500 hover:bg-red-600 px-4 py-2 rounded w-full text-white font-bold"
+                      data-combo="SSD 480GB + 32GB DDR4 Gamer" data-price="450">
                 <i class="fas fa-gamepad mr-2"></i>Setup Gamer
               </button>
             </div>
@@ -1111,8 +861,7 @@
               💡 Descubra o upgrade ideal para seu PC
             </h3>
             <p class="text-center text-gray-200 mb-6">
-              Nossa IA analisa as especificações do seu PC e sugere os melhores
-              upgrades baseado no seu uso e orçamento
+              Nossa IA analisa as especificações do seu PC e sugere os melhores upgrades baseado no seu uso e orçamento
             </p>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -1122,25 +871,14 @@
 
                 <div class="space-y-4">
                   <div>
-                    <label class="block text-sm font-medium mb-2"
-                      >Processador</label
-                    >
-                    <input
-                      type="text"
-                      id="cpu"
-                      placeholder="Ex: Intel Core i5-4460"
-                      class="w-full bg-gray-700 text-white p-3 rounded border border-gray-600 focus:border-blue-400"
-                    />
+                    <label class="block text-sm font-medium mb-2">Processador</label>
+                    <input type="text" id="cpu" placeholder="Ex: Intel Core i5-4460"
+                           class="w-full bg-gray-700 text-white p-3 rounded border border-gray-600 focus:border-blue-400">
                   </div>
 
                   <div>
-                    <label class="block text-sm font-medium mb-2"
-                      >Memória RAM atual</label
-                    >
-                    <select
-                      id="currentRam"
-                      class="w-full bg-gray-700 text-white p-3 rounded border border-gray-600"
-                    >
+                    <label class="block text-sm font-medium mb-2">Memória RAM atual</label>
+                    <select id="currentRam" class="w-full bg-gray-700 text-white p-3 rounded border border-gray-600">
                       <option value="">Selecione</option>
                       <option value="2">2GB</option>
                       <option value="4">4GB</option>
@@ -1153,13 +891,8 @@
                   </div>
 
                   <div>
-                    <label class="block text-sm font-medium mb-2"
-                      >Armazenamento atual</label
-                    >
-                    <select
-                      id="currentStorage"
-                      class="w-full bg-gray-700 text-white p-3 rounded border border-gray-600"
-                    >
+                    <label class="block text-sm font-medium mb-2">Armazenamento atual</label>
+                    <select id="currentStorage" class="w-full bg-gray-700 text-white p-3 rounded border border-gray-600">
                       <option value="">Selecione</option>
                       <option value="hdd">HD tradicional</option>
                       <option value="ssd">SSD</option>
@@ -1168,13 +901,8 @@
                   </div>
 
                   <div>
-                    <label class="block text-sm font-medium mb-2"
-                      >Principal uso do PC</label
-                    >
-                    <select
-                      id="usage"
-                      class="w-full bg-gray-700 text-white p-3 rounded border border-gray-600"
-                    >
+                    <label class="block text-sm font-medium mb-2">Principal uso do PC</label>
+                    <select id="usage" class="w-full bg-gray-700 text-white p-3 rounded border border-gray-600">
                       <option value="">Selecione</option>
                       <option value="basic">Navegação e office básico</option>
                       <option value="work">Trabalho (multitarefas)</option>
@@ -1185,13 +913,8 @@
                   </div>
 
                   <div>
-                    <label class="block text-sm font-medium mb-2"
-                      >Orçamento disponível</label
-                    >
-                    <select
-                      id="budget"
-                      class="w-full bg-gray-700 text-white p-3 rounded border border-gray-600"
-                    >
+                    <label class="block text-sm font-medium mb-2">Orçamento disponível</label>
+                    <select id="budget" class="w-full bg-gray-700 text-white p-3 rounded border border-gray-600">
                       <option value="">Selecione</option>
                       <option value="100">Até R$ 100</option>
                       <option value="200">R$ 100 - R$ 200</option>
@@ -1201,10 +924,8 @@
                     </select>
                   </div>
 
-                  <button
-                    id="analyzeBtn"
-                    class="w-full bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 py-3 rounded font-bold text-white disabled:opacity-50"
-                  >
+                  <button id="analyzeBtn"
+                          class="w-full bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 py-3 rounded font-bold text-white disabled:opacity-50">
                     <i class="fas fa-magic mr-2"></i>Analisar com IA
                   </button>
                 </div>
@@ -1216,16 +937,11 @@
 
                 <div id="analysisResult" class="text-gray-400 text-center py-8">
                   <i class="fas fa-robot text-4xl mb-4"></i>
-                  <p>
-                    Preencha as informações ao lado para receber uma análise
-                    personalizada
-                  </p>
+                  <p>Preencha as informações ao lado para receber uma análise personalizada</p>
                 </div>
 
                 <div id="loadingAnalysis" class="hidden text-center py-8">
-                  <div
-                    class="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-400 mx-auto mb-4"
-                  ></div>
+                  <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-400 mx-auto mb-4"></div>
                   <p>Nossa IA está analisando seu PC...</p>
                 </div>
               </div>
@@ -1234,34 +950,22 @@
 
           <!-- Badges de funcionalidades -->
           <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div
-              class="bg-white/10 backdrop-blur-sm rounded-lg p-4 text-center"
-            >
+            <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4 text-center">
               <i class="fas fa-chart-line text-2xl text-blue-300 mb-2"></i>
               <h5 class="font-bold mb-1">Análise de Performance</h5>
-              <p class="text-sm text-gray-300">
-                Identificamos gargalos e melhorias
-              </p>
+              <p class="text-sm text-gray-300">Identificamos gargalos e melhorias</p>
             </div>
 
-            <div
-              class="bg-white/10 backdrop-blur-sm rounded-lg p-4 text-center"
-            >
+            <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4 text-center">
               <i class="fas fa-dollar-sign text-2xl text-green-300 mb-2"></i>
               <h5 class="font-bold mb-1">Custo-Benefício</h5>
-              <p class="text-sm text-gray-300">
-                Máximo ganho pelo menor investimento
-              </p>
+              <p class="text-sm text-gray-300">Máximo ganho pelo menor investimento</p>
             </div>
 
-            <div
-              class="bg-white/10 backdrop-blur-sm rounded-lg p-4 text-center"
-            >
+            <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4 text-center">
               <i class="fas fa-shield-alt text-2xl text-purple-300 mb-2"></i>
               <h5 class="font-bold mb-1">Compatibilidade</h5>
-              <p class="text-sm text-gray-300">
-                100% compatível com seu hardware
-              </p>
+              <p class="text-sm text-gray-300">100% compatível com seu hardware</p>
             </div>
           </div>
         </div>
@@ -1353,18 +1057,12 @@
     </div>
 
     <!-- Detector de Combo Automático -->
-    <div
-      id="combo-detector"
-      class="hidden fixed top-20 right-4 bg-gradient-to-r from-yellow-400 to-orange-500 text-black p-4 rounded-lg z-50 shadow-2xl"
-    >
+    <div id="combo-detector" class="hidden fixed top-20 right-4 bg-gradient-to-r from-yellow-400 to-orange-500 text-black p-4 rounded-lg z-50 shadow-2xl">
       <div class="text-center">
         <i class="fas fa-bolt text-2xl mb-2"></i>
         <h4 class="font-bold">COMBO DETECTADO!</h4>
         <p class="text-sm mb-3">SSD + RAM selecionados</p>
-        <button
-          id="apply-combo"
-          class="bg-black text-yellow-400 px-4 py-2 rounded font-bold hover:bg-gray-800"
-        >
+        <button id="apply-combo" class="bg-black text-yellow-400 px-4 py-2 rounded font-bold hover:bg-gray-800">
           <i class="fas fa-fire mr-2"></i>10% OFF
         </button>
       </div>
@@ -1372,8 +1070,7 @@
 
     <style>
       @keyframes comboGlow {
-        0%,
-        100% {
+        0%, 100% {
           box-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
           transform: scale(1);
         }
@@ -1384,16 +1081,9 @@
       }
 
       @keyframes shake {
-        0%,
-        100% {
-          transform: translateX(0);
-        }
-        25% {
-          transform: translateX(-5px);
-        }
-        75% {
-          transform: translateX(5px);
-        }
+        0%, 100% { transform: translateX(0); }
+        25% { transform: translateX(-5px); }
+        75% { transform: translateX(5px); }
       }
 
       @keyframes confettiFall {
@@ -1404,8 +1094,7 @@
       }
 
       @keyframes pulse-glow {
-        0%,
-        100% {
+        0%, 100% {
           background: linear-gradient(45deg, #f39c12, #e67e22);
           transform: scale(1);
         }
@@ -1435,245 +1124,44 @@
     <script>
       let cart = [];
 
-      // Sistema Inteligente de Detecção de Combos
-      let selectedItems = {
-        storage: null,
-        memory: null,
-        discount: 0,
-      };
-
-      function detectCombo() {
-        const comboDetector = document.getElementById("combo-detector");
-
-        if (selectedItems.storage && selectedItems.memory) {
-          // Mostrar loading state por 200ms para feedback visual
-          comboDetector.innerHTML = `
-            <div class="flex items-center justify-center p-3">
-              <i class="fas fa-spinner loading-spinner text-green-500 mr-2"></i>
-              <span class="text-sm text-gray-800">Detectando combo...</span>
-            </div>
-          `;
-          comboDetector.classList.remove("hidden");
-
-          setTimeout(() => {
-            const storageType = selectedItems.storage.includes("SSD")
-              ? "SSD"
-              : "HDD";
-            const memoryAmount = parseInt(selectedItems.memory.match(/\d+/)[0]);
-
-            let discount = 0;
-            let message = "";
-
-            // Lógica inteligente de combos
-            if (storageType === "SSD" && memoryAmount >= 16) {
-              discount = 15;
-              message = `🚀 Combo Performance: ${selectedItems.storage} + ${selectedItems.memory}`;
-            } else if (storageType === "SSD" && memoryAmount >= 8) {
-              discount = 12;
-              message = `⚡ Combo Rápido: ${selectedItems.storage} + ${selectedItems.memory}`;
-            } else if (storageType === "HDD" && memoryAmount >= 8) {
-              discount = 8;
-              message = `💾 Combo Econômico: ${selectedItems.storage} + ${selectedItems.memory}`;
-            } else {
-              discount = 5;
-              message = `🔧 Combo Básico: ${selectedItems.storage} + ${selectedItems.memory}`;
-            }
-
-            selectedItems.discount = discount;
-
-            // Atualizar detector com animação sutil
-            comboDetector.innerHTML = `
-              <div class="flex items-center justify-between p-3">
-                <div class="flex items-center space-x-2">
-                  <div class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-                  <span class="text-sm font-medium text-gray-800">${message}</span>
-                </div>
-                <div class="flex items-center space-x-2">
-                  <span class="text-xs text-gray-600">Desconto:</span>
-                  <span class="bg-green-500 text-white px-2 py-1 rounded text-sm font-bold">${discount}%</span>
-                </div>
-              </div>
-            `;
-
-            comboDetector.classList.add("slide-in-right");
-
-            // Adicionar efeito de highlight nos produtos selecionados
-            highlightSelectedProducts();
-          }, 200);
-        } else {
-          comboDetector.classList.add("hidden");
-          removeProductHighlights();
-        }
-      }
-
-      function highlightSelectedProducts() {
-        // Remove highlights anteriores
-        document.querySelectorAll(".combo-highlight").forEach((el) => {
-          el.classList.remove("combo-highlight");
-        });
-
-        // Adiciona highlight aos produtos selecionados
-        document.querySelectorAll(".product-card").forEach((card) => {
-          const productName = card.querySelector("h3").textContent;
-          if (
-            selectedItems.storage &&
-            productName.includes(selectedItems.storage.split(" ")[0])
-          ) {
-            card.classList.add("combo-highlight");
-          }
-          if (
-            selectedItems.memory &&
-            productName.includes(selectedItems.memory.split(" ")[0])
-          ) {
-            card.classList.add("combo-highlight");
-          }
-        });
-      }
-
-      function removeProductHighlights() {
-        document.querySelectorAll(".combo-highlight").forEach((el) => {
-          el.classList.remove("combo-highlight");
-        });
-      }
-
-      function selectProduct(productName, category, button) {
-        // Remover seleção anterior da categoria
-        document
-          .querySelectorAll(`button[data-category="${category}"]`)
-          .forEach((btn) => {
-            btn.classList.remove("bg-blue-600", "text-white");
-            btn.classList.add("bg-white", "text-blue-600");
-          });
-
-        // Adicionar seleção ao produto atual
-        button.classList.remove("bg-white", "text-blue-600");
-        button.classList.add("bg-blue-600", "text-white");
-        button.classList.add("combo-bounce");
-
-        // Salvar seleção
-        if (category === "storage") {
-          selectedItems.storage = productName;
-        } else if (category === "memory") {
-          selectedItems.memory = productName;
-        }
-
-        // Detectar combo
-        setTimeout(() => {
-          button.classList.remove("combo-bounce");
-          detectCombo();
-        }, 600);
-      }
-
-      function addToCartWithCombo(productName, price) {
-        let finalPrice = price;
-        let discountText = "";
-
-        if (selectedItems.discount > 0) {
-          finalPrice = price * (1 - selectedItems.discount / 100);
-          discountText = ` (${selectedItems.discount}% desconto aplicado!)`;
-        }
-
-        // Adicionar ao carrinho
-        cart.push({
-          name: productName + discountText,
-          price: finalPrice,
-          quantity: 1,
-        });
-
-        updateCartDisplay();
-
-        // Animação de sucesso
-        const notification = document.createElement("div");
-        notification.className =
-          "fixed top-4 right-4 bg-green-500 text-white p-4 rounded-lg shadow-lg z-50 slide-in-right";
-        notification.innerHTML = `
-          <div class="flex items-center space-x-2">
-            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-            </svg>
-            <div>
-              <div class="font-semibold">${productName}</div>
-              <div class="text-sm">R$ ${finalPrice.toFixed(
-                2
-              )}${discountText}</div>
-            </div>
-          </div>
-        `;
-
-        document.body.appendChild(notification);
-
-        setTimeout(() => {
-          notification.remove();
-        }, 3000);
-      }
-
-      // Lógica para seletores de RAM com sistema de combos
-      document.querySelectorAll(".ram-select").forEach((select) => {
-        select.addEventListener("change", function () {
-          const container = this.closest(".bg-gray-700");
-          const quantitySelect = container.querySelector(".quantity-select");
-          const addButton = container.querySelector(".add-ram-to-cart");
+      // Lógica para seletores de RAM
+      document.querySelectorAll('.ram-select').forEach(select => {
+        select.addEventListener('change', function() {
+          const container = this.closest('.bg-gray-700');
+          const quantitySelect = container.querySelector('.quantity-select');
+          const addButton = container.querySelector('.add-ram-to-cart');
 
           if (this.value) {
             quantitySelect.disabled = false;
             quantitySelect.selectedIndex = 0;
             addButton.disabled = false;
-
-            // Automaticamente selecionar para combo quando RAM for escolhida
-            const option = this.options[this.selectedIndex];
-            const ramName = option.textContent.split(" - ")[0]; // Ex: "8GB", "16GB (2x8GB)"
-            selectedItems.memory = ramName;
-
-            // Destacar visualmente a seleção
-            this.style.border = "2px solid #10B981";
-            this.style.background =
-              "linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(59, 130, 246, 0.1))";
-
-            // Detectar combo
-            detectCombo();
           } else {
             quantitySelect.disabled = true;
             addButton.disabled = true;
-
-            // Remover da seleção de combo
-            selectedItems.memory = null;
-            this.style.border = "";
-            this.style.background = "";
-
-            // Detectar combo (vai esconder se necessário)
-            detectCombo();
           }
         });
       });
 
-      // Adicionar RAM ao carrinho com sistema de combos
-      document.querySelectorAll(".add-ram-to-cart").forEach((btn) => {
-        btn.addEventListener("click", function () {
-          const container = this.closest(".bg-gray-700");
-          const ramSelect = container.querySelector(".ram-select");
-          const quantitySelect = container.querySelector(".quantity-select");
+      // Adicionar RAM ao carrinho
+      document.querySelectorAll('.add-ram-to-cart').forEach(btn => {
+        btn.addEventListener('click', function() {
+          const container = this.closest('.bg-gray-700');
+          const ramSelect = container.querySelector('.ram-select');
+          const quantitySelect = container.querySelector('.quantity-select');
 
           if (!ramSelect.value || !quantitySelect.value) return;
 
           const selectedOption = ramSelect.options[ramSelect.selectedIndex];
-          const optionParts = selectedOption.text.split(" - R$ ");
-          const ramType = container.querySelector("h4").textContent;
+          const optionParts = selectedOption.text.split(' - R$ ');
+          const ramType = container.querySelector('h4').textContent;
           const specification = optionParts[0];
-          let price = parseFloat(optionParts[1].replace(",", "."));
+          const price = parseFloat(optionParts[1].replace(',', '.'));
           const quantity = parseInt(quantitySelect.value);
 
-          // Aplicar desconto de combo se ativo
-          let discountText = "";
-          if (selectedItems.discount > 0 && selectedItems.storage) {
-            const originalPrice = price;
-            price = price * (1 - selectedItems.discount / 100);
-            discountText = ` (Combo ${selectedItems.discount}% OFF)`;
-          }
-
-          const name = `${ramType} ${specification} (${quantity}x)${discountText}`;
+          const name = `${ramType} ${specification} (${quantity}x)`;
           const totalPrice = price * quantity;
 
-          const existingItem = cart.find((item) => item.name === name);
+          const existingItem = cart.find(item => item.name === name);
           if (existingItem) {
             existingItem.quantity += 1;
           } else {
@@ -1682,73 +1170,28 @@
 
           updateCartDisplay();
 
-          // Notificação visual de combo se aplicado
-          if (discountText) {
-            const notification = document.createElement("div");
-            notification.className =
-              "fixed top-16 right-4 bg-green-500 text-white p-4 rounded-lg shadow-lg z-50 slide-in-right";
-            notification.innerHTML = `
-              <div class="flex items-center space-x-2">
-                <i class="fas fa-percent text-xl"></i>
-                <div>
-                  <div class="font-semibold">Combo Aplicado!</div>
-                  <div class="text-sm">${selectedItems.discount}% desconto em ${ramType}</div>
-                </div>
-              </div>
-            `;
-
-            document.body.appendChild(notification);
-
-            setTimeout(() => {
-              notification.remove();
-            }, 3000);
-          }
-
           this.innerHTML = '<i class="fas fa-check mr-2"></i>Adicionado';
-          this.classList.remove(
-            "bg-green-500",
-            "hover:bg-green-600",
-            "bg-purple-500",
-            "hover:bg-purple-600",
-            "bg-red-500",
-            "hover:bg-red-600"
-          );
-          this.classList.add("bg-gray-600");
+          this.classList.remove('bg-green-500', 'hover:bg-green-600', 'bg-purple-500', 'hover:bg-purple-600', 'bg-red-500', 'hover:bg-red-600');
+          this.classList.add('bg-gray-600');
 
           setTimeout(() => {
             this.innerHTML = '<i class="fas fa-cart-plus mr-2"></i>Adicionar';
-            this.classList.remove("bg-gray-600");
-            const originalColor = container.querySelector(".border-2")
-              ? container.querySelector(".border-purple-400")
-                ? ["bg-purple-500", "hover:bg-purple-600"]
-                : container.querySelector(".border-green-400")
-                ? ["bg-green-500", "hover:bg-green-600"]
-                : ["bg-red-500", "hover:bg-red-600"]
-              : ["bg-green-500", "hover:bg-green-600"];
+            this.classList.remove('bg-gray-600');
+            const originalColor = container.querySelector('.border-2') ?
+              (container.querySelector('.border-purple-400') ? ['bg-purple-500', 'hover:bg-purple-600'] :
+               container.querySelector('.border-green-400') ? ['bg-green-500', 'hover:bg-green-600'] :
+               ['bg-red-500', 'hover:bg-red-600']) :
+              ['bg-green-500', 'hover:bg-green-600'];
             this.classList.add(...originalColor);
           }, 2000);
         });
       });
 
-      // Adicionar ao carrinho (produtos existentes) com sistema de combos
+      // Adicionar ao carrinho (produtos existentes)
       document.querySelectorAll(".add-to-cart").forEach((btn) => {
         btn.addEventListener("click", () => {
-          const productName = btn.dataset.name;
-          let price = parseFloat(btn.dataset.price);
-
-          // Aplicar desconto de combo se ativo
-          let discountText = "";
-          if (
-            selectedItems.discount > 0 &&
-            selectedItems.memory &&
-            (productName.includes("SSD") || productName.includes("HD"))
-          ) {
-            const originalPrice = price;
-            price = price * (1 - selectedItems.discount / 100);
-            discountText = ` (Combo ${selectedItems.discount}% OFF)`;
-          }
-
-          const name = productName + discountText;
+          const name = btn.dataset.name;
+          const price = parseFloat(btn.dataset.price);
 
           const existingItem = cart.find((item) => item.name === name);
           if (existingItem) {
@@ -1758,97 +1201,19 @@
           }
 
           updateCartDisplay();
-
-          // Micro-animação no carrinho flutuante
-          const cartFloat = document.querySelector(".cart-floating");
-          cartFloat.classList.add("cart-shake");
-          setTimeout(() => {
-            cartFloat.classList.remove("cart-shake");
-          }, 500);
-
-          // Micro-animação no botão
-          btn.classList.add("add-to-cart-pulse");
-          setTimeout(() => {
-            btn.classList.remove("add-to-cart-pulse");
-          }, 300);
-
-          // Notificação visual de combo se aplicado
-          if (discountText) {
-            const notification = document.createElement("div");
-            notification.className =
-              "fixed top-16 right-4 bg-green-500 text-white p-4 rounded-lg shadow-lg z-50 slide-in-right";
-            notification.innerHTML = `
-              <div class="flex items-center space-x-2">
-                <i class="fas fa-percent text-xl"></i>
-                <div>
-                  <div class="font-semibold">Combo Aplicado!</div>
-                  <div class="text-sm">${selectedItems.discount}% desconto em ${productName}</div>
-                </div>
-              </div>
-            `;
-
-            document.body.appendChild(notification);
-
-            setTimeout(() => {
-              notification.remove();
-            }, 3000);
-          }
           btn.innerHTML = '<i class="fas fa-check mr-2"></i>Adicionado';
-          btn.classList.remove(
-            "bg-green-500",
-            "hover:bg-green-600",
-            "bg-blue-500",
-            "hover:bg-blue-600",
-            "bg-purple-500",
-            "hover:bg-purple-600",
-            "bg-orange-500",
-            "hover:bg-orange-600"
-          );
+          btn.classList.remove("bg-green-500", "hover:bg-green-600", "bg-blue-500", "hover:bg-blue-600", "bg-purple-500", "hover:bg-purple-600", "bg-orange-500", "hover:bg-orange-600");
           btn.classList.add("bg-gray-600");
 
           setTimeout(() => {
             btn.innerHTML = '<i class="fas fa-cart-plus mr-2"></i>Adicionar';
-            const originalClasses = btn.className.includes("bg-blue")
-              ? ["bg-blue-500", "hover:bg-blue-600"]
-              : btn.className.includes("bg-purple")
-              ? ["bg-purple-500", "hover:bg-purple-600"]
-              : btn.className.includes("bg-orange")
-              ? ["bg-orange-500", "hover:bg-orange-600"]
-              : ["bg-green-500", "hover:bg-green-600"];
+            const originalClasses = btn.className.includes('bg-blue') ? ["bg-blue-500", "hover:bg-blue-600"] :
+                                   btn.className.includes('bg-purple') ? ["bg-purple-500", "hover:bg-purple-600"] :
+                                   btn.className.includes('bg-orange') ? ["bg-orange-500", "hover:bg-orange-600"] :
+                                   ["bg-green-500", "hover:bg-green-600"];
             btn.classList.add(...originalClasses);
             btn.classList.remove("bg-gray-600");
           }, 2000);
-        });
-      });
-
-      // Funcionalidade dos botões de tipo RAM (Desktop/Notebook)
-      document.querySelectorAll(".ram-type-btn").forEach((btn) => {
-        btn.addEventListener("click", function () {
-          // Remover active de todos os botões
-          document.querySelectorAll(".ram-type-btn").forEach((b) => {
-            b.classList.remove("active", "bg-purple-500", "text-white");
-            b.classList.add("text-gray-300");
-          });
-
-          // Adicionar active ao botão clicado
-          this.classList.add("active", "bg-purple-500", "text-white");
-          this.classList.remove("text-gray-300");
-
-          // Mostrar/esconder seções apropriadas
-          const type = this.dataset.type;
-          document.getElementById("desktop-ram").style.display =
-            type === "desktop" ? "block" : "none";
-          document.getElementById("notebook-ram").style.display =
-            type === "notebook" ? "block" : "none";
-
-          // Animação de transição
-          if (type === "desktop") {
-            document.getElementById("desktop-ram").classList.add("fadeInScale");
-          } else {
-            document
-              .getElementById("notebook-ram")
-              .classList.add("fadeInScale");
-          }
         });
       });
 
@@ -1880,9 +1245,7 @@
               </div>
               <div class="flex items-center gap-2">
                 <div class="text-green-400 font-bold">
-                  R$ ${(item.price * item.quantity)
-                    .toFixed(2)
-                    .replace(".", ",")}
+                  R$ ${(item.price * item.quantity).toFixed(2).replace(".", ",")}
                 </div>
                 <button onclick="removeFromCart(${index})" class="text-red-400 hover:text-red-600 text-sm">
                   <i class="fas fa-trash"></i>
@@ -1913,53 +1276,44 @@
       });
 
       // Análise com IA
-      document
-        .getElementById("analyzeBtn")
-        .addEventListener("click", async function () {
-          const cpu = document.getElementById("cpu").value;
-          const currentRam = document.getElementById("currentRam").value;
-          const currentStorage =
-            document.getElementById("currentStorage").value;
-          const usage = document.getElementById("usage").value;
-          const budget = document.getElementById("budget").value;
+      document.getElementById('analyzeBtn').addEventListener('click', async function() {
+        const cpu = document.getElementById('cpu').value;
+        const currentRam = document.getElementById('currentRam').value;
+        const currentStorage = document.getElementById('currentStorage').value;
+        const usage = document.getElementById('usage').value;
+        const budget = document.getElementById('budget').value;
 
-          if (!cpu || !currentRam || !currentStorage || !usage || !budget) {
-            alert("Por favor, preencha todas as informações");
-            return;
-          }
+        if (!cpu || !currentRam || !currentStorage || !usage || !budget) {
+          alert('Por favor, preencha todas as informações');
+          return;
+        }
 
-          const loadingDiv = document.getElementById("loadingAnalysis");
-          const resultDiv = document.getElementById("analysisResult");
+        const loadingDiv = document.getElementById('loadingAnalysis');
+        const resultDiv = document.getElementById('analysisResult');
 
-          loadingDiv.classList.remove("hidden");
-          resultDiv.classList.add("hidden");
+        loadingDiv.classList.remove('hidden');
+        resultDiv.classList.add('hidden');
 
-          try {
-            const analysis = await analyzePC(
-              cpu,
-              currentRam,
-              currentStorage,
-              usage,
-              budget
-            );
-            displayAnalysis(analysis);
-          } catch (error) {
-            console.error("Erro na análise:", error);
-            resultDiv.innerHTML = `
+        try {
+          const analysis = await analyzePC(cpu, currentRam, currentStorage, usage, budget);
+          displayAnalysis(analysis);
+        } catch (error) {
+          console.error('Erro na análise:', error);
+          resultDiv.innerHTML = `
             <div class="text-red-400 text-center">
               <i class="fas fa-exclamation-triangle text-2xl mb-2"></i>
               <p>Erro na análise. Tente novamente.</p>
             </div>
           `;
-          } finally {
-            loadingDiv.classList.add("hidden");
-            resultDiv.classList.remove("hidden");
-          }
-        });
+        } finally {
+          loadingDiv.classList.add('hidden');
+          resultDiv.classList.remove('hidden');
+        }
+      });
 
       async function analyzePC(cpu, currentRam, currentStorage, usage, budget) {
         // Simulação de análise com IA (substituir por API real posteriormente)
-        await new Promise((resolve) => setTimeout(resolve, 2000));
+        await new Promise(resolve => setTimeout(resolve, 2000));
 
         const ramNum = parseInt(currentRam);
         const budgetNum = parseInt(budget);
@@ -1968,44 +1322,44 @@
         let priority = [];
 
         // Análise de RAM
-        if (usage === "basic" && ramNum < 4) {
+        if (usage === 'basic' && ramNum < 4) {
           recommendations.push({
-            component: "Memória RAM",
+            component: 'Memória RAM',
             current: `${currentRam}GB`,
-            recommended: "8GB DDR4",
-            price: "R$ 100,00",
-            impact: "+150% performance multitarefas",
-            priority: 1,
+            recommended: '8GB DDR4',
+            price: 'R$ 100,00',
+            impact: '+150% performance multitarefas',
+            priority: 1
           });
-        } else if ((usage === "work" || usage === "gaming") && ramNum < 8) {
+        } else if ((usage === 'work' || usage === 'gaming') && ramNum < 8) {
           recommendations.push({
-            component: "Memória RAM",
+            component: 'Memória RAM',
             current: `${currentRam}GB`,
-            recommended: "16GB DDR4",
-            price: "R$ 180,00",
-            impact: "+200% performance em aplicações pesadas",
-            priority: 1,
+            recommended: '16GB DDR4',
+            price: 'R$ 180,00',
+            impact: '+200% performance em aplicações pesadas',
+            priority: 1
           });
-        } else if (usage === "creative" && ramNum < 16) {
+        } else if (usage === 'creative' && ramNum < 16) {
           recommendations.push({
-            component: "Memória RAM",
+            component: 'Memória RAM',
             current: `${currentRam}GB`,
-            recommended: "32GB DDR4",
-            price: "R$ 360,00",
-            impact: "+300% performance em edição",
-            priority: 1,
+            recommended: '32GB DDR4',
+            price: 'R$ 360,00',
+            impact: '+300% performance em edição',
+            priority: 1
           });
         }
 
         // Análise de armazenamento
-        if (currentStorage === "hdd") {
+        if (currentStorage === 'hdd') {
           recommendations.push({
-            component: "Armazenamento",
-            current: "HD tradicional",
-            recommended: "SSD 240GB",
-            price: "R$ 120,00",
-            impact: "+500% velocidade do sistema",
-            priority: 1,
+            component: 'Armazenamento',
+            current: 'HD tradicional',
+            recommended: 'SSD 240GB',
+            price: 'R$ 120,00',
+            impact: '+500% velocidade do sistema',
+            priority: 1
           });
         }
 
@@ -2015,32 +1369,29 @@
         return {
           recommendations,
           totalBenefit: calculateBenefit(recommendations),
-          compatibility: "100%",
-          estimatedGain: calculatePerformanceGain(recommendations, usage),
+          compatibility: '100%',
+          estimatedGain: calculatePerformanceGain(recommendations, usage)
         };
       }
 
       function calculateBenefit(recommendations) {
-        if (recommendations.length === 0)
-          return "Seu PC já está bem configurado!";
-        if (recommendations.some((r) => r.component === "Armazenamento"))
-          return "Alto";
-        if (recommendations.some((r) => r.component === "Memória RAM"))
-          return "Médio-Alto";
-        return "Médio";
+        if (recommendations.length === 0) return 'Seu PC já está bem configurado!';
+        if (recommendations.some(r => r.component === 'Armazenamento')) return 'Alto';
+        if (recommendations.some(r => r.component === 'Memória RAM')) return 'Médio-Alto';
+        return 'Médio';
       }
 
       function calculatePerformanceGain(recommendations, usage) {
         let gain = 0;
-        recommendations.forEach((rec) => {
-          if (rec.component === "Armazenamento") gain += 40;
-          if (rec.component === "Memória RAM") gain += 25;
+        recommendations.forEach(rec => {
+          if (rec.component === 'Armazenamento') gain += 40;
+          if (rec.component === 'Memória RAM') gain += 25;
         });
-        return Math.min(gain, 80) + "%";
+        return Math.min(gain, 80) + '%';
       }
 
       function displayAnalysis(analysis) {
-        const resultDiv = document.getElementById("analysisResult");
+        const resultDiv = document.getElementById('analysisResult');
 
         if (analysis.recommendations.length === 0) {
           resultDiv.innerHTML = `
@@ -2096,9 +1447,7 @@
 
       function addRecommendationsToCart() {
         // Simular adição das recomendações ao carrinho
-        alert(
-          "Funcionalidade em desenvolvimento! Por enquanto, adicione os itens manualmente baseado nas recomendações."
-        );
+        alert('Funcionalidade em desenvolvimento! Por enquanto, adicione os itens manualmente baseado nas recomendações.');
       }
 
       // Checkout

@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agendamento Online - DeiviTech</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <style>
+      .hero-bg {
+        background: linear-gradient(
+          135deg,
+          #7c3aed 0%,
+          #a855f7 50%,
+          #c084fc 100%
+        );
+      }
+      .card-hover {
+        transition: all 0.3s ease;
+      }
+      .card-hover:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+      }
+
+      .calendar-day {
+        transition: all 0.2s ease;
+        cursor: pointer;
+      }
+
+      .calendar-day:hover {
+        background-color: rgba(139, 92, 246, 0.2);
+      }
+
+      .calendar-day.selected {
+        background-color: #8b5cf6;
+        color: white;
+      }
+
+      .calendar-day.unavailable {
+        opacity: 0.3;
+        cursor: not-allowed;
+      }
+
+      .time-slot {
+        transition: all 0.2s ease;
+        cursor: pointer;
+      }
+
+      .time-slot:hover {
+        background-color: rgba(34, 197, 94, 0.2);
+      }
+
+      .time-slot.selected {
+        background-color: #22c55e;
+        color: white;
+      }
+
+      .time-slot.occupied {
+        background-color: #ef4444;
+        color: white;
+        cursor: not-allowed;
+      }
+
+      @keyframes slideInRight {
+        from {
+          transform: translateX(20px);
+          opacity: 0;
+        }
+        to {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+
+      .slide-in-right {
+        animation: slideInRight 0.3s ease-out;
+      }
+
+      @keyframes pulseGreen {
+        0% {
+          box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7);
+        }
+        70% {
+          box-shadow: 0 0 0 10px rgba(34, 197, 94, 0);
+        }
+        100% {
+          box-shadow: 0 0 0 0 rgba(34, 197, 94, 0);
+        }
+      }
+
+      .pulse-green {
+        animation: pulseGreen 2s infinite;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-900 text-white font-sans">
+    <!-- Header -->
+    <header class="hero-bg py-8">
+      <div class="container mx-auto px-6">
+        <nav class="flex justify-between items-center mb-6">
+          <a
+            href="index.html"
+            class="flex items-center text-white hover:text-purple-200"
+          >
+            <i class="fas fa-arrow-left mr-2"></i>
+            <span>Voltar</span>
+          </a>
+          <div class="flex space-x-4">
+            <a
+              href="formatacao.html"
+              class="bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded"
+              >Formatação</a
+            >
+            <a
+              href="hardware.html"
+              class="bg-green-500 hover:bg-green-600 px-4 py-2 rounded"
+              >Hardware</a
+            >
+            <a
+              href="sistemas.html"
+              class="bg-purple-500 hover:bg-purple-600 px-4 py-2 rounded"
+              >Sistemas</a
+            >
+            <a
+              href="analise.html"
+              class="bg-orange-500 hover:bg-orange-600 px-4 py-2 rounded"
+              >Análise IA</a
+            >
+          </div>
+        </nav>
+
+        <div class="text-center">
+          <i class="fas fa-calendar-check text-5xl text-white mb-4"></i>
+          <h1 class="text-4xl font-bold mb-4">Agendamento Online</h1>
+          <p class="text-xl opacity-90">
+            Agende seu atendimento de forma rápida e prática
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <!-- Seletor de Serviço -->
+    <section class="py-12">
+      <div class="container mx-auto px-6">
+        <div class="max-w-6xl mx-auto">
+          <!-- Step 1: Escolha do Serviço -->
+          <div id="step1" class="mb-12">
+            <h2 class="text-3xl font-bold text-center mb-8">
+              🛠️ Escolha o Serviço
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div
+                class="bg-gray-800 rounded-xl p-6 card-hover cursor-pointer service-card"
+                data-service="formatacao"
+                data-price="50"
+              >
+                <div class="text-center">
+                  <i class="fas fa-desktop text-3xl text-blue-400 mb-4"></i>
+                  <h3 class="text-xl font-bold mb-2">Formatação</h3>
+                  <p class="text-gray-300 text-sm mb-4">
+                    Reinstalação completa do sistema
+                  </p>
+                  <div class="text-2xl font-bold text-blue-400">R$ 50</div>
+                  <div class="text-sm text-gray-400">2-3 horas</div>
+                </div>
+              </div>
+
+              <div
+                class="bg-gray-800 rounded-xl p-6 card-hover cursor-pointer service-card"
+                data-service="hardware"
+                data-price="25"
+              >
+                <div class="text-center">
+                  <i class="fas fa-microchip text-3xl text-green-400 mb-4"></i>
+                  <h3 class="text-xl font-bold mb-2">Instalação Hardware</h3>
+                  <p class="text-gray-300 text-sm mb-4">RAM, SSD, HD, etc.</p>
+                  <div class="text-2xl font-bold text-green-400">R$ 25</div>
+                  <div class="text-sm text-gray-400">30-60 min</div>
+                </div>
+              </div>
+
+              <div
+                class="bg-gray-800 rounded-xl p-6 card-hover cursor-pointer service-card"
+                data-service="manutencao"
+                data-price="40"
+              >
+                <div class="text-center">
+                  <i class="fas fa-tools text-3xl text-yellow-400 mb-4"></i>
+                  <h3 class="text-xl font-bold mb-2">Manutenção</h3>
+                  <p class="text-gray-300 text-sm mb-4">
+                    Limpeza e diagnóstico
+                  </p>
+                  <div class="text-2xl font-bold text-yellow-400">R$ 40</div>
+                  <div class="text-sm text-gray-400">1-2 horas</div>
+                </div>
+              </div>
+
+              <div
+                class="bg-gray-800 rounded-xl p-6 card-hover cursor-pointer service-card"
+                data-service="consultoria"
+                data-price="30"
+              >
+                <div class="text-center">
+                  <i class="fas fa-brain text-3xl text-purple-400 mb-4"></i>
+                  <h3 class="text-xl font-bold mb-2">Consultoria IA</h3>
+                  <p class="text-gray-300 text-sm mb-4">
+                    Análise e recomendações
+                  </p>
+                  <div class="text-2xl font-bold text-purple-400">R$ 30</div>
+                  <div class="text-sm text-gray-400">45-60 min</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 2: Escolha da Data -->
+          <div id="step2" class="mb-12 hidden">
+            <h2 class="text-3xl font-bold text-center mb-8">
+              📅 Escolha a Data
+            </h2>
+
+            <div class="bg-gray-800 rounded-xl p-8 max-w-4xl mx-auto">
+              <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Calendário -->
+                <div>
+                  <div class="flex justify-between items-center mb-6">
+                    <button
+                      id="prevMonth"
+                      class="bg-gray-700 hover:bg-gray-600 p-2 rounded"
+                    >
+                      <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <h3 id="currentMonth" class="text-xl font-bold"></h3>
+                    <button
+                      id="nextMonth"
+                      class="bg-gray-700 hover:bg-gray-600 p-2 rounded"
+                    >
+                      <i class="fas fa-chevron-right"></i>
+                    </button>
+                  </div>
+
+                  <div class="grid grid-cols-7 gap-2 mb-4">
+                    <div class="text-center font-bold text-gray-400 p-2">
+                      Dom
+                    </div>
+                    <div class="text-center font-bold text-gray-400 p-2">
+                      Seg
+                    </div>
+                    <div class="text-center font-bold text-gray-400 p-2">
+                      Ter
+                    </div>
+                    <div class="text-center font-bold text-gray-400 p-2">
+                      Qua
+                    </div>
+                    <div class="text-center font-bold text-gray-400 p-2">
+                      Qui
+                    </div>
+                    <div class="text-center font-bold text-gray-400 p-2">
+                      Sex
+                    </div>
+                    <div class="text-center font-bold text-gray-400 p-2">
+                      Sáb
+                    </div>
+                  </div>
+
+                  <div id="calendarDays" class="grid grid-cols-7 gap-2">
+                    <!-- Dias serão inseridos via JavaScript -->
+                  </div>
+                </div>
+
+                <!-- Informações da Data Selecionada -->
+                <div>
+                  <div id="selectedDateInfo" class="bg-gray-700 rounded-lg p-6">
+                    <h4 class="text-lg font-bold mb-4">
+                      📍 Selecione uma data
+                    </h4>
+                    <p class="text-gray-300">
+                      Clique em uma data disponível para ver os horários.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 3: Escolha do Horário -->
+          <div id="step3" class="mb-12 hidden">
+            <h2 class="text-3xl font-bold text-center mb-8">
+              ⏰ Escolha o Horário
+            </h2>
+
+            <div class="bg-gray-800 rounded-xl p-8 max-w-4xl mx-auto">
+              <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Horários Disponíveis -->
+                <div>
+                  <h3 class="text-xl font-bold mb-6">Horários Disponíveis</h3>
+
+                  <div class="space-y-4">
+                    <div>
+                      <h4 class="font-bold mb-3 text-gray-300">🌅 Manhã</h4>
+                      <div id="morningSlots" class="grid grid-cols-2 gap-2">
+                        <!-- Horários da manhã -->
+                      </div>
+                    </div>
+
+                    <div>
+                      <h4 class="font-bold mb-3 text-gray-300">🌞 Tarde</h4>
+                      <div id="afternoonSlots" class="grid grid-cols-2 gap-2">
+                        <!-- Horários da tarde -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Resumo do Agendamento -->
+                <div>
+                  <div class="bg-gray-700 rounded-lg p-6">
+                    <h4 class="text-lg font-bold mb-4">
+                      📋 Resumo do Agendamento
+                    </h4>
+
+                    <div class="space-y-3">
+                      <div class="flex justify-between">
+                        <span class="text-gray-300">Serviço:</span>
+                        <span id="summaryService" class="font-bold">-</span>
+                      </div>
+                      <div class="flex justify-between">
+                        <span class="text-gray-300">Data:</span>
+                        <span id="summaryDate" class="font-bold">-</span>
+                      </div>
+                      <div class="flex justify-between">
+                        <span class="text-gray-300">Horário:</span>
+                        <span id="summaryTime" class="font-bold">-</span>
+                      </div>
+                      <hr class="border-gray-600" />
+                      <div class="flex justify-between text-lg">
+                        <span class="text-gray-300">Total:</span>
+                        <span id="summaryPrice" class="font-bold text-green-400"
+                          >R$ 0</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 4: Dados do Cliente -->
+          <div id="step4" class="mb-12 hidden">
+            <h2 class="text-3xl font-bold text-center mb-8">👤 Seus Dados</h2>
+
+            <div class="bg-gray-800 rounded-xl p-8 max-w-4xl mx-auto">
+              <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Formulário -->
+                <div>
+                  <form id="clientForm" class="space-y-6">
+                    <div>
+                      <label class="block text-sm font-medium mb-2"
+                        >Nome Completo *</label
+                      >
+                      <input
+                        type="text"
+                        id="clientName"
+                        required
+                        class="w-full bg-gray-700 text-white p-3 rounded border border-gray-600 focus:border-purple-400"
+                        placeholder="Seu nome completo"
+                      />
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      <div>
+                        <label class="block text-sm font-medium mb-2"
+                          >WhatsApp *</label
+                        >
+                        <input
+                          type="tel"
+                          id="clientPhone"
+                          required
+                          class="w-full bg-gray-700 text-white p-3 rounded border border-gray-600 focus:border-purple-400"
+                          placeholder="(11) 99999-9999"
+                        />
+                      </div>
+                      <div>
+                        <label class="block text-sm font-medium mb-2"
+                          >Email</label
+                        >
+                        <input
+                          type="email"
+                          id="clientEmail"
+                          class="w-full bg-gray-700 text-white p-3 rounded border border-gray-600 focus:border-purple-400"
+                          placeholder="seu@email.com"
+                        />
+                      </div>
+                    </div>
+
+                    <div>
+                      <label class="block text-sm font-medium mb-2"
+                        >Endereço *</label
+                      >
+                      <textarea
+                        id="clientAddress"
+                        required
+                        rows="3"
+                        class="w-full bg-gray-700 text-white p-3 rounded border border-gray-600 focus:border-purple-400"
+                        placeholder="Rua, número, bairro, cidade..."
+                      ></textarea>
+                    </div>
+
+                    <div>
+                      <label class="block text-sm font-medium mb-2"
+                        >Observações</label
+                      >
+                      <textarea
+                        id="clientNotes"
+                        rows="3"
+                        class="w-full bg-gray-700 text-white p-3 rounded border border-gray-600 focus:border-purple-400"
+                        placeholder="Informações adicionais sobre o problema ou serviço..."
+                      ></textarea>
+                    </div>
+                  </form>
+                </div>
+
+                <!-- Confirmação Final -->
+                <div>
+                  <div class="bg-gray-700 rounded-lg p-6 mb-6">
+                    <h4 class="text-lg font-bold mb-4">✅ Confirmação Final</h4>
+
+                    <div class="space-y-3 text-sm">
+                      <div class="flex justify-between">
+                        <span class="text-gray-300">Serviço:</span>
+                        <span id="finalService" class="font-bold">-</span>
+                      </div>
+                      <div class="flex justify-between">
+                        <span class="text-gray-300">Data:</span>
+                        <span id="finalDate" class="font-bold">-</span>
+                      </div>
+                      <div class="flex justify-between">
+                        <span class="text-gray-300">Horário:</span>
+                        <span id="finalTime" class="font-bold">-</span>
+                      </div>
+                      <div class="flex justify-between">
+                        <span class="text-gray-300">Preço:</span>
+                        <span id="finalPrice" class="font-bold text-green-400"
+                          >-</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="bg-blue-600 rounded-lg p-4 mb-6">
+                    <h5 class="font-bold mb-2">📱 Como funciona:</h5>
+                    <ul class="text-sm space-y-1">
+                      <li>• Confirmação via WhatsApp</li>
+                      <li>• Atendimento no local</li>
+                      <li>• Pagamento na conclusão</li>
+                      <li>• Garantia de 30 dias</li>
+                    </ul>
+                  </div>
+
+                  <button
+                    id="confirmBooking"
+                    class="bg-green-500 hover:bg-green-600 px-8 py-4 rounded-lg font-bold w-full text-lg pulse-green"
+                  >
+                    <i class="fas fa-calendar-check mr-2"></i>Confirmar
+                    Agendamento
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Navegação entre Steps -->
+          <div class="flex justify-center space-x-4">
+            <button
+              id="prevStep"
+              class="bg-gray-600 hover:bg-gray-500 px-6 py-3 rounded-lg hidden"
+            >
+              <i class="fas fa-arrow-left mr-2"></i>Voltar
+            </button>
+            <button
+              id="nextStep"
+              class="bg-purple-500 hover:bg-purple-600 px-6 py-3 rounded-lg hidden"
+            >
+              Próximo<i class="fas fa-arrow-right ml-2"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      // Estado da aplicação
+      let currentStep = 1;
+      let selectedService = null;
+      let selectedDate = null;
+      let selectedTime = null;
+      let currentMonth = new Date().getMonth();
+      let currentYear = new Date().getFullYear();
+
+      // Dados dos serviços
+      const services = {
+        formatacao: {
+          name: "Formatação Completa",
+          price: 50,
+          duration: "2-3 horas",
+        },
+        hardware: {
+          name: "Instalação Hardware",
+          price: 25,
+          duration: "30-60 min",
+        },
+        manutencao: {
+          name: "Manutenção Preventiva",
+          price: 40,
+          duration: "1-2 horas",
+        },
+        consultoria: {
+          name: "Consultoria IA",
+          price: 30,
+          duration: "45-60 min",
+        },
+      };
+
+      // Horários disponíveis
+      const timeSlots = {
+        morning: [
+          "08:00",
+          "08:30",
+          "09:00",
+          "09:30",
+          "10:00",
+          "10:30",
+          "11:00",
+          "11:30",
+        ],
+        afternoon: [
+          "13:00",
+          "13:30",
+          "14:00",
+          "14:30",
+          "15:00",
+          "15:30",
+          "16:00",
+          "16:30",
+          "17:00",
+        ],
+      };
+
+      // Event Listeners
+      document.addEventListener("DOMContentLoaded", function () {
+        setupServiceCards();
+        setupCalendar();
+        setupNavigation();
+        updateStepVisibility();
+      });
+
+      // Configurar cards de serviço
+      function setupServiceCards() {
+        document.querySelectorAll(".service-card").forEach((card) => {
+          card.addEventListener("click", function () {
+            // Remove seleção anterior
+            document
+              .querySelectorAll(".service-card")
+              .forEach((c) =>
+                c.classList.remove("border-2", "border-purple-400")
+              );
+
+            // Adiciona seleção atual
+            this.classList.add("border-2", "border-purple-400");
+
+            selectedService = {
+              type: this.dataset.service,
+              ...services[this.dataset.service],
+            };
+
+            updateNextStepButton();
+          });
+        });
+      }
+
+      // Configurar calendário
+      function setupCalendar() {
+        document.getElementById("prevMonth").addEventListener("click", () => {
+          currentMonth--;
+          if (currentMonth < 0) {
+            currentMonth = 11;
+            currentYear--;
+          }
+          generateCalendar();
+        });
+
+        document.getElementById("nextMonth").addEventListener("click", () => {
+          currentMonth++;
+          if (currentMonth > 11) {
+            currentMonth = 0;
+            currentYear++;
+          }
+          generateCalendar();
+        });
+
+        generateCalendar();
+      }
+
+      // Gerar calendário
+      function generateCalendar() {
+        const monthNames = [
+          "Janeiro",
+          "Fevereiro",
+          "Março",
+          "Abril",
+          "Maio",
+          "Junho",
+          "Julho",
+          "Agosto",
+          "Setembro",
+          "Outubro",
+          "Novembro",
+          "Dezembro",
+        ];
+
+        document.getElementById("currentMonth").textContent =
+          monthNames[currentMonth] + " " + currentYear;
+
+        const firstDay = new Date(currentYear, currentMonth, 1).getDay();
+        const daysInMonth = new Date(
+          currentYear,
+          currentMonth + 1,
+          0
+        ).getDate();
+        const today = new Date();
+
+        const calendarDays = document.getElementById("calendarDays");
+        calendarDays.innerHTML = "";
+
+        // Dias vazios no início
+        for (let i = 0; i < firstDay; i++) {
+          const emptyDay = document.createElement("div");
+          calendarDays.appendChild(emptyDay);
+        }
+
+        // Dias do mês
+        for (let day = 1; day <= daysInMonth; day++) {
+          const dayElement = document.createElement("div");
+          dayElement.className = "calendar-day text-center p-3 rounded";
+          dayElement.textContent = day;
+
+          const dayDate = new Date(currentYear, currentMonth, day);
+
+          // Desabilitar dias passados e domingos
+          if (dayDate < today || dayDate.getDay() === 0) {
+            dayElement.classList.add("unavailable");
+          } else {
+            dayElement.addEventListener("click", () => selectDate(dayDate));
+          }
+
+          calendarDays.appendChild(dayElement);
+        }
+      }
+
+      // Selecionar data
+      function selectDate(date) {
+        // Remove seleção anterior
+        document
+          .querySelectorAll(".calendar-day")
+          .forEach((day) => day.classList.remove("selected"));
+
+        // Adiciona seleção atual
+        event.target.classList.add("selected");
+
+        selectedDate = date;
+        updateSelectedDateInfo();
+        generateTimeSlots();
+        updateNextStepButton();
+      }
+
+      // Atualizar informações da data selecionada
+      function updateSelectedDateInfo() {
+        if (!selectedDate) return;
+
+        const dateInfo = document.getElementById("selectedDateInfo");
+        const options = {
+          weekday: "long",
+          year: "numeric",
+          month: "long",
+          day: "numeric",
+        };
+
+        dateInfo.innerHTML = `
+          <h4 class="text-lg font-bold mb-4">📅 ${selectedDate.toLocaleDateString(
+            "pt-BR",
+            options
+          )}</h4>
+          <p class="text-gray-300 mb-2">Data selecionada com sucesso!</p>
+          <p class="text-sm text-green-400">✓ Data disponível para agendamento</p>
+        `;
+      }
+
+      // Gerar slots de horário
+      function generateTimeSlots() {
+        if (!selectedDate) return;
+
+        const morningSlots = document.getElementById("morningSlots");
+        const afternoonSlots = document.getElementById("afternoonSlots");
+
+        morningSlots.innerHTML = "";
+        afternoonSlots.innerHTML = "";
+
+        // Simular alguns horários ocupados aleatoriamente
+        const occupiedSlots = ["09:30", "14:00", "15:30"];
+
+        // Horários da manhã
+        timeSlots.morning.forEach((time) => {
+          const slot = createTimeSlot(time, occupiedSlots.includes(time));
+          morningSlots.appendChild(slot);
+        });
+
+        // Horários da tarde
+        timeSlots.afternoon.forEach((time) => {
+          const slot = createTimeSlot(time, occupiedSlots.includes(time));
+          afternoonSlots.appendChild(slot);
+        });
+      }
+
+      // Criar slot de horário
+      function createTimeSlot(time, isOccupied) {
+        const slot = document.createElement("div");
+        slot.className =
+          "time-slot text-center p-3 rounded border border-gray-600";
+        slot.textContent = time;
+
+        if (isOccupied) {
+          slot.classList.add("occupied");
+          slot.title = "Horário ocupado";
+        } else {
+          slot.addEventListener("click", () => selectTime(time, slot));
+        }
+
+        return slot;
+      }
+
+      // Selecionar horário
+      function selectTime(time, element) {
+        // Remove seleção anterior
+        document
+          .querySelectorAll(".time-slot")
+          .forEach((slot) => slot.classList.remove("selected"));
+
+        // Adiciona seleção atual
+        element.classList.add("selected");
+
+        selectedTime = time;
+        updateSummary();
+        updateNextStepButton();
+      }
+
+      // Atualizar resumo
+      function updateSummary() {
+        if (!selectedService || !selectedDate || !selectedTime) return;
+
+        const options = {
+          weekday: "short",
+          day: "numeric",
+          month: "short",
+        };
+
+        document.getElementById("summaryService").textContent =
+          selectedService.name;
+        document.getElementById("summaryDate").textContent =
+          selectedDate.toLocaleDateString("pt-BR", options);
+        document.getElementById("summaryTime").textContent = selectedTime;
+        document.getElementById(
+          "summaryPrice"
+        ).textContent = `R$ ${selectedService.price}`;
+
+        // Atualizar também a confirmação final
+        document.getElementById("finalService").textContent =
+          selectedService.name;
+        document.getElementById("finalDate").textContent =
+          selectedDate.toLocaleDateString("pt-BR", options);
+        document.getElementById("finalTime").textContent = selectedTime;
+        document.getElementById(
+          "finalPrice"
+        ).textContent = `R$ ${selectedService.price}`;
+      }
+
+      // Configurar navegação
+      function setupNavigation() {
+        document.getElementById("prevStep").addEventListener("click", () => {
+          if (currentStep > 1) {
+            currentStep--;
+            updateStepVisibility();
+          }
+        });
+
+        document.getElementById("nextStep").addEventListener("click", () => {
+          if (currentStep < 4) {
+            currentStep++;
+            updateStepVisibility();
+          }
+        });
+
+        document
+          .getElementById("confirmBooking")
+          .addEventListener("click", confirmBooking);
+      }
+
+      // Atualizar visibilidade dos steps
+      function updateStepVisibility() {
+        // Ocultar todos os steps
+        for (let i = 1; i <= 4; i++) {
+          document.getElementById(`step${i}`).classList.add("hidden");
+        }
+
+        // Mostrar step atual
+        document
+          .getElementById(`step${currentStep}`)
+          .classList.remove("hidden");
+        document
+          .getElementById(`step${currentStep}`)
+          .classList.add("slide-in-right");
+
+        // Atualizar botões de navegação
+        document
+          .getElementById("prevStep")
+          .classList.toggle("hidden", currentStep === 1);
+        document
+          .getElementById("nextStep")
+          .classList.toggle("hidden", currentStep === 4);
+
+        updateNextStepButton();
+      }
+
+      // Atualizar botão próximo
+      function updateNextStepButton() {
+        const nextBtn = document.getElementById("nextStep");
+
+        if (currentStep === 1) {
+          nextBtn.disabled = !selectedService;
+          nextBtn.textContent = selectedService
+            ? "Escolher Data"
+            : "Selecione um Serviço";
+        } else if (currentStep === 2) {
+          nextBtn.disabled = !selectedDate;
+          nextBtn.textContent = selectedDate
+            ? "Escolher Horário"
+            : "Selecione uma Data";
+        } else if (currentStep === 3) {
+          nextBtn.disabled = !selectedTime;
+          nextBtn.textContent = selectedTime
+            ? "Preencher Dados"
+            : "Selecione um Horário";
+        }
+
+        nextBtn.innerHTML =
+          nextBtn.textContent + '<i class="fas fa-arrow-right ml-2"></i>';
+        nextBtn.classList.toggle("opacity-50", nextBtn.disabled);
+      }
+
+      // Confirmar agendamento
+      function confirmBooking() {
+        const form = document.getElementById("clientForm");
+        if (!form.checkValidity()) {
+          form.reportValidity();
+          return;
+        }
+
+        const clientData = {
+          name: document.getElementById("clientName").value,
+          phone: document.getElementById("clientPhone").value,
+          email: document.getElementById("clientEmail").value,
+          address: document.getElementById("clientAddress").value,
+          notes: document.getElementById("clientNotes").value,
+        };
+
+        // Simular envio
+        document.getElementById("confirmBooking").innerHTML =
+          '<i class="fas fa-spinner fa-spin mr-2"></i>Confirmando...';
+
+        setTimeout(() => {
+          showSuccessMessage(clientData);
+        }, 2000);
+      }
+
+      // Mostrar mensagem de sucesso
+      function showSuccessMessage(clientData) {
+        const step4 = document.getElementById("step4");
+        step4.innerHTML = `
+          <div class="text-center py-12">
+            <div class="bg-green-500 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6">
+              <i class="fas fa-check text-3xl text-white"></i>
+            </div>
+            <h2 class="text-3xl font-bold mb-4 text-green-400">Agendamento Confirmado!</h2>
+            <p class="text-xl mb-6">Seu atendimento foi agendado com sucesso.</p>
+
+            <div class="bg-gray-800 rounded-xl p-6 max-w-md mx-auto mb-6">
+              <h3 class="font-bold mb-4">📋 Detalhes do Agendamento:</h3>
+              <div class="space-y-2 text-left text-sm">
+                <div><strong>Serviço:</strong> ${selectedService.name}</div>
+                <div><strong>Data:</strong> ${selectedDate.toLocaleDateString(
+                  "pt-BR"
+                )}</div>
+                <div><strong>Horário:</strong> ${selectedTime}</div>
+                <div><strong>Cliente:</strong> ${clientData.name}</div>
+                <div><strong>WhatsApp:</strong> ${clientData.phone}</div>
+                <div><strong>Valor:</strong> R$ ${selectedService.price}</div>
+              </div>
+            </div>
+
+            <div class="bg-blue-600 rounded-lg p-4 mb-6 max-w-md mx-auto">
+              <h4 class="font-bold mb-2">📱 Próximos Passos:</h4>
+              <ul class="text-sm text-left space-y-1">
+                <li>• Enviamos uma confirmação via WhatsApp</li>
+                <li>• Lembrete 1 dia antes do atendimento</li>
+                <li>• Técnico chegará no horário agendado</li>
+                <li>• Pagamento somente após conclusão</li>
+              </ul>
+            </div>
+
+            <button onclick="window.location='index.html'" class="bg-purple-500 hover:bg-purple-600 px-8 py-3 rounded-lg">
+              <i class="fas fa-home mr-2"></i>Voltar ao Início
+            </button>
+          </div>
+        `;
+      }
+    </script>
+  </body>
+</html>
