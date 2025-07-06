@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FreelancerDeiviTech - Soluções Tecnológicas Profissionais</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <style>
+      .hero-bg {
+        background: linear-gradient(
+          135deg,
+          #1e3a8a 0%,
+          #3b82f6 50%,
+          #06b6d4 100%
+        );
+      }
+      .service-card {
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+      }
+      .service-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+      }
+      .price-pulse {
+        animation: pulse 2s infinite;
+      }
+      @keyframes pulse {
+        0%,
+        100% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0.8;
+        }
+      }
+      .gradient-text {
+        background: linear-gradient(45deg, #3b82f6, #06b6d4, #10b981);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .floating {
+        animation: floating 3s ease-in-out infinite;
+      }
+      @keyframes floating {
+        0%,
+        100% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+      }
+      .calculator-input {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+      }
+    </style>
+  </head>
+  <body class="bg-gray-900 text-white">
+    <!-- Header -->
+    <header class="hero-bg py-16 relative overflow-hidden">
+      <div class="absolute inset-0 bg-black opacity-20"></div>
+      <div class="container mx-auto px-6 relative z-10">
+        <div class="text-center">
+          <div class="floating">
+            <i class="fas fa-rocket text-6xl text-white mb-6"></i>
+          </div>
+          <h1 class="text-5xl font-bold mb-4">
+            <span class="gradient-text">FreelancerDeiviTech</span>
+          </h1>
+          <p class="text-2xl mb-8 opacity-90">
+            Soluções Tecnológicas que Transformam Negócios
+          </p>
+          <div class="flex justify-center space-x-4">
+            <a
+              href="#servicos"
+              class="bg-white text-blue-600 px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition-all"
+            >
+              Ver Serviços
+            </a>
+            <a
+              href="#contato"
+              class="border-2 border-white text-white px-8 py-3 rounded-lg font-bold hover:bg-white hover:text-blue-600 transition-all"
+            >
+              Solicitar Orçamento
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Stats Section -->
+    <section class="py-12 bg-gray-800">
+      <div class="container mx-auto px-6">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          <div class="service-card bg-gray-700 p-6 rounded-xl">
+            <div class="text-3xl font-bold text-blue-400 mb-2">50+</div>
+            <div class="text-gray-300">Projetos Entregues</div>
+          </div>
+          <div class="service-card bg-gray-700 p-6 rounded-xl">
+            <div class="text-3xl font-bold text-green-400 mb-2">98%</div>
+            <div class="text-gray-300">Clientes Satisfeitos</div>
+          </div>
+          <div class="service-card bg-gray-700 p-6 rounded-xl">
+            <div class="text-3xl font-bold text-purple-400 mb-2">15</div>
+            <div class="text-gray-300">Anos Experiência</div>
+          </div>
+          <div class="service-card bg-gray-700 p-6 rounded-xl">
+            <div class="text-3xl font-bold text-orange-400 mb-2">30</div>
+            <div class="text-gray-300">Dias Garantia</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicos" class="py-16">
+      <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center mb-12">
+          <span class="gradient-text">Nossos Serviços</span>
+        </h2>
+
+        <!-- Development Services -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+          <!-- Web Development -->
+          <div
+            class="service-card bg-gray-800 p-8 rounded-xl border border-blue-500"
+          >
+            <div class="flex items-center mb-6">
+              <i class="fas fa-code text-4xl text-blue-400 mr-4"></i>
+              <h3 class="text-2xl font-bold">Desenvolvimento Web</h3>
+            </div>
+
+            <div class="space-y-4 mb-6">
+              <div
+                class="flex justify-between items-center p-3 bg-gray-700 rounded"
+              >
+                <span>Site Básico (1-3 páginas)</span>
+                <span class="text-green-400 font-bold">R$ 500 - R$ 800</span>
+              </div>
+              <div
+                class="flex justify-between items-center p-3 bg-gray-700 rounded"
+              >
+                <span>Site Completo (4-8 páginas)</span>
+                <span class="text-green-400 font-bold">R$ 900 - R$ 1.500</span>
+              </div>
+              <div
+                class="flex justify-between items-center p-3 bg-gray-700 rounded"
+              >
+                <span>Sistema Web Personalizado</span>
+                <span class="text-green-400 font-bold"
+                  >R$ 1.600 - R$ 3.000</span
+                >
+              </div>
+              <div
+                class="flex justify-between items-center p-3 bg-gray-700 rounded"
+              >
+                <span>E-commerce Completo</span>
+                <span class="text-green-400 font-bold"
+                  >R$ 2.000 - R$ 4.000</span
+                >
+              </div>
+            </div>
+
+            <div class="bg-blue-900 p-4 rounded mb-6">
+              <h4 class="font-bold mb-2">🚀 Incluso em todos os planos:</h4>
+              <ul class="text-sm space-y-1">
+                <li>✅ Design responsivo (mobile/desktop)</li>
+                <li>✅ SEO básico otimizado</li>
+                <li>✅ Hospedagem GitHub Pages</li>
+                <li>✅ SSL Certificate gratuito</li>
+                <li>✅ 30 dias de suporte</li>
+              </ul>
+            </div>
+
+            <button
+              onclick="calculateWeb()"
+              class="bg-blue-500 hover:bg-blue-600 w-full py-3 rounded-lg font-bold transition-all"
+            >
+              <i class="fas fa-calculator mr-2"></i>Calcular Orçamento
+            </button>
+          </div>
+
+          <!-- Python Automation -->
+          <div
+            class="service-card bg-gray-800 p-8 rounded-xl border border-green-500"
+          >
+            <div class="flex items-center mb-6">
+              <i class="fab fa-python text-4xl text-green-400 mr-4"></i>
+              <h3 class="text-2xl font-bold">Automações Python</h3>
+            </div>
+
+            <div class="space-y-4 mb-6">
+              <div
+                class="flex justify-between items-center p-3 bg-gray-700 rounded"
+              >
+                <span>Script Simples</span>
+                <span class="text-green-400 font-bold">R$ 200 - R$ 400</span>
+              </div>
+              <div
+                class="flex justify-between items-center p-3 bg-gray-700 rounded"
+              >
+                <span>Automação Média</span>
+                <span class="text-green-400 font-bold">R$ 500 - R$ 800</span>
+              </div>
+              <div
+                class="flex justify-between items-center p-3 bg-gray-700 rounded"
+              >
+                <span>Sistema Completo</span>
+                <span class="text-green-400 font-bold">R$ 900 - R$ 1.500</span>
+              </div>
+              <div
+                class="flex justify-between items-center p-3 bg-gray-700 rounded"
+              >
+                <span>Consultoria/Hora</span>
+                <span class="text-green-400 font-bold">R$ 100/hora</span>
+              </div>
+            </div>
+
+            <div class="bg-green-900 p-4 rounded mb-6">
+              <h4 class="font-bold mb-2">🤖 Automações populares:</h4>
+              <ul class="text-sm space-y-1">
+                <li>✅ Web scraping e coleta de dados</li>
+                <li>✅ Relatórios automáticos (Excel/PDF)</li>
+                <li>✅ Backup e organização de arquivos</li>
+                <li>✅ Integração de sistemas e APIs</li>
+                <li>✅ Monitoramento e alertas</li>
+              </ul>
+            </div>
+
+            <button
+              onclick="calculatePython()"
+              class="bg-green-500 hover:bg-green-600 w-full py-3 rounded-lg font-bold transition-all"
+            >
+              <i class="fas fa-robot mr-2"></i>Calcular Automação
+            </button>
+          </div>
+        </div>
+
+        <!-- Technical Services -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <!-- Technical Support -->
+          <div
+            class="service-card bg-gray-800 p-8 rounded-xl border border-purple-500"
+          >
+            <div class="flex items-center mb-6">
+              <i class="fas fa-tools text-4xl text-purple-400 mr-4"></i>
+              <h3 class="text-2xl font-bold">Suporte Técnico</h3>
+            </div>
+
+            <div class="space-y-4 mb-6">
+              <div
+                class="flex justify-between items-center p-3 bg-gray-700 rounded"
+              >
+                <span>Formatação Básica</span>
+                <span class="text-green-400 font-bold">R$ 50</span>
+              </div>
+              <div
+                class="flex justify-between items-center p-3 bg-gray-700 rounded"
+              >
+                <span>Formatação + Programas</span>
+                <span class="text-green-400 font-bold">R$ 80</span>
+              </div>
+              <div
+                class="flex justify-between items-center p-3 bg-gray-700 rounded"
+              >
+                <span>Formatação Premium</span>
+                <span class="text-green-400 font-bold">R$ 120</span>
+              </div>
+              <div
+                class="flex justify-between items-center p-3 bg-gray-700 rounded"
+              >
+                <span>Instalação Hardware</span>
+                <span class="text-green-400 font-bold">R$ 30 - R$ 40</span>
+              </div>
+            </div>
+
+            <div class="bg-purple-900 p-4 rounded mb-6">
+              <h4 class="font-bold mb-2">🛠️ Sistemas disponíveis:</h4>
+              <ul class="text-sm space-y-1">
+                <li>✅ Windows 10/11 Original</li>
+                <li>✅ Ghost Spectre (Ultra otimizado)</li>
+                <li>✅ Linux Ubuntu/Mint</li>
+                <li>✅ Chrome OS Flex</li>
+                <li>✅ Dual boot personalizado</li>
+              </ul>
+            </div>
+
+            <a
+              href="https://deivisan.github.io/DeiviTech-Formatacao/"
+              target="_blank"
+              class="bg-purple-500 hover:bg-purple-600 w-full py-3 rounded-lg font-bold transition-all inline-block text-center"
+            >
+              <i class="fas fa-external-link-alt mr-2"></i>Loja Especializada
+            </a>
+          </div>
+
+          <!-- Consultation -->
+          <div
+            class="service-card bg-gray-800 p-8 rounded-xl border border-orange-500"
+          >
+            <div class="flex items-center mb-6">
+              <i class="fas fa-lightbulb text-4xl text-orange-400 mr-4"></i>
+              <h3 class="text-2xl font-bold">Consultoria Digital</h3>
+            </div>
+
+            <div class="space-y-4 mb-6">
+              <div
+                class="flex justify-between items-center p-3 bg-gray-700 rounded"
+              >
+                <span>Consultoria Online</span>
+                <span class="text-green-400 font-bold">R$ 80/hora</span>
+              </div>
+              <div
+                class="flex justify-between items-center p-3 bg-gray-700 rounded"
+              >
+                <span>Consultoria Presencial</span>
+                <span class="text-green-400 font-bold">R$ 120/hora</span>
+              </div>
+              <div
+                class="flex justify-between items-center p-3 bg-gray-700 rounded"
+              >
+                <span>Pacote 5 horas</span>
+                <span class="text-green-400 font-bold">R$ 350</span>
+              </div>
+              <div
+                class="flex justify-between items-center p-3 bg-gray-700 rounded"
+              >
+                <span>Análise Completa</span>
+                <span class="text-green-400 font-bold">R$ 200</span>
+              </div>
+            </div>
+
+            <div class="bg-orange-900 p-4 rounded mb-6">
+              <h4 class="font-bold mb-2">💡 Áreas de consultoria:</h4>
+              <ul class="text-sm space-y-1">
+                <li>✅ Infraestrutura tecnológica</li>
+                <li>✅ Planejamento de projetos digitais</li>
+                <li>✅ Escolha de tecnologias</li>
+                <li>✅ Treinamento de equipes</li>
+                <li>✅ Otimização de processos</li>
+              </ul>
+            </div>
+
+            <button
+              onclick="openConsultation()"
+              class="bg-orange-500 hover:bg-orange-600 w-full py-3 rounded-lg font-bold transition-all"
+            >
+              <i class="fas fa-calendar-alt mr-2"></i>Agendar Consultoria
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Calculator Modal -->
+    <div
+      id="calculatorModal"
+      class="fixed inset-0 bg-black bg-opacity-50 hidden z-50 flex items-center justify-center"
+    >
+      <div class="bg-gray-800 p-8 rounded-xl max-w-md w-full mx-4">
+        <div class="flex justify-between items-center mb-6">
+          <h3 class="text-2xl font-bold">Calculadora de Orçamento</h3>
+          <button
+            onclick="closeCalculator()"
+            class="text-gray-400 hover:text-white"
+          >
+            <i class="fas fa-times text-xl"></i>
+          </button>
+        </div>
+
+        <div id="calculatorContent">
+          <!-- Content will be dynamically inserted -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio Section -->
+    <section class="py-16 bg-gray-800">
+      <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center mb-12">
+          <span class="gradient-text">Portfólio Recente</span>
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="service-card bg-gray-700 rounded-xl overflow-hidden">
+            <div
+              class="h-48 bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center"
+            >
+              <i class="fas fa-desktop text-6xl text-white"></i>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">DeiviTech Formatação</h3>
+              <p class="text-gray-300 mb-4">
+                Site completo com sistema de combos, análise IA e carrinho
+                inteligente.
+              </p>
+              <a
+                href="https://deivisan.github.io/DeiviTech-Formatacao/"
+                target="_blank"
+                class="text-blue-400 hover:text-blue-300"
+              >
+                Ver Projeto <i class="fas fa-external-link-alt ml-1"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="service-card bg-gray-700 rounded-xl overflow-hidden">
+            <div
+              class="h-48 bg-gradient-to-r from-green-500 to-blue-600 flex items-center justify-center"
+            >
+              <i class="fas fa-laptop text-6xl text-white"></i>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">Configurador Notebook</h3>
+              <p class="text-gray-300 mb-4">
+                Sistema interativo para personalização de notebooks com
+                calculadora de preços.
+              </p>
+              <a
+                href="https://deivisan.github.io/DeiviTech-Monte-Seu-Notebook/"
+                target="_blank"
+                class="text-blue-400 hover:text-blue-300"
+              >
+                Ver Projeto <i class="fas fa-external-link-alt ml-1"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="service-card bg-gray-700 rounded-xl overflow-hidden">
+            <div
+              class="h-48 bg-gradient-to-r from-purple-500 to-pink-600 flex items-center justify-center"
+            >
+              <i class="fas fa-robot text-6xl text-white"></i>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">Scripts Automação</h3>
+              <p class="text-gray-300 mb-4">
+                Coleção de automações Python para produtividade empresarial.
+              </p>
+              <a
+                href="https://github.com/deivisan/automation-scripts"
+                target="_blank"
+                class="text-blue-400 hover:text-blue-300"
+              >
+                Ver Repositório <i class="fas fa-external-link-alt ml-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contato" class="py-16">
+      <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center mb-12">
+          <span class="gradient-text">Entre em Contato</span>
+        </h2>
+
+        <div class="max-w-4xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div class="space-y-6">
+            <h3 class="text-2xl font-bold mb-6">
+              Vamos conversar sobre seu projeto!
+            </h3>
+
+            <div class="flex items-center space-x-4 p-4 bg-gray-800 rounded-lg">
+              <i class="fab fa-whatsapp text-3xl text-green-400"></i>
+              <div>
+                <div class="font-bold">WhatsApp</div>
+                <div class="text-gray-300">+55 75 9 8123-1019</div>
+              </div>
+            </div>
+
+            <div class="flex items-center space-x-4 p-4 bg-gray-800 rounded-lg">
+              <i class="fas fa-envelope text-3xl text-blue-400"></i>
+              <div>
+                <div class="font-bold">Email</div>
+                <div class="text-gray-300">deivilsantana@outlook.com</div>
+              </div>
+            </div>
+
+            <div class="flex items-center space-x-4 p-4 bg-gray-800 rounded-lg">
+              <i class="fas fa-map-marker-alt text-3xl text-red-400"></i>
+              <div>
+                <div class="font-bold">Localização</div>
+                <div class="text-gray-300">Feira de Santana, BA</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-gray-800 p-8 rounded-xl">
+            <h3 class="text-xl font-bold mb-6">Solicitar Orçamento Rápido</h3>
+
+            <form onsubmit="sendQuote(event)" class="space-y-4">
+              <input
+                type="text"
+                placeholder="Seu nome"
+                required
+                class="w-full p-3 rounded bg-gray-700 text-white"
+              />
+              <input
+                type="email"
+                placeholder="Seu email"
+                required
+                class="w-full p-3 rounded bg-gray-700 text-white"
+              />
+              <select
+                required
+                class="w-full p-3 rounded bg-gray-700 text-white"
+              >
+                <option value="">Selecione o serviço</option>
+                <option value="web">Desenvolvimento Web</option>
+                <option value="python">Automações Python</option>
+                <option value="suporte">Suporte Técnico</option>
+                <option value="consultoria">Consultoria Digital</option>
+              </select>
+              <textarea
+                placeholder="Descreva seu projeto..."
+                required
+                class="w-full p-3 rounded bg-gray-700 text-white h-32"
+              ></textarea>
+              <button
+                type="submit"
+                class="w-full bg-blue-500 hover:bg-blue-600 py-3 rounded font-bold transition-all"
+              >
+                <i class="fas fa-paper-plane mr-2"></i>Enviar Solicitação
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-8 border-t border-gray-700">
+      <div class="container mx-auto px-6 text-center">
+        <div class="mb-6">
+          <h3 class="text-xl font-bold mb-4">FreelancerDeiviTech</h3>
+          <div class="flex justify-center space-x-6">
+            <a
+              href="https://github.com/deivisan"
+              target="_blank"
+              class="text-gray-400 hover:text-white"
+            >
+              <i class="fab fa-github text-xl"></i>
+            </a>
+            <a
+              href="https://linkedin.com/in/deivison-santana"
+              target="_blank"
+              class="text-gray-400 hover:text-white"
+            >
+              <i class="fab fa-linkedin text-xl"></i>
+            </a>
+            <a
+              href="https://instagram.com/deivilsan"
+              target="_blank"
+              class="text-gray-400 hover:text-white"
+            >
+              <i class="fab fa-instagram text-xl"></i>
+            </a>
+            <a
+              href="https://wa.me/5575981231019"
+              target="_blank"
+              class="text-gray-400 hover:text-white"
+            >
+              <i class="fab fa-whatsapp text-xl"></i>
+            </a>
+          </div>
+        </div>
+        <div class="text-gray-400">
+          <p>
+            &copy; 2025 FreelancerDeiviTech. Transformando ideias em soluções
+            digitais.
+          </p>
+          <p class="mt-2">
+            Desenvolvido com ❤️ por
+            <a href="../" class="text-blue-400 hover:text-blue-300"
+              >Deivison Santana</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Calculator Functions
+      function calculateWeb() {
+        const content = `
+                <div class="space-y-4">
+                    <div>
+                        <label class="block text-sm font-medium mb-2">Tipo de projeto:</label>
+                        <select id="webType" class="calculator-input w-full p-3 rounded text-white">
+                            <option value="500-800">Site Básico (1-3 páginas) - R$ 500-800</option>
+                            <option value="900-1500">Site Completo (4-8 páginas) - R$ 900-1500</option>
+                            <option value="1600-3000">Sistema Web - R$ 1600-3000</option>
+                            <option value="2000-4000">E-commerce - R$ 2000-4000</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium mb-2">Funcionalidades extras:</label>
+                        <div class="space-y-2">
+                            <label class="flex items-center">
+                                <input type="checkbox" class="mr-2" value="200"> Formulário de contato avançado (+R$ 200)
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="mr-2" value="300"> Integração com redes sociais (+R$ 300)
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="mr-2" value="400"> Sistema de blog (+R$ 400)
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="mr-2" value="500"> Dashboard administrativo (+R$ 500)
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="bg-blue-900 p-4 rounded">
+                        <div class="text-lg font-bold">Estimativa: <span id="webEstimate" class="text-green-400">R$ 500 - R$ 800</span></div>
+                        <div class="text-sm text-gray-300 mt-2">Valores podem variar conforme complexidade do projeto</div>
+                    </div>
+
+                    <button onclick="sendWebQuote()" class="w-full bg-blue-500 hover:bg-blue-600 py-3 rounded font-bold">
+                        <i class="fas fa-whatsapp mr-2"></i>Solicitar Orçamento Detalhado
+                    </button>
+                </div>
+            `;
+
+        document.getElementById("calculatorContent").innerHTML = content;
+        document.getElementById("calculatorModal").classList.remove("hidden");
+
+        // Add event listeners
+        const inputs = document.querySelectorAll(
+          "#calculatorContent input, #calculatorContent select"
+        );
+        inputs.forEach((input) => {
+          input.addEventListener("change", updateWebEstimate);
+        });
+      }
+
+      function calculatePython() {
+        const content = `
+                <div class="space-y-4">
+                    <div>
+                        <label class="block text-sm font-medium mb-2">Tipo de automação:</label>
+                        <select id="pythonType" class="calculator-input w-full p-3 rounded text-white">
+                            <option value="200-400">Script Simples - R$ 200-400</option>
+                            <option value="500-800">Automação Média - R$ 500-800</option>
+                            <option value="900-1500">Sistema Completo - R$ 900-1500</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium mb-2">Funcionalidades necessárias:</label>
+                        <div class="space-y-2">
+                            <label class="flex items-center">
+                                <input type="checkbox" class="mr-2" value="150"> Web scraping (+R$ 150)
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="mr-2" value="200"> Geração de relatórios (+R$ 200)
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="mr-2" value="250"> Integração com APIs (+R$ 250)
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="mr-2" value="300"> Interface gráfica (+R$ 300)
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="mr-2" value="200"> Agendamento automático (+R$ 200)
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="bg-green-900 p-4 rounded">
+                        <div class="text-lg font-bold">Estimativa: <span id="pythonEstimate" class="text-green-400">R$ 200 - R$ 400</span></div>
+                        <div class="text-sm text-gray-300 mt-2">Inclui documentação e suporte inicial</div>
+                    </div>
+
+                    <button onclick="sendPythonQuote()" class="w-full bg-green-500 hover:bg-green-600 py-3 rounded font-bold">
+                        <i class="fas fa-whatsapp mr-2"></i>Solicitar Orçamento Detalhado
+                    </button>
+                </div>
+            `;
+
+        document.getElementById("calculatorContent").innerHTML = content;
+        document.getElementById("calculatorModal").classList.remove("hidden");
+
+        // Add event listeners
+        const inputs = document.querySelectorAll(
+          "#calculatorContent input, #calculatorContent select"
+        );
+        inputs.forEach((input) => {
+          input.addEventListener("change", updatePythonEstimate);
+        });
+      }
+
+      function updateWebEstimate() {
+        const baseValue = document.getElementById("webType").value;
+        const checkboxes = document.querySelectorAll(
+          '#calculatorContent input[type="checkbox"]:checked'
+        );
+        let extras = 0;
+
+        checkboxes.forEach((checkbox) => {
+          extras += parseInt(checkbox.value);
+        });
+
+        const [min, max] = baseValue.split("-").map((v) => parseInt(v));
+        const newMin = min + extras;
+        const newMax = max + extras;
+
+        document.getElementById(
+          "webEstimate"
+        ).textContent = `R$ ${newMin} - R$ ${newMax}`;
+      }
+
+      function updatePythonEstimate() {
+        const baseValue = document.getElementById("pythonType").value;
+        const checkboxes = document.querySelectorAll(
+          '#calculatorContent input[type="checkbox"]:checked'
+        );
+        let extras = 0;
+
+        checkboxes.forEach((checkbox) => {
+          extras += parseInt(checkbox.value);
+        });
+
+        const [min, max] = baseValue.split("-").map((v) => parseInt(v));
+        const newMin = min + extras;
+        const newMax = max + extras;
+
+        document.getElementById(
+          "pythonEstimate"
+        ).textContent = `R$ ${newMin} - R$ ${newMax}`;
+      }
+
+      function closeCalculator() {
+        document.getElementById("calculatorModal").classList.add("hidden");
+      }
+
+      function sendWebQuote() {
+        const estimate = document.getElementById("webEstimate").textContent;
+        const message = `Olá! Gostaria de um orçamento detalhado para desenvolvimento web. Estimativa inicial: ${estimate}`;
+        window.open(
+          `https://wa.me/5575981231019?text=${encodeURIComponent(message)}`
+        );
+      }
+
+      function sendPythonQuote() {
+        const estimate = document.getElementById("pythonEstimate").textContent;
+        const message = `Olá! Gostaria de um orçamento detalhado para automação Python. Estimativa inicial: ${estimate}`;
+        window.open(
+          `https://wa.me/5575981231019?text=${encodeURIComponent(message)}`
+        );
+      }
+
+      function openConsultation() {
+        const message = `Olá! Gostaria de agendar uma consultoria digital. Quando podemos conversar?`;
+        window.open(
+          `https://wa.me/5575981231019?text=${encodeURIComponent(message)}`
+        );
+      }
+
+      function sendQuote(event) {
+        event.preventDefault();
+        const formData = new FormData(event.target);
+        const message = `Olá! Gostaria de solicitar um orçamento para: ${formData.get(
+          "service"
+        )}`;
+        window.open(
+          `https://wa.me/5575981231019?text=${encodeURIComponent(message)}`
+        );
+      }
+
+      // Smooth scrolling
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

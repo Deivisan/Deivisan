@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filantropia DeiviTech - Conhecimento Livre e Gratuito</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <style>
+      .hero-bg {
+        background: linear-gradient(
+          135deg,
+          #059669 0%,
+          #10b981 50%,
+          #34d399 100%
+        );
+      }
+      .service-card {
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+      }
+      .service-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.25);
+      }
+      .gradient-text {
+        background: linear-gradient(45deg, #10b981, #34d399, #6ee7b7);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .floating {
+        animation: floating 3s ease-in-out infinite;
+      }
+      @keyframes floating {
+        0%,
+        100% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+      }
+      .tutorial-step {
+        border-left: 4px solid #10b981;
+        transition: all 0.3s ease;
+      }
+      .tutorial-step:hover {
+        border-left-color: #34d399;
+        background: rgba(16, 185, 129, 0.1);
+      }
+      .code-block {
+        background: #1f2937;
+        border: 1px solid #374151;
+        border-radius: 8px;
+        position: relative;
+      }
+      .copy-btn {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        background: #374151;
+        border: none;
+        color: #d1d5db;
+        padding: 4px 8px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 12px;
+      }
+      .copy-btn:hover {
+        background: #4b5563;
+      }
+      .project-showcase {
+        position: relative;
+        overflow: hidden;
+        border-radius: 12px;
+      }
+      .project-overlay {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          45deg,
+          rgba(16, 185, 129, 0.9),
+          rgba(52, 211, 153, 0.9)
+        );
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      .project-showcase:hover .project-overlay {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-900 text-white">
+    <!-- Header -->
+    <header class="hero-bg py-16 relative overflow-hidden">
+      <div class="absolute inset-0 bg-black opacity-20"></div>
+      <div class="container mx-auto px-6 relative z-10">
+        <div class="text-center">
+          <div class="floating">
+            <i class="fas fa-heart text-6xl text-white mb-6"></i>
+          </div>
+          <h1 class="text-5xl font-bold mb-4">
+            <span class="text-white">Filantropia</span>
+            <span class="gradient-text">DeiviTech</span>
+          </h1>
+          <p class="text-2xl mb-8 opacity-90">
+            Conhecimento Livre • Código Aberto • Futuro Melhor
+          </p>
+          <div class="flex justify-center space-x-4">
+            <a
+              href="#projetos"
+              class="bg-white text-green-600 px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition-all"
+            >
+              Explorar Projetos
+            </a>
+            <a
+              href="#tutoriais"
+              class="border-2 border-white text-white px-8 py-3 rounded-lg font-bold hover:bg-white hover:text-green-600 transition-all"
+            >
+              Tutoriais Gratuitos
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mission Section -->
+    <section class="py-16 bg-gray-800">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-12">
+          <h2 class="text-4xl font-bold mb-6">
+            <span class="gradient-text">Nossa Missão</span>
+          </h2>
+          <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+            Democratizar o conhecimento tecnológico, oferecendo ferramentas,
+            tutoriais e projetos completamente gratuitos para que qualquer
+            pessoa possa aprender, empreender e transformar sua vida através da
+            tecnologia.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="service-card bg-gray-700 p-8 rounded-xl text-center">
+            <i class="fas fa-graduation-cap text-4xl text-green-400 mb-4"></i>
+            <h3 class="text-xl font-bold mb-4">Educação Gratuita</h3>
+            <p class="text-gray-300">
+              Tutoriais completos e projetos práticos para aprender programação
+              do zero ao avançado.
+            </p>
+          </div>
+
+          <div class="service-card bg-gray-700 p-8 rounded-xl text-center">
+            <i class="fas fa-code-branch text-4xl text-blue-400 mb-4"></i>
+            <h3 class="text-xl font-bold mb-4">Código Aberto</h3>
+            <p class="text-gray-300">
+              Todos os projetos com código fonte disponível no GitHub para
+              estudar e modificar livremente.
+            </p>
+          </div>
+
+          <div class="service-card bg-gray-700 p-8 rounded-xl text-center">
+            <i class="fas fa-rocket text-4xl text-purple-400 mb-4"></i>
+            <h3 class="text-xl font-bold mb-4">Empreendedorismo</h3>
+            <p class="text-gray-300">
+              Ferramentas e guias completos para transformar conhecimento em
+              oportunidades de negócio.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Free Projects Section -->
+    <section id="projetos" class="py-16">
+      <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center mb-12">
+          <span class="gradient-text">Projetos Gratuitos</span>
+        </h2>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+          <!-- DeiviTech Formatação -->
+          <div class="service-card bg-gray-800 p-8 rounded-xl">
+            <div
+              class="project-showcase h-48 bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center mb-6 relative"
+            >
+              <i class="fas fa-desktop text-6xl text-white"></i>
+              <div class="project-overlay">
+                <div class="text-center">
+                  <i
+                    class="fas fa-external-link-alt text-3xl text-white mb-2"
+                  ></i>
+                  <p class="text-white font-bold">Ver Demonstração</p>
+                </div>
+              </div>
+            </div>
+
+            <h3 class="text-2xl font-bold mb-4">🖥️ DeiviTech Formatação</h3>
+            <p class="text-gray-300 mb-4">
+              Site completo para negócio de formatação com carrinho inteligente,
+              análise IA e sistema de combos.
+            </p>
+
+            <div class="bg-green-900 p-4 rounded mb-4">
+              <h4 class="font-bold mb-2">📚 O que você aprende:</h4>
+              <ul class="text-sm space-y-1">
+                <li>✅ HTML5, CSS3 e JavaScript avançado</li>
+                <li>✅ Sistema de carrinho dinâmico</li>
+                <li>✅ Integração com WhatsApp API</li>
+                <li>✅ Design responsivo moderno</li>
+                <li>✅ Análise de dados com IA</li>
+              </ul>
+            </div>
+
+            <div class="flex space-x-3">
+              <a
+                href="https://deivisan.github.io/DeiviTech-Formatacao/"
+                target="_blank"
+                class="flex-1 bg-blue-500 hover:bg-blue-600 py-3 rounded-lg font-bold text-center transition-all"
+              >
+                <i class="fas fa-eye mr-2"></i>Ver Demo
+              </a>
+              <a
+                href="https://github.com/deivisan/DeiviTech-Formatacao"
+                target="_blank"
+                class="flex-1 bg-gray-600 hover:bg-gray-700 py-3 rounded-lg font-bold text-center transition-all"
+              >
+                <i class="fab fa-github mr-2"></i>Código
+              </a>
+            </div>
+          </div>
+
+          <!-- Monte Seu Notebook -->
+          <div class="service-card bg-gray-800 p-8 rounded-xl">
+            <div
+              class="project-showcase h-48 bg-gradient-to-r from-green-500 to-blue-600 flex items-center justify-center mb-6 relative"
+            >
+              <i class="fas fa-laptop text-6xl text-white"></i>
+              <div class="project-overlay">
+                <div class="text-center">
+                  <i
+                    class="fas fa-external-link-alt text-3xl text-white mb-2"
+                  ></i>
+                  <p class="text-white font-bold">Ver Demonstração</p>
+                </div>
+              </div>
+            </div>
+
+            <h3 class="text-2xl font-bold mb-4">💻 Configurador de Notebook</h3>
+            <p class="text-gray-300 mb-4">
+              Sistema interativo para personalização de notebooks com
+              calculadora em tempo real e comparação de preços.
+            </p>
+
+            <div class="bg-green-900 p-4 rounded mb-4">
+              <h4 class="font-bold mb-2">📚 O que você aprende:</h4>
+              <ul class="text-sm space-y-1">
+                <li>✅ JavaScript modular e orientado a objetos</li>
+                <li>✅ Manipulação dinâmica do DOM</li>
+                <li>✅ Sistemas de configuração complexos</li>
+                <li>✅ Calculadoras interativas</li>
+                <li>✅ UX/UI para e-commerce</li>
+              </ul>
+            </div>
+
+            <div class="flex space-x-3">
+              <a
+                href="https://deivisan.github.io/DeiviTech-Monte-Seu-Notebook/"
+                target="_blank"
+                class="flex-1 bg-blue-500 hover:bg-blue-600 py-3 rounded-lg font-bold text-center transition-all"
+              >
+                <i class="fas fa-eye mr-2"></i>Ver Demo
+              </a>
+              <a
+                href="https://github.com/deivisan/DeiviTech-Monte-Seu-Notebook"
+                target="_blank"
+                class="flex-1 bg-gray-600 hover:bg-gray-700 py-3 rounded-lg font-bold text-center transition-all"
+              >
+                <i class="fab fa-github mr-2"></i>Código
+              </a>
+            </div>
+          </div>
+
+          <!-- Automation Scripts -->
+          <div class="service-card bg-gray-800 p-8 rounded-xl">
+            <div
+              class="project-showcase h-48 bg-gradient-to-r from-purple-500 to-pink-600 flex items-center justify-center mb-6 relative"
+            >
+              <i class="fas fa-robot text-6xl text-white"></i>
+              <div class="project-overlay">
+                <div class="text-center">
+                  <i
+                    class="fas fa-external-link-alt text-3xl text-white mb-2"
+                  ></i>
+                  <p class="text-white font-bold">Ver Repositório</p>
+                </div>
+              </div>
+            </div>
+
+            <h3 class="text-2xl font-bold mb-4">🤖 Scripts de Automação</h3>
+            <p class="text-gray-300 mb-4">
+              Coleção de automações Python para produtividade, organização de
+              arquivos e tarefas repetitivas.
+            </p>
+
+            <div class="bg-green-900 p-4 rounded mb-4">
+              <h4 class="font-bold mb-2">📚 O que você aprende:</h4>
+              <ul class="text-sm space-y-1">
+                <li>✅ Python para automação</li>
+                <li>✅ Manipulação de arquivos e pastas</li>
+                <li>✅ Web scraping e APIs</li>
+                <li>✅ Relatórios automáticos</li>
+                <li>✅ Agendamento de tarefas</li>
+              </ul>
+            </div>
+
+            <div class="flex space-x-3">
+              <a
+                href="https://github.com/deivisan/automation-scripts"
+                target="_blank"
+                class="flex-1 bg-purple-500 hover:bg-purple-600 py-3 rounded-lg font-bold text-center transition-all"
+              >
+                <i class="fab fa-github mr-2"></i>Repositório
+              </a>
+              <a
+                href="#tutorial-python"
+                class="flex-1 bg-gray-600 hover:bg-gray-700 py-3 rounded-lg font-bold text-center transition-all"
+              >
+                <i class="fas fa-book mr-2"></i>Tutorial
+              </a>
+            </div>
+          </div>
+
+          <!-- Idelizador do Futuro -->
+          <div
+            class="service-card bg-gray-800 p-8 rounded-xl border-2 border-green-500"
+          >
+            <div
+              class="project-showcase h-48 bg-gradient-to-r from-green-400 to-cyan-500 flex items-center justify-center mb-6 relative"
+            >
+              <i class="fas fa-brain text-6xl text-white"></i>
+              <div class="project-overlay">
+                <div class="text-center">
+                  <i
+                    class="fas fa-external-link-alt text-3xl text-white mb-2"
+                  ></i>
+                  <p class="text-white font-bold">Em Desenvolvimento</p>
+                </div>
+              </div>
+            </div>
+
+            <h3 class="text-2xl font-bold mb-4">
+              🧠 Idelizador do Futuro
+              <span class="text-green-400 text-sm">(NOVO!)</span>
+            </h3>
+            <p class="text-gray-300 mb-4">
+              IA revolucionária para geração de ideias de negócio personalizadas
+              usando análise de mercado em tempo real.
+            </p>
+
+            <div class="bg-green-900 p-4 rounded mb-4">
+              <h4 class="font-bold mb-2">🚀 Tecnologias avançadas:</h4>
+              <ul class="text-sm space-y-1">
+                <li>✅ IA com API atualizada</li>
+                <li>✅ Análise de mercado em tempo real</li>
+                <li>✅ Machine Learning para personalização</li>
+                <li>✅ Interface conversacional</li>
+                <li>✅ Integração com dados econômicos</li>
+              </ul>
+            </div>
+
+            <div class="flex space-x-3">
+              <button
+                onclick="showComingSoon()"
+                class="flex-1 bg-green-500 hover:bg-green-600 py-3 rounded-lg font-bold text-center transition-all"
+              >
+                <i class="fas fa-rocket mr-2"></i>Em Breve
+              </button>
+              <a
+                href="#idelizador-tutorial"
+                class="flex-1 bg-gray-600 hover:bg-gray-700 py-3 rounded-lg font-bold text-center transition-all"
+              >
+                <i class="fas fa-info mr-2"></i>Saiba Mais
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tutorials Section -->
+    <section id="tutoriais" class="py-16 bg-gray-800">
+      <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center mb-12">
+          <span class="gradient-text">Tutoriais Completos</span>
+        </h2>
+
+        <!-- Web Development Tutorial -->
+        <div class="max-w-4xl mx-auto mb-12">
+          <div class="bg-gray-700 p-8 rounded-xl">
+            <h3 class="text-3xl font-bold mb-6 flex items-center">
+              <i class="fas fa-code text-blue-400 mr-4"></i>
+              Como Criar um Site de Formatação Completo
+            </h3>
+
+            <div class="space-y-6">
+              <div class="tutorial-step bg-gray-800 p-6 rounded-lg">
+                <h4 class="text-xl font-bold mb-3">
+                  📋 Passo 1: Estrutura HTML
+                </h4>
+                <div class="code-block p-4 mb-4">
+                  <button class="copy-btn" onclick="copyCode(this)">
+                    Copiar
+                  </button>
+                  <pre
+                    class="text-green-400 text-sm overflow-x-auto"
+                  ><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="pt-BR"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Minha Loja de Formatação&lt;/title&gt;
+    &lt;link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"&gt;
+&lt;/head&gt;
+&lt;body class="bg-gray-900 text-white"&gt;
+    &lt;!-- Seu conteúdo aqui --&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                </div>
+                <p class="text-gray-300">
+                  Comece com uma estrutura HTML5 semântica e adicione o Tailwind
+                  CSS para estilização rápida.
+                </p>
+              </div>
+
+              <div class="tutorial-step bg-gray-800 p-6 rounded-lg">
+                <h4 class="text-xl font-bold mb-3">
+                  🛒 Passo 2: Sistema de Carrinho
+                </h4>
+                <div class="code-block p-4 mb-4">
+                  <button class="copy-btn" onclick="copyCode(this)">
+                    Copiar
+                  </button>
+                  <pre
+                    class="text-green-400 text-sm overflow-x-auto"
+                  ><code>class CarrinhoManager {
+    constructor() {
+        this.itens = [];
+        this.total = 0;
+    }
+
+    adicionarItem(produto, preco) {
+        this.itens.push({ produto, preco });
+        this.atualizarTotal();
+        this.renderizarCarrinho();
+    }
+
+    atualizarTotal() {
+        this.total = this.itens.reduce((sum, item) => sum + item.preco, 0);
+    }
+}</code></pre>
+                </div>
+                <p class="text-gray-300">
+                  Crie uma classe JavaScript para gerenciar o carrinho de
+                  compras de forma dinâmica.
+                </p>
+              </div>
+
+              <div class="tutorial-step bg-gray-800 p-6 rounded-lg">
+                <h4 class="text-xl font-bold mb-3">
+                  💬 Passo 3: Integração WhatsApp
+                </h4>
+                <div class="code-block p-4 mb-4">
+                  <button class="copy-btn" onclick="copyCode(this)">
+                    Copiar
+                  </button>
+                  <pre
+                    class="text-green-400 text-sm overflow-x-auto"
+                  ><code>function enviarPedido() {
+    const itens = carrinho.itens.map(item =>
+        `${item.produto} - R$ ${item.preco}`
+    ).join('\n');
+
+    const mensagem = `Pedido:\n${itens}\n\nTotal: R$ ${carrinho.total}`;
+    const url = `https://wa.me/5575981231019?text=${encodeURIComponent(mensagem)}`;
+
+    window.open(url, '_blank');
+}</code></pre>
+                </div>
+                <p class="text-gray-300">
+                  Automatize o envio de pedidos via WhatsApp com uma função
+                  JavaScript simples.
+                </p>
+              </div>
+
+              <div class="bg-blue-900 p-6 rounded-lg">
+                <h4 class="text-xl font-bold mb-3">🎯 Resultado Final</h4>
+                <p class="text-gray-300 mb-4">
+                  Com esses passos você terá um site profissional de formatação
+                  com carrinho funcional e integração WhatsApp.
+                </p>
+                <div class="flex space-x-4">
+                  <a
+                    href="https://deivisan.github.io/DeiviTech-Formatacao/"
+                    target="_blank"
+                    class="bg-blue-500 hover:bg-blue-600 px-6 py-3 rounded-lg font-bold transition-all"
+                  >
+                    <i class="fas fa-eye mr-2"></i>Ver Exemplo
+                  </a>
+                  <a
+                    href="https://github.com/deivisan/DeiviTech-Formatacao"
+                    target="_blank"
+                    class="bg-gray-600 hover:bg-gray-700 px-6 py-3 rounded-lg font-bold transition-all"
+                  >
+                    <i class="fab fa-github mr-2"></i>Código Completo
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Python Automation Tutorial -->
+        <div id="tutorial-python" class="max-w-4xl mx-auto mb-12">
+          <div class="bg-gray-700 p-8 rounded-xl">
+            <h3 class="text-3xl font-bold mb-6 flex items-center">
+              <i class="fab fa-python text-yellow-400 mr-4"></i>
+              Automações Python para Produtividade
+            </h3>
+
+            <div class="space-y-6">
+              <div class="tutorial-step bg-gray-800 p-6 rounded-lg">
+                <h4 class="text-xl font-bold mb-3">
+                  🗂️ Organizador de Arquivos
+                </h4>
+                <div class="code-block p-4 mb-4">
+                  <button class="copy-btn" onclick="copyCode(this)">
+                    Copiar
+                  </button>
+                  <pre
+                    class="text-green-400 text-sm overflow-x-auto"
+                  ><code>import os
+import shutil
+from pathlib import Path
+
+def organizar_downloads():
+    downloads = Path.home() / "Downloads"
+
+    extensoes = {
+        'Imagens': ['.jpg', '.png', '.gif', '.svg'],
+        'Documentos': ['.pdf', '.doc', '.txt', '.xlsx'],
+        'Videos': ['.mp4', '.avi', '.mkv'],
+        'Programas': ['.exe', '.msi', '.deb']
+    }
+
+    for arquivo in downloads.iterdir():
+        if arquivo.is_file():
+            for pasta, exts in extensoes.items():
+                if arquivo.suffix.lower() in exts:
+                    destino = downloads / pasta
+                    destino.mkdir(exist_ok=True)
+                    shutil.move(str(arquivo), str(destino / arquivo.name))
+                    break</code></pre>
+                </div>
+                <p class="text-gray-300">
+                  Script para organizar automaticamente arquivos por tipo nas
+                  pastas Downloads.
+                </p>
+              </div>
+
+              <div class="tutorial-step bg-gray-800 p-6 rounded-lg">
+                <h4 class="text-xl font-bold mb-3">📊 Gerador de Relatórios</h4>
+                <div class="code-block p-4 mb-4">
+                  <button class="copy-btn" onclick="copyCode(this)">
+                    Copiar
+                  </button>
+                  <pre
+                    class="text-green-400 text-sm overflow-x-auto"
+                  ><code>import pandas as pd
+from datetime import datetime
+import matplotlib.pyplot as plt
+
+def gerar_relatorio_vendas(dados):
+    df = pd.DataFrame(dados)
+
+    # Análise por mês
+    df['data'] = pd.to_datetime(df['data'])
+    vendas_mes = df.groupby(df['data'].dt.month)['valor'].sum()
+
+    # Gráfico
+    plt.figure(figsize=(10, 6))
+    vendas_mes.plot(kind='bar')
+    plt.title('Vendas por Mês')
+    plt.xlabel('Mês')
+    plt.ylabel('Valor (R$)')
+    plt.tight_layout()
+
+    # Salvar
+    plt.savefig(f'relatorio_{datetime.now().strftime("%Y%m%d")}.png')
+
+    return df.describe()</code></pre>
+                </div>
+                <p class="text-gray-300">
+                  Gere relatórios automáticos com gráficos usando pandas e
+                  matplotlib.
+                </p>
+              </div>
+
+              <div class="bg-yellow-900 p-6 rounded-lg">
+                <h4 class="text-xl font-bold mb-3">⚡ Dicas de Automação</h4>
+                <ul class="space-y-2 text-gray-300">
+                  <li>
+                    • Use
+                    <code class="bg-gray-700 px-2 py-1 rounded">schedule</code>
+                    para agendar tarefas
+                  </li>
+                  <li>
+                    •
+                    <code class="bg-gray-700 px-2 py-1 rounded">requests</code>
+                    para APIs e web scraping
+                  </li>
+                  <li>
+                    •
+                    <code class="bg-gray-700 px-2 py-1 rounded">openpyxl</code>
+                    para manipular Excel
+                  </li>
+                  <li>
+                    •
+                    <code class="bg-gray-700 px-2 py-1 rounded">selenium</code>
+                    para automação web complexa
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Idelizador Tutorial -->
+        <div id="idelizador-tutorial" class="max-w-4xl mx-auto">
+          <div class="bg-gray-700 p-8 rounded-xl border-2 border-green-500">
+            <h3 class="text-3xl font-bold mb-6 flex items-center">
+              <i class="fas fa-brain text-green-400 mr-4"></i>
+              Idelizador do Futuro - IA para Ideias de Negócio
+            </h3>
+
+            <div class="space-y-6">
+              <div class="bg-green-900 p-6 rounded-lg">
+                <h4 class="text-xl font-bold mb-3">🚀 O que é o Idelizador?</h4>
+                <p class="text-gray-300 mb-4">
+                  Uma IA revolucionária que analisa seu perfil, região,
+                  habilidades e tendências de mercado para gerar ideias de
+                  negócio personalizadas com viabilidade real.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div class="bg-gray-800 p-4 rounded">
+                    <h5 class="font-bold text-green-400 mb-2">
+                      📈 Análise de Mercado
+                    </h5>
+                    <p class="text-sm text-gray-300">
+                      Dados em tempo real de tendências, concorrência e
+                      oportunidades
+                    </p>
+                  </div>
+                  <div class="bg-gray-800 p-4 rounded">
+                    <h5 class="font-bold text-green-400 mb-2">
+                      🎯 Personalização
+                    </h5>
+                    <p class="text-sm text-gray-300">
+                      Ideias baseadas em suas habilidades e localização
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tutorial-step bg-gray-800 p-6 rounded-lg">
+                <h4 class="text-xl font-bold mb-3">
+                  🔧 Tecnologias Utilizadas
+                </h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div>
+                    <h5 class="font-bold text-blue-400 mb-2">Frontend</h5>
+                    <ul class="text-sm text-gray-300 space-y-1">
+                      <li>• React/Next.js para interface moderna</li>
+                      <li>• TailwindCSS para estilização</li>
+                      <li>• Chart.js para visualizações</li>
+                      <li>• PWA para uso offline</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h5 class="font-bold text-green-400 mb-2">Backend & IA</h5>
+                    <ul class="text-sm text-gray-300 space-y-1">
+                      <li>• OpenAI GPT-4 com API atualizada</li>
+                      <li>• Node.js para backend</li>
+                      <li>• APIs de dados econômicos</li>
+                      <li>• Machine Learning personalizado</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tutorial-step bg-gray-800 p-6 rounded-lg">
+                <h4 class="text-xl font-bold mb-3">
+                  💡 Como Replicar o Projeto
+                </h4>
+                <div class="code-block p-4 mb-4">
+                  <button class="copy-btn" onclick="copyCode(this)">
+                    Copiar
+                  </button>
+                  <pre
+                    class="text-green-400 text-sm overflow-x-auto"
+                  ><code># 1. Clone o repositório (disponível em breve)
+git clone https://github.com/deivisan/idelizador-futuro
+cd idelizador-futuro
+
+# 2. Instale as dependências
+npm install
+
+# 3. Configure as variáveis de ambiente
+echo "OPENAI_API_KEY=sua_chave_aqui" > .env
+echo "MARKET_API_KEY=sua_chave_aqui" >> .env
+
+# 4. Execute o projeto
+npm run dev</code></pre>
+                </div>
+                <p class="text-gray-300">
+                  Guia completo será disponibilizado quando o projeto estiver
+                  finalizado.
+                </p>
+              </div>
+
+              <div class="bg-green-900 p-6 rounded-lg">
+                <h4 class="text-xl font-bold mb-3">
+                  📅 Cronograma de Desenvolvimento
+                </h4>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                  <div class="bg-gray-800 p-4 rounded text-center">
+                    <div class="text-2xl font-bold text-green-400 mb-2">
+                      Fase 1
+                    </div>
+                    <div class="text-sm">Integração IA e análise básica</div>
+                    <div class="text-xs text-gray-400 mt-2">Janeiro 2025</div>
+                  </div>
+                  <div class="bg-gray-800 p-4 rounded text-center">
+                    <div class="text-2xl font-bold text-yellow-400 mb-2">
+                      Fase 2
+                    </div>
+                    <div class="text-sm">
+                      Interface completa e personalização
+                    </div>
+                    <div class="text-xs text-gray-400 mt-2">Fevereiro 2025</div>
+                  </div>
+                  <div class="bg-gray-800 p-4 rounded text-center">
+                    <div class="text-2xl font-bold text-blue-400 mb-2">
+                      Fase 3
+                    </div>
+                    <div class="text-sm">Lançamento público e tutoriais</div>
+                    <div class="text-xs text-gray-400 mt-2">Março 2025</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-blue-900 p-6 rounded-lg">
+                <h4 class="text-xl font-bold mb-3">🎯 Potencial Comercial</h4>
+                <p class="text-gray-300 mb-4">
+                  Este projeto tem potencial para se tornar uma ferramenta SaaS
+                  com valor comercial. Você pode usar o código para criar sua
+                  própria versão e monetizar através de:
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <ul class="text-sm text-gray-300 space-y-1">
+                    <li>• Consultoria em inovação empresarial</li>
+                    <li>• Planos premium com análises avançadas</li>
+                    <li>• White label para grandes empresas</li>
+                  </ul>
+                  <ul class="text-sm text-gray-300 space-y-1">
+                    <li>• Cursos sobre empreendedorismo com IA</li>
+                    <li>• Licenciamento da tecnologia</li>
+                    <li>• Parcerias com incubadoras</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Community Section -->
+    <section class="py-16">
+      <div class="container mx-auto px-6">
+        <div
+          class="bg-gradient-to-r from-green-600 to-blue-600 p-8 rounded-xl text-center"
+        >
+          <h2 class="text-3xl font-bold mb-4">Junte-se à Comunidade</h2>
+          <p class="text-xl mb-8 opacity-90">
+            Conecte-se com outros desenvolvedores, tire dúvidas e compartilhe
+            suas criações
+          </p>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <a
+              href="https://github.com/deivisan"
+              target="_blank"
+              class="bg-white text-gray-900 p-6 rounded-lg hover:bg-gray-100 transition-all"
+            >
+              <i class="fab fa-github text-3xl mb-3"></i>
+              <div class="font-bold">GitHub</div>
+              <div class="text-sm">Códigos e projetos</div>
+            </a>
+
+            <a
+              href="https://wa.me/5575981231019?text=Olá! Gostaria de participar da comunidade DeiviTech"
+              target="_blank"
+              class="bg-white text-gray-900 p-6 rounded-lg hover:bg-gray-100 transition-all"
+            >
+              <i class="fab fa-whatsapp text-3xl mb-3"></i>
+              <div class="font-bold">WhatsApp</div>
+              <div class="text-sm">Suporte direto</div>
+            </a>
+
+            <a
+              href="https://linkedin.com/in/deivison-santana"
+              target="_blank"
+              class="bg-white text-gray-900 p-6 rounded-lg hover:bg-gray-100 transition-all"
+            >
+              <i class="fab fa-linkedin text-3xl mb-3"></i>
+              <div class="font-bold">LinkedIn</div>
+              <div class="text-sm">Rede profissional</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-8 border-t border-gray-700">
+      <div class="container mx-auto px-6 text-center">
+        <div class="mb-6">
+          <h3 class="text-xl font-bold mb-4">Filantropia DeiviTech</h3>
+          <p class="text-gray-400 max-w-2xl mx-auto">
+            Acreditamos que o conhecimento deve ser livre e acessível a todos.
+            Cada projeto compartilhado é uma semente para um futuro melhor.
+          </p>
+        </div>
+
+        <div class="flex justify-center space-x-6 mb-6">
+          <a
+            href="https://github.com/deivisan"
+            target="_blank"
+            class="text-gray-400 hover:text-white"
+          >
+            <i class="fab fa-github text-xl"></i>
+          </a>
+          <a
+            href="https://linkedin.com/in/deivison-santana"
+            target="_blank"
+            class="text-gray-400 hover:text-white"
+          >
+            <i class="fab fa-linkedin text-xl"></i>
+          </a>
+          <a
+            href="https://wa.me/5575981231019"
+            target="_blank"
+            class="text-gray-400 hover:text-white"
+          >
+            <i class="fab fa-whatsapp text-xl"></i>
+          </a>
+        </div>
+
+        <div class="text-gray-400">
+          <p>
+            &copy; 2025 Filantropia DeiviTech. Conhecimento livre para todos.
+          </p>
+          <p class="mt-2">
+            Feito com ❤️ para a comunidade •
+            <a
+              href="../FreelancerDeiviTech/"
+              class="text-green-400 hover:text-green-300"
+              >Serviços Comerciais</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Coming Soon Modal -->
+    <div
+      id="comingSoonModal"
+      class="fixed inset-0 bg-black bg-opacity-50 hidden z-50 flex items-center justify-center"
+    >
+      <div class="bg-gray-800 p-8 rounded-xl max-w-md w-full mx-4 text-center">
+        <i class="fas fa-rocket text-6xl text-green-400 mb-4"></i>
+        <h3 class="text-2xl font-bold mb-4">Em Desenvolvimento!</h3>
+        <p class="text-gray-300 mb-6">
+          O Idelizador do Futuro está sendo finalizado com as mais modernas
+          tecnologias de IA. Em breve você terá acesso completo ao código e
+          tutoriais.
+        </p>
+        <button
+          onclick="closeComingSoon()"
+          class="bg-green-500 hover:bg-green-600 px-8 py-3 rounded-lg font-bold"
+        >
+          Entendi!
+        </button>
+      </div>
+    </div>
+
+    <script>
+      function copyCode(button) {
+        const codeBlock = button.nextElementSibling.textContent;
+        navigator.clipboard.writeText(codeBlock).then(() => {
+          button.textContent = "Copiado!";
+          button.style.background = "#10b981";
+          setTimeout(() => {
+            button.textContent = "Copiar";
+            button.style.background = "#374151";
+          }, 2000);
+        });
+      }
+
+      function showComingSoon() {
+        document.getElementById("comingSoonModal").classList.remove("hidden");
+      }
+
+      function closeComingSoon() {
+        document.getElementById("comingSoonModal").classList.add("hidden");
+      }
+
+      // Smooth scrolling
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
+            });
+          }
+        });
+      });
+
+      // Project showcase interactions
+      document.querySelectorAll(".project-showcase").forEach((showcase) => {
+        showcase.addEventListener("click", function () {
+          const projectCard = this.closest(".service-card");
+          const demoLink = projectCard.querySelector(
+            'a[href*="deivisan.github.io"], a[href*="github.com"]'
+          );
+          if (demoLink) {
+            window.open(demoLink.href, "_blank");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
