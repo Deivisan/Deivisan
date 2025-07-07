@@ -43,28 +43,11 @@
 - Clonagem de HD
 - Migração para SSD
 
-## 💰 Preços
-
-| Serviço         | Valor     | Tempo |
-| --------------- | --------- | ----- |
-| Windows 11 Pro  | R$ 120,00 | 24h   |
-| Windows 10 Pro  | R$ 100,00 | 24h   |
-| Ghost Spectre   | R$ 150,00 | 24h   |
-| Arch Linux      | R$ 180,00 | 48h   |
-| Dual Boot       | R$ 250,00 | 48h   |
-| Recovery/Backup | R$ 80,00  | 12h   |
-
-## ✨ Diferenciais
-
-- ✅ **Garantia de 30 dias**
-- ✅ **150+ PCs formatados**
-- ✅ **98% de satisfação**
-- ✅ **Suporte técnico incluso**
-- ✅ **Atendimento em Feira de Santana e região**
-
-## 🌐 Acesse o Site
+## 🌐 Acesse o Site para Preços
 
 **[🔗 DeiviTech Formatação](https://deivisan.github.io/DeiviTech-Formatacao/)**
+
+*Consulte valores atualizados e promoções diretamente no site oficial.*
 
 ## 📱 Contato
 

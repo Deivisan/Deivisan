@@ -33,7 +33,7 @@
 - **Backup e Migração**: Dados seguros durante o processo
 - **Otimização de Performance**: Registry, startup, services, drivers
 
-**💰 Preços**: R$ 80,00 - R$ 200,00 | **⏱️ Prazo**: 24-48h
+**💰 Preços**: Consulte valores no site | **⏱️ Prazo**: 24-48h
 **🌐 [Site Especializado](https://deivisan.github.io/DeiviTech-Formatacao/)**
 
 ---
@@ -47,7 +47,7 @@
 - **PWA (Progressive Web Apps)**: Apps web que funcionam offline
 - **SEO e Performance**: Otimização para buscadores e velocidade
 
-**💰 Preços**: R$ 500,00 - R$ 5.000,00 | **⏱️ Prazo**: 7-30 dias
+**💰 Preços**: Consulte valores no site | **⏱️ Prazo**: 7-30 dias
 **🌐 [Portfólio de Sites](https://deivisan.github.io/DeiviTech-WebDev/)**
 
 ---
@@ -61,7 +61,7 @@
 - **Integração APIs**: Sistemas externos, pagamentos, analytics
 - **Publicação**: Google Play Store e distribuição
 
-**💰 Preços**: R$ 1.500,00 - R$ 8.000,00 | **⏱️ Prazo**: 15-60 dias
+**💰 Preços**: Consulte valores no site | **⏱️ Prazo**: 15-60 dias
 **🌐 [Em Desenvolvimento](https://github.com/deivisan/DeiviTech-MobileDev)**
 
 ---
@@ -75,7 +75,7 @@
 - **Bots e Assistentes**: Telegram, WhatsApp, Discord
 - **Backup e Monitoramento**: Scripts de manutenção automática
 
-**💰 Preços**: R$ 200,00 - R$ 2.000,00 | **⏱️ Prazo**: 3-15 dias
+**💰 Preços**: Consulte valores no site | **⏱️ Prazo**: 3-15 dias
 **🌐 [Scripts Disponíveis](https://deivisan.github.io/DeiviTech-Automacao/)**
 
 ---
@@ -89,7 +89,7 @@
 - **Planejamento Tech**: Roadmaps, migração, modernização
 - **Suporte Técnico**: Contratos mensais de manutenção preventiva
 
-**💰 Preços**: R$ 150,00/h - Contratos personalizados | **⏱️ Prazo**: Sob demanda
+**💰 Preços**: Consulte valores no site | **⏱️ Prazo**: Sob demanda
 **🌐 [Agendar Consultoria](https://deivisan.github.io/DeiviTech-Consultoria/)**
 
 ---
