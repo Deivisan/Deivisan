@@ -12,7 +12,7 @@
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
   </a>
   <a href="mailto:deivilsantana@outlook.com" target="_blank">
-    <img src="https://img.shields.io/badge/Outlook-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white" alt="Email">
+    <img src="https://img.shields.io/badge/Email-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white" alt="Email">
   </a>
    <a href="https://wa.me/5575981231019?text=acabei+de+ver+seu+repositorio+do+github" target="_blank">
     <img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp">
@@ -173,16 +173,14 @@ Portfólio profissional responsivo com design moderno e animações CSS.
 
 ### 🧠 **Idealizador do Futuro - IA Revolucionária**
 
-**🌐 [Ver Demo](https://deivisan.github.io/Experimentos/DT~Idealizador.html)** | **📁 [Ver Código](https://github.com/deivisan/experimentos)** | **📖 [Documentação](https://github.com/deivisan/experimentos/blob/main/README-Idealizador.md)**
+**🌐 [Ver Demo](https://deivisan.github.io/Experimentos/DT~Idealizador.html)** | **📁 [Ver Código](https://github.com/deivisan/experimentos)**
 
 IA revolucionária para geração de ideias de negócio com análise de mercado em tempo real.
 
-#### 🎯 **Funcionalidades Principais:**
-
-- **🔮 Geração Inteligente:** Ideias personalizadas baseadas em perfil profissional
-- **📊 Análise de Mercado:** Pesquisa de tendências e viabilidade em tempo real
-- **🎨 Interface 3D:** Experiência imersiva com Three.js
-- **📈 Performance:** 95+ Lighthouse Score otimizado
+- Geração inteligente de ideias personalizadas
+- Análise de mercado em tempo real
+- Interface 3D imersiva com Three.js
+- Performance 95+ Lighthouse Score
 
 **💡 Tecnologias:** Google Gemini API, Three.js, Chart.js, HTML5, JavaScript
 
@@ -212,7 +210,7 @@ Coleção de automações Python para otimização de tarefas e produtividade.
 <div align="center">
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/deivisonlsantana)
-[![Outlook](https://img.shields.io/badge/Outlook-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white)](mailto:deivilsantana@outlook.com)
+[![Email](https://img.shields.io/badge/Email-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white)](mailto:deivilsantana@outlook.com)
 [![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/5575981231019)
 [![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=todoist&logoColor=white)](https://deivisan.github.io/)
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/deivisan)
