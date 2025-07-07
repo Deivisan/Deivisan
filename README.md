@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&pause=1000&color=2563EB&random=false&width=600&lines=Olá,+sou+o+Deivison+Santana!;Desenvolvedor+Junior;Fundador+da+DeiviTech;Bem-vindo+ao+meu+perfil!" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&pause=### 🛒 **[FreelancerDeiviTech - Loja Digital](https://deivisan.github.io/FreelancerDeiviTech/)**000&color=2563EB&random=false&width=600&lines=Olá,+sou+o+Deivison+Santana!;Desenvolvedor+Junior;Fundador+da+DeiviTech;Bem-vindo+ao+meu+perfil!" alt="Typing SVG" />
 
 </div>
 
@@ -90,17 +90,59 @@ Pronto para novos desafios, com **flexibilidade para atuar em Feira de Santana e
 
 ## 🚀 **Projetos em Destaque**
 
-### 🖥️ [DeiviTech Formatação](https://deivisan.github.io/DeiviTech-Formatacao/)
-Sistema completo para negócio de formatação com carrinho inteligente, análise IA e integração WhatsApp.
+### � **[FreelancerDeiviTech - Loja Digital](https://deivisan.github.io/FreelancerDeiviTech/)**
+**🌐 [Ver Site](https://deivisan.github.io/FreelancerDeiviTech/)** | **📁 [Repositório](https://github.com/Deivisan/FreelancerDeiviTech)**
 
-### 💻 [Configurador de Notebook](https://deivisan.github.io/DeiviTech-Monte-Seu-Notebook/)
-Ferramenta interativa para personalização de notebooks com cálculo automático de preços e comparações.
+Loja digital completa com calculadora de preços, 6 categorias de serviços e integração WhatsApp.
+- 🧮 **Calculadora Interativa** - Orçamentos dinâmicos
+- 💰 **Preços Acessíveis** - Desenvolvimento web a partir de R$ 150
+- 📱 **WhatsApp Integrado** - Contato direto com valores
+- 🎯 **Portfolio Conectado** - Links para todos os projetos
 
-### 🤖 [Scripts de Automação](https://github.com/deivisan/automation-scripts)
+### 🔧 **[DeiviTech Formatação](https://deivisan.github.io/DeiviTech-Formatacao/)**
+**🌐 [Ver Site](https://deivisan.github.io/DeiviTech-Formatacao/)** | **📁 [Repositório](https://github.com/Deivisan/DeiviTech-Formatacao)**
+
+Sistema completo para negócio de formatação com 5 páginas especializadas e carrinho inteligente.
+- 🖥️ **5 Páginas Modulares** - Formatação, Hardware, Sistemas, IA, Agendamento
+- 🛒 **Carrinho Inteligente** - Detecção automática de compatibilidade
+- 🤖 **Análise IA** - 3 métodos de diagnóstico (automática, manual, upload)
+- 📊 **Charts Interativos** - Comparação de performance
+
+### 💻 **[Configurador de Notebook](https://deivisan.github.io/DeiviTech-Monte-Seu-Notebook/)**
+**🌐 [Ver Site](https://deivisan.github.io/DeiviTech-Monte-Seu-Notebook/)** | **📁 [Repositório](https://github.com/Deivisan/DeiviTech-Monte-Seu-Notebook)**
+
+Ferramenta interativa para personalização de notebooks com cálculo automático de preços.
+- ⚙️ **Configurador Dinâmico** - Seleção de componentes inteligente
+- 💰 **Calculadora Avançada** - Preços em tempo real
+- 📊 **Modo Básico/Avançado** - Interface adaptável
+- 📋 **Info Detalhada** - Especificações completas
+
+### 📄 **[Currículo Digital Interativo](https://deivisan.github.io/Curriculo-Deivison/)**
+**🌐 [Ver Site](https://deivisan.github.io/Curriculo-Deivison/)** | **📁 [Repositório](https://github.com/Deivisan/Curriculo-Deivison)**
+
+Portfólio profissional responsivo com design moderno e animações CSS.
+- 🎨 **Design Profissional** - Layout moderno e responsivo
+- 📱 **Mobile-First** - Otimizado para todos os dispositivos
+- 🖨️ **Print-Ready** - Versão otimizada para impressão
+- ⚡ **Animações CSS** - Transições suaves e elegantes
+
+### 🤖 **[Scripts de Automação](https://github.com/Deivisan/automation-scripts)**
+**📁 [Repositório](https://github.com/Deivisan/automation-scripts)**
+
 Coleção de automações Python para produtividade, backup e organização de arquivos.
+- 🐍 **Python Scripts** - Automações personalizadas
+- 📁 **Organização Arquivos** - Scripts para limpeza e organização
+- 🔄 **Backup Automático** - Sistemas de backup inteligente
+- 📊 **Relatórios** - Geração automática de reports
 
-### 🧠 **Idelizador do Futuro** *(Em Desenvolvimento)*
-IA revolucionária para geração de ideias de negócio com análise de mercado em tempo real.
+### 🧠 **[Experimentos Tech](https://deivisan.github.io/Experimentos/)**
+**🌐 [Ver Site](https://deivisan.github.io/Experimentos/)** | **📁 [Repositório](https://github.com/Deivisan/Experimentos)**
+
+Laboratório digital com projetos experimentais e inovações tecnológicas.
+- 🔮 **Idealizador do Futuro** - IA para geração de ideias de negócio
+- 🎮 **Projetos Interativos** - Experimentos com APIs e frameworks
+- 🚀 **Inovação Constante** - Testes de novas tecnologias
+- 📈 **Performance Otimizada** - Score 95+ no Lighthouse
 
 ---
 
