@@ -5,7 +5,7 @@
 </div>
 
 <h1 align="center">Deivison Santana</h1>
-<h3 align="center">🚀 Desenvolvedor Junior • Soluções Digitais • Fundador da DeiviTech</h3>
+<h3 align="center">🚀 Desenvolvedor Junior • Fundador da DeiviTech • Soluções Digitais</h3>
 
 <p align="center">
   <a href="https://www.linkedin.com/in/deivisonlsantana/" target="_blank">
@@ -17,17 +17,11 @@
    <a href="https://wa.me/5575981231019?text=acabei+de+ver+seu+repositorio+do+github" target="_blank">
     <img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp">
   </a>
-  <a href="https://t.me/deivilsan" target="_blank">
-    <img src="https://img.shields.io/badge/Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram">
+  <a href="https://deivisan.github.io/" target="_blank">
+    <img src="https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=todoist&logoColor=white" alt="Portfolio">
   </a>
-  <a href="https://www.instagram.com/deivilsan/" target="_blank">
-    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram">
-  </a>
-   <a href="https://github.com/deivisan?tab=repositories" target="_blank">
-    <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Repositories">
-  </a>
-  <a href="https://www.youtube.com/@Deivi-Tech" target="_blank">
-    <img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube">
+  <a href="https://deivisan.github.io/Curriculo-Deivison/" target="_blank">
+    <img src="https://img.shields.io/badge/Currículo-4CAF50?style=for-the-badge&logo=readme&logoColor=white" alt="Currículo">
   </a>
 </p>
 
@@ -35,18 +29,32 @@
 
 ## 👨‍💻 Sobre Mim
 
-Entusiasta de **tecnologia** apaixonado por **inovação digital**, com vivência tecnológica desde 2010 quando ganhei meu primeiro notebook e comecei a desmontar, montar e atualizar drivers por curiosidade. Fundador da **DeiviTech**, focado em democratizar o acesso à tecnologia através de projetos práticos e soluções criativas.
+Entusiasta de **tecnologia** apaixonado por **inovação digital**, com vivência tecnológica desde 2010. Fundador da **DeiviTech**, focado em democratizar o acesso à tecnologia através de projetos práticos e soluções criativas.
 
-Utilizo ferramentas modernas e desenvolvimento assistido por IA para acelerar a criação de soluções eficientes. Tenho experiência tanto em desenvolvimento web quanto em infraestrutura de TI, sempre buscando aprender e aplicar novas tecnologias.
+Utilizo **desenvolvimento assistido por IA** para acelerar a criação de soluções eficientes. Tenho experiência tanto em desenvolvimento web quanto em infraestrutura de TI, sempre buscando aprender e aplicar novas tecnologias.
 
-Pronto para novos desafios, com **flexibilidade para atuar em Feira de Santana e região**, disponibilidade para projetos remotos e presenciais.
+**🎯 Disponível para projetos em Feira de Santana e região, remoto e presencial.**
 
-- 🔭 Trabalhando em: **DeiviTech** e **projetos web inovadores**
-- 🌱 Aprendendo: **React**, **Python**, **desenvolvimento moderno**
-- 👯 Colaborando em: **Projetos Open Source** e **soluções criativas**
-- 💬 Especialidades: **Desenvolvimento web**, **automação**, **infraestrutura**
-- ⚡ Diferencial: **Desenvolvimento assistido por IA** e **soluções práticas**
-- 🎓 Formação: **Aspirante a Analista de Sistemas** (retomando estudos na Estácio)
+### ⚡ Características Profissionais
+
+- 🔭 **Trabalhando em:** DeiviTech e projetos web inovadores
+- 🌱 **Aprendendo:** React, Python, desenvolvimento moderno
+- 👯 **Colaborando em:** Projetos Open Source e soluções criativas
+- 💬 **Especialidades:** Desenvolvimento web, automação, infraestrutura
+- ⚡ **Diferencial:** Desenvolvimento assistido por IA e soluções práticas
+- 🎓 **Formação:** Aspirante a Analista de Sistemas (estudos em andamento)
+
+---
+
+## 💼 Experiência Profissional
+
+### 🔧 **Infraestrutura & Suporte Técnico**
+
+**Santa Casa, Core3, Meddi** - Suporte técnico especializado, manutenção e otimização de sistemas, automação de processos, resolução eficiente de problemas complexos.
+
+### 💻 **Desenvolvimento Web**
+
+**Projetos Funcionais** - Criação de aplicações web completas com tecnologias modernas (HTML5, CSS3, JavaScript, Python), aprendizado contínuo através de experimentação prática.
 
 ---
 
@@ -88,70 +96,48 @@ Pronto para novos desafios, com **flexibilidade para atuar em Feira de Santana e
 
 ---
 
-## 🚀 Meus Projetos
+## 🚀 Portfólio de Projetos
 
 ### 🛒 **FreelancerDeiviTech - Loja Digital Principal**
-
-#### � **FreelancerDeiviTech**
 
 **🌐 [Ver Loja Online](https://deivisan.github.io/FreelancerDeiviTech/)** | **📁 [Ver Código](https://github.com/Deivisan/FreelancerDeiviTech)**
 
 Loja digital completa com calculadora de preços interativa, 6 categorias de serviços e integração WhatsApp.
 
-**🎯 Serviços Disponíveis:**
-
 - **💻 Desenvolvimento Web:** Landing Pages e sites completos
 - **🛒 E-commerce:** Lojas virtuais profissionais
-- **� Design Gráfico:** Logotipos e identidade visual
+- **🎨 Design Gráfico:** Logotipos e identidade visual
 - **📱 Apps Mobile:** Desenvolvimento Android/iOS
 - **🤖 Automações:** Scripts Python personalizados
 - **🔧 Suporte Técnico:** Formatação e manutenção
 
-**⚡ Recursos Exclusivos:**
-
-- 🧮 Calculadora Interativa com orçamentos em tempo real
-- 📱 WhatsApp Integrado para contato direto
-- 🎯 Portfolio Conectado com links para todos os projetos
-- 💡 **Tecnologias:** HTML5, Tailwind CSS, JavaScript, WhatsApp API
+**🎯 Recursos:** Calculadora Interativa, WhatsApp Integrado, Portfolio Conectado
+**💡 Tecnologias:** HTML5, Tailwind CSS, JavaScript, WhatsApp API
 
 ---
 
-### 🔧 **Projetos DeiviTech - Soluções Profissionais**
+### 🎯 **Soluções Profissionais DeiviTech**
 
 #### 💻 **DeiviTech Formatação**
 
 **🌐 [Ver Site](https://deivisan.github.io/DeiviTech-Formatacao/)** | **📁 [Ver Código](https://github.com/Deivisan/DeiviTech-Formatacao)**
 
-Site profissional completo para serviços de formatação, hardware e análise IA.
+Site profissional para serviços de formatação, hardware e análise IA.
 
-**🎯 Características:**
-
-- 5 páginas modulares: Index, Formatação, Hardware, Sistemas, Análise IA, Agendamento
-- Sistema de Combos com detecção automática de compatibilidade
-- Análise IA com 3 métodos (automática, manual, upload)
-- Charts Interativos para comparação de performance
+- 5 páginas modulares com Sistema de Combos
+- Análise IA com 3 métodos diferentes
+- Charts Interativos para comparação
 - Carrinho Inteligente com cálculos dinâmicos
 
-💡 **Tecnologias:** HTML5, Tailwind CSS, JavaScript, Chart.js, Font Awesome
-
----
-
-### 🎯 **Aplicações Web Interativas**
-
-#### 💻 **DeiviTech - Monte Seu Notebook**
+#### 🛠️ **DeiviTech - Monte Seu Notebook**
 
 **🌐 [Ver Site](https://deivisan.github.io/DeiviTech-Monte-Seu-Notebook/)** | **📁 [Ver Código](https://github.com/deivisan/DeiviTech-Monte-Seu-Notebook)**
 
-Sistema web interativo para personalização de notebooks com interface moderna.
-
-**🎯 Recursos:**
+Sistema web interativo para personalização de notebooks.
 
 - Configurador dinâmico de componentes
 - Calculadora avançada em tempo real
 - Modo básico/avançado adaptável
-- Informações detalhadas de especificações
-
-💡 **Tecnologias:** HTML5, CSS3 (Tailwind), JavaScript
 
 #### 📄 **Currículo Digital Interativo**
 
@@ -159,154 +145,59 @@ Sistema web interativo para personalização de notebooks com interface moderna.
 
 Portfólio profissional responsivo com design moderno e animações CSS.
 
-**🎯 Recursos:**
-
 - Design profissional responsivo
-- Otimizado para dispositivos móveis
-- Versão otimizada para impressão
+- Otimizado para dispositivos móveis e impressão
 - Animações CSS suaves e elegantes
-
-💡 **Tecnologias:** HTML5, CSS3, JavaScript, Font Awesome
-
-#### 🤝 **DeiviTech Filantropia**
-**🌐 [Ver Site](https://deivisan.github.io/DeiviTech-Filantropia/)** | **📁 [Ver Código](https://github.com/deivisan/DeiviTech-Filantropia)**
-
-Plataforma dedicada a projetos de responsabilidade social e ações filantrópicas.
-
-**🎯 Recursos:**
-- Projetos de inclusão digital
-- Parcerias com ONGs e instituições
-- Divulgação de ações sociais
-- Conexão entre voluntários e projetos
-
-💡 **Tecnologias:** HTML5, CSS3, JavaScript
 
 ---
 
-### 🌐 **Websites & Portfólios**
+### 🤝 **DeiviTech Filantropia - Responsabilidade Social**
 
-#### 🎨 **[Portfolio Pessoal](https://github.com/deivisan/deivisan.github.io)**
+**🌐 [Ver Site](https://deivisan.github.io/DeiviTech-Filantropia/)** | **📁 [Ver Código](https://github.com/deivisan/DeiviTech-Filantropia)**
 
-**🌐 [Ver Demonstração](https://deivisan.github.io/)** - Portfolio profissional online
+**Plataforma dedicada a projetos de responsabilidade social e ações filantrópicas da DeiviTech.**
 
-Site pessoal com apresentação de projetos, habilidades técnicas e contatos profissionais.
+#### 🎯 **Missão Social:**
 
-- **Tecnologias:** HTML5, CSS3, JavaScript moderno, design responsivo
-- **Status:** ✅ Online e funcional
-- **Recursos:** Interface limpa, seções organizadas, projetos em destaque, contato direto
-- **Finalidade:** Showcase profissional e ponte para oportunidades
+- **💙 Inclusão Digital:** Projetos de democratização tecnológica
+- **🤝 Parcerias ONGs:** Colaboração com instituições beneficentes
+- **📢 Ações Sociais:** Divulgação e coordenação de projetos
+- **👥 Voluntariado:** Conexão entre voluntários e projetos
 
-#### 🏢 **[DeiviTech Institucional](https://github.com/deivisan/deivitech)**
+**✨ Este projeto representa o compromisso da DeiviTech em usar a tecnologia como ferramenta de transformação social positiva.**
 
-Website institucional da marca DeiviTech com foco em soluções tecnológicas.
-
-- **Tecnologias:** HTML5, CSS3, JavaScript
-- **Recursos:** Landing page profissional, seções de serviços
-- **🌐 [Em Desenvolvimento](https://github.com/deivisan/deivitech)**
+---
 
 ### 🧪 **Laboratório de Experimentos**
 
-#### 🧠 **[Idealizador do Futuro](https://github.com/deivisan/experimentos)**
+#### 🧠 **Idealizador do Futuro**
 
-**🌐 [Ver Demonstração](https://deivisan.github.io/Experimentos/DT~Idealizador.html)** - Experimento #001 Ativo
+**🌐 [Ver Demo](https://deivisan.github.io/Experimentos/DT~Idealizador.html)** | **📁 [Ver Código](https://github.com/deivisan/experimentos)**
 
 IA revolucionária para geração de ideias de negócio com análise de mercado em tempo real.
 
-- **Tecnologias:** Google Gemini API, Three.js, Chart.js, HTML5, JavaScript
+- **Tecnologias:** Google Gemini API, Three.js, Chart.js
 - **Recursos:** Análise de profissões, simulação de cenários, interface 3D futurística
-- **Status:** ✅ Experimento Funcional - Performance 95+ Lighthouse Score
-- **📁 [Laboratório Digital](https://github.com/deivisan/experimentos)** - Repositório de experimentação tecnológica
+- **Performance:** 95+ Lighthouse Score
 
-#### 📄 **[Currículo Digital Interativo](https://github.com/deivisan/Curriculo-Deivison)**
+#### 🔧 **Automações & Scripts**
 
-**🌐 [Ver Demonstração](https://deivisan.github.io/Curriculo-Deivison/)**
+**📁 [Ver Repositório](https://github.com/deivisan/automation-scripts)**
 
-Portfólio profissional responsivo com design moderno e animações CSS.
-
-- **Tecnologias:** HTML5, CSS3, JavaScript, Font Awesome
-- **Recursos:** Design responsivo, animações, seções interativas, otimizado para impressão
-- **Finalidade:** Apresentação da trajetória profissional de forma dinâmica
-
-#### ⚗️ **[Experimentos Tech](https://github.com/deivisan/experimentos)**
-
-Repositório com testes, protótipos e experimentações em diferentes tecnologias.
-
-- **Conteúdo:** Animações CSS, efeitos JavaScript, testes de frameworks
-- **Finalidade:** Aprendizado prático e validação de conceitos
-- **🌐 [Ver Experimentos](https://github.com/deivisan/experimentos)**
-
-### 🔧 **Automações & Scripts**
-
-#### 🤖 **[Scripts Python](https://github.com/deivisan/automation-scripts)**
-
-Coleção de automações para otimização de tarefas e produtividade.
-
-- **Tecnologias:** Python, bibliotecas de automação
-- **Aplicações:** Automação de sistema, scripts utilitários
-- **📁 [Ver Repositório](https://github.com/deivisan/automation-scripts)**
+Coleção de automações Python para otimização de tarefas e produtividade.
 
 ---
 
-## 🛒 **Links Profissionais**
+## 🛒 Marketplace & Serviços
 
 ### 🏪 **Marketplace Online**
 
-#### 📱 **[OLX - Produtos Tech](https://www.olx.com.br/perfil/deivilsan)**
+- **📱 [OLX - Produtos Tech](https://www.olx.com.br/perfil/deivilsan)** - Equipamentos de informática e acessórios
+- **🛍️ [Mercado Livre](https://perfil.mercadolivre.com.br/DEIVISAN)** - Produtos digitais *(em desenvolvimento)*
 
-Equipamentos de informática, componentes e acessórios tecnológicos.
+### 📞 **Contato Comercial**
 
-#### 🛍️ **[Mercado Livre](https://perfil.mercadolivre.com.br/DEIVISAN)**
-
-Produtos digitais e soluções tecnológicas *(em desenvolvimento)*.
-
-### 💼 **Perfil Freelancer Completo**
-
-#### 🚀 **[FreelancerDeiviTech - Loja Online](https://deivisan.github.io/FreelancerDeiviTech/)**
-
-Loja digital completa com calculadora de preços, orçamentos automáticos e WhatsApp integrado.
-
-### 💼 **Serviços Freelance**
-
-#### 🖥️ **[DeiviTech Formatação](https://deivisan.github.io/DeiviTech-Formatacao/)**
-
-Serviço especializado em formatação, hardware e sistemas otimizados.
-
-#### 🌐 **Desenvolvimento Web**
-
-Criação de sites, landing pages e sistemas web personalizados.
-
-#### 🤖 **Automações Python**
-
-Scripts personalizados para automação de tarefas e processos empresariais.
-
-📞 **[Solicitar Orçamento via WhatsApp](https://wa.me/5575981231019?text=Olá!%20Vi%20seu%20GitHub%20e%20gostaria%20de%20um%20orçamento.)**
-
-### 🎓 **Produtos Digitais**
-
-Seção em desenvolvimento - Lançamento previsto para Q3 2025
-
-- **📚 Cursos Online** - Manutenção de computadores e programação
-- **📄 Templates** - Sites prontos e sistemas web
-- **🔧 Scripts Premium** - Automações avançadas para empresas
-- **📖 E-books** - Guias técnicos especializados
-
----
-
-## 💼 Experiência Técnica
-
-**🔧 Infraestrutura & Suporte (Experiência Profissional):**
-
-- **Santa Casa, Core3, Meddi** - Suporte técnico especializado
-- **Hardware e software** - Manutenção e otimização de sistemas
-- **Automação de processos** - Soluções para problemas complexos
-- **Resolução de problemas** - Diagnóstico e correção eficiente
-
-**💻 Desenvolvimento Web (Aprendizado Prático):**
-
-- **Projetos funcionais** - Criação de aplicações web completas
-- **Tecnologias modernas** - HTML5, CSS3, JavaScript, Python
-- **Aprendizado contínuo** - Experimentação e aplicação prática
-- **Desenvolvimento assistido por IA** - Ferramentas modernas para acelerar projetos
+**[💬 Solicitar Orçamento via WhatsApp](https://wa.me/5575981231019?text=Olá!%20Vi%20seu%20GitHub%20e%20gostaria%20de%20um%20orçamento.)**
 
 ---
 
@@ -317,6 +208,7 @@ Seção em desenvolvimento - Lançamento previsto para Q3 2025
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/deivisonlsantana)
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:deivilsantana@outlook.com)
 [![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/5575981231019)
+[![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=todoist&logoColor=white)](https://deivisan.github.io/)
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/deivisan)
 
 </div>
@@ -325,16 +217,17 @@ Seção em desenvolvimento - Lançamento previsto para Q3 2025
 
 <div align="center">
 
-## 🎯 Missão
+## 🎯 Missão Profissional
 
-💡 **Aprender** programação de forma prática
-🌍 **Criar** projetos que sirvam a outras pessoas
-📚 **Compartilhar** minha jornada de aprendizado
-🤝 **Colaborar** com a comunidade de desenvolvimento
+💡 **Aprender** programação de forma prática e aplicada
+🌍 **Criar** projetos que impactem positivamente outras pessoas
+📚 **Compartilhar** conhecimento e experiências da jornada
+🤝 **Colaborar** ativamente com a comunidade de desenvolvimento
+💙 **Transformar** vidas através da tecnologia e responsabilidade social
 
 ---
 
-**⭐ Se algum projeto foi útil, deixe uma estrela! Cada ⭐ motiva mais aprendizado!**
+**⭐ Se algum projeto foi útil, deixe uma estrela! Cada ⭐ motiva mais inovação!**
 
 *Criado com ❤️ e muito ☕ por Deivison Santana*
 *Desenvolvedor Junior em constante evolução 🚀*
