@@ -12,7 +12,7 @@
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
   </a>
   <a href="mailto:deivilsantana@outlook.com" target="_blank">
-    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
+    <img src="https://img.shields.io/badge/Outlook-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white" alt="Email">
   </a>
    <a href="https://wa.me/5575981231019?text=acabei+de+ver+seu+repositorio+do+github" target="_blank">
     <img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp">
@@ -29,9 +29,11 @@
 
 ## 👨‍💻 Sobre Mim
 
-Entusiasta de **tecnologia** apaixonado por **inovação digital**, com vivência tecnológica desde 2010. Fundador da **DeiviTech**, focado em democratizar o acesso à tecnologia através de projetos práticos e soluções criativas.
+Entusiasta de **tecnologia** apaixonado por **inovação digital**, com vivência tecnológica desde 2010 quando ganhei meu primeiro notebook e a partir daí fui me envolvendo com tecnologia, sempre ajudando minha família e amigos com soluções práticas. Fundador da **DeiviTech**, focado em democratizar o acesso à tecnologia através de projetos práticos e soluções criativas.
 
-Utilizo **desenvolvimento assistido por IA** para acelerar a criação de soluções eficientes. Tenho experiência tanto em desenvolvimento web quanto em infraestrutura de TI, sempre buscando aprender e aplicar novas tecnologias.
+Utilizo **desenvolvimento assistido por IA** para acelerar a criação de soluções eficientes. Tenho experiência tanto em desenvolvimento web quanto em infraestrutura de TI, sempre buscando aprender e aplicar novas tecnologias. **Em 2025, lancei meu perfil profissional online**, representando anos de dedicação e crescimento na área.
+
+Acredito que a **tecnologia deve ser uma ferramenta de transformação social positiva**, sempre procurando maneiras de ajudar outras pessoas através do meu conhecimento técnico, seja resolvendo problemas simples do dia a dia ou desenvolvendo soluções mais complexas.
 
 **🎯 Disponível para projetos em Feira de Santana e região, remoto e presencial.**
 
@@ -50,7 +52,8 @@ Utilizo **desenvolvimento assistido por IA** para acelerar a criação de soluç
 
 ### 🔧 **Infraestrutura & Suporte Técnico**
 
-**Santa Casa, Core3, Meddi** - Suporte técnico especializado, manutenção e otimização de sistemas, automação de processos, resolução eficiente de problemas complexos.
+**Core3 Tecnologia** - Atendente técnico remoto via central de chamados para clientes residenciais com problemas de internet (maior provedor do interior da Bahia)
+**Santa Casa, Meddi** - Suporte técnico especializado, manutenção e otimização de sistemas, automação de processos, resolução eficiente de problemas complexos.
 
 ### 💻 **Desenvolvimento Web**
 
@@ -85,6 +88,7 @@ Utilizo **desenvolvimento assistido por IA** para acelerar a criação de soluç
 
 <img height="180em" src="https://github-readme-stats.vercel.app/api?username=deivisan&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true" alt="GitHub Stats"/>
 <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=deivisan&layout=compact&langs_count=7&theme=tokyonight" alt="Top Languages"/>
+<img height="180em" src="https://github-readme-stats.vercel.app/api/pin/?username=deivisan&repo=FreelancerDeiviTech&theme=tokyonight" alt="FreelancerDeiviTech"/>
 
 </div>
 
@@ -111,7 +115,6 @@ Loja digital completa com calculadora de preços interativa, 6 categorias de ser
 - **🤖 Automações:** Scripts Python personalizados
 - **🔧 Suporte Técnico:** Formatação e manutenção
 
-**🎯 Recursos:** Calculadora Interativa, WhatsApp Integrado, Portfolio Conectado
 **💡 Tecnologias:** HTML5, Tailwind CSS, JavaScript, WhatsApp API
 
 ---
@@ -168,17 +171,24 @@ Portfólio profissional responsivo com design moderno e animações CSS.
 
 ---
 
-### 🧪 **Laboratório de Experimentos**
+### 🧠 **Idealizador do Futuro - IA Revolucionária**
 
-#### 🧠 **Idealizador do Futuro**
-
-**🌐 [Ver Demo](https://deivisan.github.io/Experimentos/DT~Idealizador.html)** | **📁 [Ver Código](https://github.com/deivisan/experimentos)**
+**🌐 [Ver Demo](https://deivisan.github.io/Experimentos/DT~Idealizador.html)** | **📁 [Ver Código](https://github.com/deivisan/experimentos)** | **📖 [Documentação](https://github.com/deivisan/experimentos/blob/main/README-Idealizador.md)**
 
 IA revolucionária para geração de ideias de negócio com análise de mercado em tempo real.
 
-- **Tecnologias:** Google Gemini API, Three.js, Chart.js
-- **Recursos:** Análise de profissões, simulação de cenários, interface 3D futurística
-- **Performance:** 95+ Lighthouse Score
+#### 🎯 **Funcionalidades Principais:**
+
+- **🔮 Geração Inteligente:** Ideias personalizadas baseadas em perfil profissional
+- **📊 Análise de Mercado:** Pesquisa de tendências e viabilidade em tempo real
+- **🎨 Interface 3D:** Experiência imersiva com Three.js
+- **📈 Performance:** 95+ Lighthouse Score otimizado
+
+**💡 Tecnologias:** Google Gemini API, Three.js, Chart.js, HTML5, JavaScript
+
+---
+
+### 🧪 **Laboratório de Experimentos**
 
 #### 🔧 **Automações & Scripts**
 
@@ -195,10 +205,6 @@ Coleção de automações Python para otimização de tarefas e produtividade.
 - **📱 [OLX - Produtos Tech](https://www.olx.com.br/perfil/deivilsan)** - Equipamentos de informática e acessórios
 - **🛍️ [Mercado Livre](https://perfil.mercadolivre.com.br/DEIVISAN)** - Produtos digitais *(em desenvolvimento)*
 
-### 📞 **Contato Comercial**
-
-**[💬 Solicitar Orçamento via WhatsApp](https://wa.me/5575981231019?text=Olá!%20Vi%20seu%20GitHub%20e%20gostaria%20de%20um%20orçamento.)**
-
 ---
 
 ## 🤝 Contatos Profissionais
@@ -206,7 +212,7 @@ Coleção de automações Python para otimização de tarefas e produtividade.
 <div align="center">
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/deivisonlsantana)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:deivilsantana@outlook.com)
+[![Outlook](https://img.shields.io/badge/Outlook-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white)](mailto:deivilsantana@outlook.com)
 [![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/5575981231019)
 [![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=todoist&logoColor=white)](https://deivisan.github.io/)
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/deivisan)
