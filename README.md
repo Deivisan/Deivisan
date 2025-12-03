@@ -31,7 +31,7 @@
 
 Entusiasta de **tecnologia** apaixonado por **inovação digital**, com vivência tecnológica desde 2010 quando ganhei meu primeiro notebook e a partir daí fui me envolvendo com tecnologia, sempre ajudando minha família e amigos com soluções práticas. Fundador da **DeiviTech**, focado em democratizar o acesso à tecnologia através de projetos práticos e soluções criativas.
 
-Utilizo **desenvolvimento assistido por IA** para acelerar a criação de soluções eficientes. Tenho experiência tanto em desenvolvimento web quanto em infraestrutura de TI, sempre buscando aprender e aplicar novas tecnologias. **Em 2025, lancei meu perfil profissional online**, representando anos de dedicação e crescimento na área.
+Utilizo **desenvolvimento assistido por IA** para acelerar a criação de soluções eficientes. Tenho experiência tanto em desenvolvimento web quanto em infraestrutura de TI, sempre buscando aprender e aplicar novas tecnologias. **Desde 2025, com perfil profissional online consolidado**, representando anos de dedicação e crescimento contínuo na área.
 
 Acredito que a **tecnologia deve ser uma ferramenta de transformação social positiva**, sempre procurando maneiras de ajudar outras pessoas através do meu conhecimento técnico, seja resolvendo problemas simples do dia a dia ou desenvolvendo soluções mais complexas.
 
@@ -39,10 +39,10 @@ Acredito que a **tecnologia deve ser uma ferramenta de transformação social po
 
 ### ⚡ Características Profissionais
 
-- 🔭 **Trabalhando em:** DeiviTech e projetos web inovadores
-- 🌱 **Aprendendo:** React, Python, desenvolvimento moderno
+- 🔭 **Trabalhando em:** DeiviTech, desenvolvimento web e automação Python
+- 🌱 **Aprendendo:** React, Python avançado, Docker, desenvolvimento moderno
 - 👯 **Colaborando em:** Projetos Open Source e soluções criativas
-- 💬 **Especialidades:** Desenvolvimento web, automação, infraestrutura
+- 💬 **Especialidades:** Desenvolvimento web, automação, infraestrutura, APIs com IA
 - ⚡ **Diferencial:** Desenvolvimento assistido por IA e soluções práticas
 - 🎓 **Formação:** Aspirante a Analista de Sistemas (estudos em andamento)
 
@@ -77,6 +77,7 @@ Acredito que a **tecnologia deve ser uma ferramenta de transformação social po
 |    ![Google Cloud](https://img.shields.io/badge/Google_Cloud-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white)     | ![Android Studio](https://img.shields.io/badge/Android_Studio-3DDC84?style=for-the-badge&logo=android-studio&logoColor=white) |      ![Docker](https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white)       |
 | ![Chrome DevTools](https://img.shields.io/badge/Chrome_DevTools-4285F4?style=for-the-badge&logo=google-chrome&logoColor=white) |           ![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)            |      ![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)       |
 |             ![WebKit](https://img.shields.io/badge/WebKit-005F88?style=for-the-badge&logo=webkit&logoColor=white)              |             ![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white)             | ![Terminal](https://img.shields.io/badge/Terminal-4D4D4D?style=for-the-badge&logo=gnometerminal&logoColor=white) |
+|      ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)                  |                                                                                                                               |  ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)       |
 
 </div>
 
@@ -88,7 +89,7 @@ Acredito que a **tecnologia deve ser uma ferramenta de transformação social po
 
 <img height="180em" src="https://github-readme-stats.vercel.app/api?username=deivisan&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true" alt="GitHub Stats"/>
 <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=deivisan&layout=compact&langs_count=7&theme=tokyonight" alt="Top Languages"/>
-<img height="180em" src="https://github-readme-stats.vercel.app/api/pin/?username=deivisan&repo=FreelancerDeiviTech&theme=tokyonight" alt="FreelancerDeiviTech"/>
+<img height="180em" src="https://github-readme-stats.vercel.app/api/pin/?username=Deivisan&repo=FreelancerDeiviTech&theme=tokyonight" alt="FreelancerDeiviTech"/>
 
 </div>
 
@@ -173,7 +174,7 @@ Portfólio profissional responsivo com design moderno e animações CSS.
 
 ### 🧠 **Idealizador do Futuro - IA Revolucionária**
 
-**🌐 [Ver Demo](https://deivisan.github.io/Experimentos/DT~Idealizador.html)** | **📁 [Ver Código](https://github.com/deivisan/experimentos)**
+**🌐 [Ver Demo](https://deivisan.github.io/Experimentos/DT%7EIdealizador.html)** | **📁 [Ver Código](https://github.com/deivisan/Experimentos)**
 
 IA revolucionária para geração de ideias de negócio com análise de mercado em tempo real.
 
@@ -183,6 +184,36 @@ IA revolucionária para geração de ideias de negócio com análise de mercado 
 - Performance 95+ Lighthouse Score
 
 **💡 Tecnologias:** Google Gemini API, Three.js, Chart.js, HTML5, JavaScript
+
+---
+
+### 🎪 **Eventos FSA - Plataforma de Eventos de Feira de Santana**
+
+**🌐 [Ver Site](https://deivisan.github.io/Eventos-FSA/)** | **📁 [Ver Código](https://github.com/Deivisan/Eventos-FSA)**
+
+Plataforma moderna para divulgação e gerenciamento de eventos em Feira de Santana/BA.
+
+- Interface multi-perspectiva com 5 diferentes visões
+- Sistema de backend integrado
+- Containerização com Docker
+- Design responsivo e moderno
+
+**💡 Tecnologias:** HTML5, CSS3, JavaScript, Docker, Node.js
+
+---
+
+### 💰 **FinanDEV - Sistema de Gestão Financeira Pessoal**
+
+**📁 [Ver Código](https://github.com/Deivisan/FinanDEV)**
+
+Sistema completo de gestão financeira e organização pessoal desenvolvido em Python.
+
+- Dashboard interativo com visualizações
+- Controle de rotinas e produtividade
+- Mini-sistemas modulares
+- Automações e scrapers integrados
+
+**💡 Tecnologias:** Python, Jupyter Notebook, JSON
 
 ---
 
