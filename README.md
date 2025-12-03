@@ -202,21 +202,6 @@ Plataforma moderna para divulgação e gerenciamento de eventos em Feira de Sant
 
 ---
 
-### 💰 **FinanDEV - Sistema de Gestão Financeira Pessoal**
-
-**📁 [Ver Código](https://github.com/Deivisan/FinanDEV)**
-
-Sistema completo de gestão financeira e organização pessoal desenvolvido em Python.
-
-- Dashboard interativo com visualizações
-- Controle de rotinas e produtividade
-- Mini-sistemas modulares
-- Automações e scrapers integrados
-
-**💡 Tecnologias:** Python, Jupyter Notebook, JSON
-
----
-
 ### 🧪 **Laboratório de Experimentos**
 
 #### 🔧 **Automações & Scripts**
