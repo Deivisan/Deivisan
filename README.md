@@ -225,6 +225,12 @@ Sistema completo de gestão financeira e organização pessoal desenvolvido em P
 
 Coleção de automações Python para otimização de tarefas e produtividade.
 
+#### 🎤 **Assistente de Voz - Experimento**
+
+**🌐 [Ver Demo](https://deivisan.github.io/Teste-assitentevoz/)** | **📁 [Ver Código](https://github.com/Deivisan/Teste-assitentevoz)**
+
+Experimento de assistente de voz utilizando APIs de reconhecimento e síntese de fala.
+
 ---
 
 ## 🛒 Marketplace & Serviços
