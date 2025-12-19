@@ -4,7 +4,7 @@
 
 ## 📊 Informações do Projeto
 
-**Tipo:** Documentação, Documentação, Documentação, Documentação, Documentação
+**Tipo:** Documentação
 
 ## 📁 Estrutura
 
@@ -40,8 +40,8 @@ Este perfil foi criado para funcionar perfeitamente com:
 
 ---
 
-*Perfil DevSan A.G.I. gerado automaticamente*
+*Perfil DevSan A.G.I. gerado automaticamente com Bun*
 
 **Orquestrado por OpenCode - A.G.I. pessoal de @deivisan**
 
-`#DevSan #AGI #OpenCode #DesenvolvimentoAutônomo`
+`#DevSan #AGI #OpenCode #DesenvolvimentoAutônomo #BunRuntime`
