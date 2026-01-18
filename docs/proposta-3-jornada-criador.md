@@ -1,101 +1,93 @@
-# Deivison Santana
-
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com/?font=Fira+Code&pause=1000&color=2563EB&width=700&lines=Deivison+Santana;Projetos+P%C3%BAblicos+e+Reconhecimento;Perfil+com+visibilidade+real)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com/?font=Fira+Code&pause=1000&color=2563EB&width=700&lines=Deivison+Santana;Perfil+publico;Visao%2C+valores+e+projetos)](https://git.io/typing-svg)
 
 </div>
 
-<h3 align="center">Desenvolvedor Júnior • Técnico em Informática</h3>
-<h3 align="center">📍 Feira de Santana, BA • 🏢 DeiviTech • 🎯 CETENS-UFRB</h3>
+<h1 align="center">Deivison Santana</h1>
+<h3 align="center">Desenvolvedor Junior • Fundador da DeiviTech • Solucoes Digitais</h3>
 
 <p align="center">
-  <a href="https://linkedin.com/in/deivisonlsantana"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>
-  <a href="https://wa.me/5575981231019"><img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"></a>
-  <a href="https://deivisan.github.io/Curriculo-Deivison/"><img src="https://img.shields.io/badge/Currículo-4CAF50?style=for-the-badge&logo=readme&logoColor=white"></a>
+  <a href="https://www.linkedin.com/in/deivisonlsantana/" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
+  </a>
+  <a href="mailto:deivilsantana@outlook.com" target="_blank">
+    <img src="https://img.shields.io/badge/Email-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white" alt="Email">
+  </a>
+  <a href="https://wa.me/5575981231019?text=acabei+de+ver+seu+repositorio+do+github" target="_blank">
+    <img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp">
+  </a>
+  <a href="https://deivisan.github.io/" target="_blank">
+    <img src="https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=todoist&logoColor=white" alt="Portfolio">
+  </a>
+  <a href="https://deivisan.github.io/Curriculo-Deivison/" target="_blank">
+    <img src="https://img.shields.io/badge/Curr%C3%ADculo-4CAF50?style=for-the-badge&logo=readme&logoColor=white" alt="Currículo">
+  </a>
 </p>
 
 ---
 
-## Linha de Impacto Público
+## Visao e valores
 
-```
-2010 → Início do interesse por tecnologia
-2024 → DeiviTech formalizada e projetos públicos publicados
-2025 → Consolidação de repositórios públicos e melhoria contínua
-```
+Sou um desenvolvedor com foco em solucao real e documentacao clara. Meu trabalho parte de principios simples: aprender fazendo, reduzir retrabalho, organizar o conhecimento e entregar produtos que possam ser entendidos por qualquer pessoa.
 
----
-
-## Perfil Público (Resumo)
-
-Desenvolvedor com foco em projetos acessíveis e documentação objetiva. Esta vitrine mostra apenas repositórios públicos e informações que qualquer pessoa pode verificar no GitHub.
+**Valores centrais:**
+- Evolucao continua e aprendizado pratico
+- Autonomia e responsabilidade tecnica
+- Eficiencia acima de complexidade
+- Tecnologia como ferramenta de impacto positivo
 
 ---
 
-## Reconhecimento Público (Estrelas)
+## Objetivos
 
-| Repositório | ⭐ |
-|-------------|----|
-| **[Deivisan](https://github.com/Deivisan/Deivisan)** | 2 |
-| **[Metodologia-Scrape](https://github.com/Deivisan/Metodologia-Scrape)** | 0 |
-| **[dubladinho](https://github.com/Deivisan/dubladinho)** | 0 |
-| **[SELECOES-MIDU](https://github.com/Deivisan/SELECOES-MIDU)** | 0 |
-| **[DeiviTech-Monte-Seu-Notebook](https://github.com/Deivisan/DeiviTech-Monte-Seu-Notebook)** | 0 |
-| **[Experimentos](https://github.com/Deivisan/Experimentos)** | 0 |
-| **[deivitech](https://github.com/Deivisan/deivitech)** | 0 |
-| **[Eventos-FSA](https://github.com/Deivisan/Eventos-FSA)** | 0 |
-| **[Curriculo-Deivison](https://github.com/Deivisan/Curriculo-Deivison)** | 0 |
-| **[DeiviTech-Filantropia](https://github.com/Deivisan/DeiviTech-Filantropia)** | 0 |
-| **[DeiviTech-Formatacao](https://github.com/Deivisan/DeiviTech-Formatacao)** | 0 |
-| **[deivisan.github.io](https://github.com/Deivisan/deivisan.github.io)** | 0 |
-| **[FreelancerDeiviTech](https://github.com/Deivisan/FreelancerDeiviTech)** | 0 |
+- Consolidar produtos digitais publicos com alto nivel de qualidade
+- Facilitar o acesso de pessoas e empresas a solucoes tecnicas
+- Manter repositorios claros, reutilizaveis e evolutivos
 
 ---
 
-## Vitrine Pública (Atualizações Recentes)
+## Portfolio publico
 
-| Projeto | Atualizado |
-|---------|-----------|
-| **[Deivisan](https://github.com/Deivisan/Deivisan)** | 2026-01-18 |
-| **[Metodologia-Scrape](https://github.com/Deivisan/Metodologia-Scrape)** | 2026-01-18 |
-| **[dubladinho](https://github.com/Deivisan/dubladinho)** | 2026-01-15 |
-| **[SELECOES-MIDU](https://github.com/Deivisan/SELECOES-MIDU)** | 2026-01-13 |
-| **[DeiviTech-Monte-Seu-Notebook](https://github.com/Deivisan/DeiviTech-Monte-Seu-Notebook)** | 2025-12-24 |
-
----
-
-## Acesso Rápido
-
-- **Todos os repositórios públicos:**
-  https://github.com/Deivisan?tab=repositories&sort=updated
-- **Portfolio:**
-  https://deivisan.github.io/
-- **Currículo:**
-  https://deivisan.github.io/Curriculo-Deivison/
+| Projeto | Descricao | Estrelas |
+|---------|-----------|----------|
+| Deivisan | Perfil profissional | ![Stars](https://img.shields.io/github/stars/Deivisan/Deivisan?style=flat-square) |
+| FreelancerDeiviTech | Loja digital e servicos | ![Stars](https://img.shields.io/github/stars/Deivisan/FreelancerDeiviTech?style=flat-square) |
+| DeiviTech Formatacao | Servicos tecnicos e manutencao | ![Stars](https://img.shields.io/github/stars/Deivisan/DeiviTech-Formatacao?style=flat-square) |
+| Monte Seu Notebook | Configurador interativo | ![Stars](https://img.shields.io/github/stars/Deivisan/DeiviTech-Monte-Seu-Notebook?style=flat-square) |
+| Eventos FSA | Plataforma de eventos | ![Stars](https://img.shields.io/github/stars/Deivisan/Eventos-FSA?style=flat-square) |
+| Metodologia-Scrape | Framework de scraping e IA | ![Stars](https://img.shields.io/github/stars/Deivisan/Metodologia-Scrape?style=flat-square) |
+| dubladinho | MCP de dublagem | ![Stars](https://img.shields.io/github/stars/Deivisan/dubladinho?style=flat-square) |
+| Experimentos | POCs e prototipos | ![Stars](https://img.shields.io/github/stars/Deivisan/Experimentos?style=flat-square) |
+| DeiviTech Filantropia | Inclusao digital | ![Stars](https://img.shields.io/github/stars/Deivisan/DeiviTech-Filantropia?style=flat-square) |
+| Curriculo Deivison | Curriculo digital | ![Stars](https://img.shields.io/github/stars/Deivisan/Curriculo-Deivison?style=flat-square) |
+| deivisan.github.io | Portfolio GitHub Pages | ![Stars](https://img.shields.io/github/stars/Deivisan/deivisan.github.io?style=flat-square) |
+| deivitech | Site institucional | ![Stars](https://img.shields.io/github/stars/Deivisan/deivitech?style=flat-square) |
+| SELECOES-MIDU | Metodologia de selecoes | ![Stars](https://img.shields.io/github/stars/Deivisan/SELECOES-MIDU?style=flat-square) |
 
 ---
 
-## Gráficos
+## Estatisticas GitHub
 
 <div align="center">
-  <img height="175em" src="https://github-readme-stats.vercel.app/api?username=deivisan&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true">
-  <img height="175em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=deivisan&layout=compact&langs_count=6&theme=tokyonight">
+
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=deivisan&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true" alt="GitHub Stats"/>
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=deivisan&layout=compact&langs_count=7&theme=tokyonight" alt="Top Languages"/>
+
 </div>
 
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=deivisan&theme=tokyo-night&hide_border=true">
+
+![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=deivisan&theme=tokyo-night&hide_border=true&area=true)
+
 </div>
 
 ---
 
 ## Contato
 
-<div align="center">
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/deivisonlsantana)
-[![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/5575981231019)
-[![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge)](https://deivisan.github.io/)
-[![Email](https://img.shields.io/badge/Email-0078D4?style=for-the-badge)](mailto:deivilsantana@outlook.com)
-
-</div>
+- Profissional: https://www.linkedin.com/in/deivisonlsantana/
+- E-mail: deivilsantana@outlook.com
+- Projetos e orcamentos: https://wa.me/5575981231019
+- Portfolio: https://deivisan.github.io/
+- Repositorios publicos: https://github.com/Deivisan?tab=repositories&sort=updated
