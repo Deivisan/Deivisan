@@ -87,28 +87,29 @@ Acredito que a **tecnologia deve ser uma ferramenta de transformação social po
 
 <div align="center">
 
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=deivisan&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true" alt="GitHub Stats"/>
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=deivisan&layout=compact&langs_count=7&theme=tokyonight" alt="Top Languages"/>
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=Deivisan&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true" alt="GitHub Stats"/>
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs?username=Deivisan&layout=compact&langs_count=7&theme=tokyonight" alt="Top Languages"/>
 
 </div>
 
 <div align="center">
 
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=deivisan&theme=tokyonight)
+![GitHub Streak](https://streak-stats.demolab.com?user=Deivisan&theme=tokyonight)
 
 </div>
 
 <div align="center">
 
-![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=deivisan&theme=tokyo-night&hide_border=true&area=true)
+![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=Deivisan&theme=tokyo-night&hide_border=true&area=true)
 
 </div>
 
 <div align="center">
 
-![GitHub Trophies](https://github-profile-trophy.vercel.app/?username=deivisan&theme=tokyonight&no-frame=true&row=1&column=7)
+![GitHub Trophies](https://github-profile-trophy.vercel.app/?username=Deivisan&theme=tokyonight&no-frame=true&row=1&column=7)
 
-</div>
+</div> 
+## 📊 Estatísticas GitHub
 
 ---
 
