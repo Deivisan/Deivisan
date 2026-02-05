@@ -217,15 +217,28 @@ Plataforma moderna para divulgação e gerenciamento de eventos em Feira de Sant
 
 #### 🔧 **Automações & Scripts**
 
-**📁 [Ver Repositório](https://github.com/deivisan/automation-scripts)**
+Coleção de automações Python para otimização de tarefas e produtividade incluídas neste repositório.
 
-Coleção de automações Python para otimização de tarefas e produtividade.
+- Scripts de organização de arquivos
+- Automações de tarefas repetitivas
+- Ferramentas de produtividade
 
-#### 🎤 **Assistente de Voz - Experimento**
+**💡 Tecnologias:** Python, Scripts de automação
 
-**🌐 [Ver Demo](https://deivisan.github.io/Teste-assitentevoz/)** | **📁 [Ver Código](https://github.com/Deivisan/Teste-assitentevoz)**
+---
 
-Experimento de assistente de voz utilizando APIs de reconhecimento e síntese de fala.
+### 🎯 **SELECOES-MIDU - Metodologia de Seleções**
+
+**🌐 [Ver Plataforma Online](https://deivisan.github.io/SELECOES-MIDU/)** | **📁 [Ver Código](https://github.com/Deivisan/SELECOES-MIDU)**
+
+Metodologia moderna para processos de seleção baseada nos desafios MIDU.
+
+- Sistema de gerenciamento de candidatos
+- Interface multi-perspectiva responsiva
+- Backend TypeScript com Vite
+- Design moderno com Tailwind CSS
+
+**💡 Tecnologias:** TypeScript, Vite, Tailwind CSS, Bun
 
 ---
 
