@@ -94,22 +94,21 @@ Acredito que a **tecnologia deve ser uma ferramenta de transformação social po
 
 <div align="center">
 
-![GitHub Streak](https://streak-stats.demolab.com?user=Deivisan&theme=tokyonight)
+<img src="https://streak-stats.demolab.com?user=Deivisan&theme=tokyonight" alt="GitHub Streak"/>
 
 </div>
 
 <div align="center">
 
-![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=Deivisan&theme=tokyo-night&hide_border=true&area=true)
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Deivisan&theme=tokyo-night&hide_border=true&area=true" alt="GitHub Activity Graph"/>
 
 </div>
 
 <div align="center">
 
-![GitHub Trophies](https://github-profile-trophy.vercel.app/?username=Deivisan&theme=tokyonight&no-frame=true&row=1&column=7)
+<img src="https://github-profile-trophy.vercel.app/?username=Deivisan&theme=tokyonight&no-frame=true&row=1&column=7" alt="GitHub Trophies"/>
 
-</div> 
-## 📊 Estatísticas GitHub
+</div>
 
 ---
 
