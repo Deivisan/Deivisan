@@ -1,63 +1,49 @@
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com/?font=Fira+Code&pause=1000&color=2563EB&width=600&lines=Ol%C3%A1%2C+sou+o+Deivison+Santana%21;Desenvolvedor+Junior;Fundador+da+DeiviTech;Bem-vindo+ao+meu+perfil%21)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com/?font=Fira+Code&pause=1000&color=2563EB&width=600&lines=Deivison+Santana+%7C+DeiviTech;Full-Stack+Developer+%26+Founder;28+reposit%C3%B3rios+%26+active+committer;Automatizando+o+futuro+com+c%C3%B3digo)](https://git.io/typing-svg)
 
 </div>
 
 <h1 align="center">Deivison Santana</h1>
-<h3 align="center">🚀 Desenvolvedor Junior • Fundador da DeiviTech • Soluções Digitais</h3>
+<h3 align="center">⚡ Full-Stack Developer • Founder @ DeiviTech • Feira de Santana, BA</h3>
 
-<p align="center">
-  <a href="https://www.linkedin.com/in/deivisonlsantana/" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
-  </a>
-  <a href="mailto:deivilsantana@outlook.com" target="_blank">
-    <img src="https://img.shields.io/badge/Email-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white" alt="Email">
-  </a>
-   <a href="https://wa.me/5575981231019?text=acabei+de+ver+seu+repositorio+do+github" target="_blank">
-    <img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp">
-  </a>
-  <a href="https://deivisan.github.io/" target="_blank">
-    <img src="https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=todoist&logoColor=white" alt="Portfolio">
-  </a>
-  <a href="https://deivisan.github.io/Curriculo-Deivison/" target="_blank">
-    <img src="https://img.shields.io/badge/Currículo-4CAF50?style=for-the-badge&logo=readme&logoColor=white" alt="Currículo">
-  </a>
-</p>
+<div align="center">
+
+[![Open To Work](https://img.shields.io/badge/✅-Open_To_Work-00A86B?style=for-the-badge&logo=openbadges&logoColor=white)](https://linkedin.com/in/deivisonlsantana)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/deivisonlsantana)
+[![Email](https://img.shields.io/badge/Email-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white)](mailto:deivilsantana@outlook.com)
+[![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/5575981231019)
+[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=todoist&logoColor=white)](https://deivisan.github.io/)
+
+</div>
 
 ---
 
-## 👨‍💻 Sobre Mim
+## 💡 Sobre Mim
 
-Entusiasta de **tecnologia** apaixonado por **inovação digital**, com vivência tecnológica desde 2010 quando ganhei meu primeiro notebook e a partir daí fui me envolvendo com tecnologia, sempre ajudando minha família e amigos com soluções práticas. Fundador da **DeiviTech**, focado em democratizar o acesso à tecnologia através de projetos práticos e soluções criativas.
+Full-stack developer e fundador da **DeiviTech**. Construo soluções web, automações e ferramentas digitais com foco em resultados práticos. Trabalho com **desenvolvimento assistido por IA** para entregar projetos mais rápido e com mais qualidade.
 
-Utilizo **desenvolvimento assistido por IA** para acelerar a criação de soluções eficientes. Tenho experiência tanto em desenvolvimento web quanto em infraestrutura de TI, sempre buscando aprender e aplicar novas tecnologias. **Desde 2025, com perfil profissional online consolidado**, representando anos de dedicação e crescimento contínuo na área.
-
-Acredito que a **tecnologia deve ser uma ferramenta de transformação social positiva**, sempre procurando maneiras de ajudar outras pessoas através do meu conhecimento técnico, seja resolvendo problemas simples do dia a dia ou desenvolvendo soluções mais complexas.
-
-**🎯 Disponível para projetos em Feira de Santana e região, remoto e presencial.**
-
-### ⚡ Características Profissionais
-
-- 🔭 **Trabalhando em:** DeiviTech, desenvolvimento web e automação Python
-- 🌱 **Aprendendo:** React, Python avançado, Docker, desenvolvimento moderno
-- 👯 **Colaborando em:** Projetos Open Source e soluções criativas
-- 💬 **Especialidades:** Desenvolvimento web, automação, infraestrutura, APIs com IA
-- ⚡ **Diferencial:** Desenvolvimento assistido por IA e soluções práticas
-- 🎓 **Formação:** Aspirante a Analista de Sistemas (estudos em andamento)
+📍 Feira de Santana, BA • 🌐 Remoto e presencial • 🇧🇷 PT-BR
 
 ---
 
-## 💼 Experiência Profissional
+## 📊 GitHub Analytics
 
-### 🔧 **Infraestrutura & Suporte Técnico**
+<div align="center">
 
-**Core3 Tecnologia** - Atendente técnico remoto via central de chamados para clientes residenciais com problemas de internet (maior provedor do interior da Bahia)
-**Santa Casa, Meddi** - Suporte técnico especializado, manutenção e otimização de sistemas, automação de processos, resolução eficiente de problemas complexos.
+| | |
+|:---:|:---:|
+| | **🔥 Streak de Commits** |
+| [![GitHub Streak](https://streak-stats.demolab.com?user=Deivisan&theme=tokyonight&date_format=j/n/Y&hide_total_contributions=true)](https://git.io/streak-stats) | **📈 Gráfico de Atividades** |
+| | [![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=Deivisan&theme=tokyo-night&hide_border=true&area=true&custom_title=Contribui%C3%A7%C3%B5es%20%C3%BAltimos%2031%20dias)](https://github.com/Deivisan) |
+| **🗂️ Top Linguagens** | **⚙️ Estatísticas** |
+| [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs?username=Deivisan&layout=compact&langs_count=8&theme=tokyonight)](https://github.com/Deivisan) | [![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Deivisan&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide=stars&hide_title=true&custom_title=Commits)](https://github.com/Deivisan) |
 
-### 💻 **Desenvolvimento Web**
+### 🏆 Troféus
 
-**Projetos Funcionais** - Criação de aplicações web completas com tecnologias modernas (HTML5, CSS3, JavaScript, Python), aprendizado contínuo através de experimentação prática.
+[![Trophies](https://github-profile-trophy.vercel.app/?username=Deivisan&theme=tokyonight&no-frame=true&row=2&column=4&no-bg=true&margin-w=10&margin-h=10&column=4)](https://github.com/Deivisan)
+
+</div>
 
 ---
 
@@ -65,221 +51,88 @@ Acredito que a **tecnologia deve ser uma ferramenta de transformação social po
 
 <div align="center">
 
-|                                                 **💻 Linguagens**                                                  |                                               **🔧 Ferramentas & IDEs**                                                |                                                  **🖥️ Sistemas**                                                   |
-| :---------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------: |
-|        ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)         |  ![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)  |     ![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)      |
-|          ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)          |         ![Cursor](https://img.shields.io/badge/Cursor-000000?style=for-the-badge&logo=cursor&logoColor=white)         |        ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)         |
-| ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) | ![GitHub Copilot](https://img.shields.io/badge/GitHub_Copilot-000000?style=for-the-badge&logo=github&logoColor=white) | ![Arch Linux](https://img.shields.io/badge/Arch_Linux-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white) |
-|       ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)       |             ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)              |     ![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)      |
-
-|                                                       **☁️ Cloud & Web**                                                        |                                                   **📱 Mobile Development**                                                    |                                               **🔧 DevOps & Tools**                                               |
-| :----------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------: |
-|    ![Google Cloud](https://img.shields.io/badge/Google_Cloud-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white)     | ![Android Studio](https://img.shields.io/badge/Android_Studio-3DDC84?style=for-the-badge&logo=android-studio&logoColor=white) |      ![Docker](https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white)       |
-| ![Chrome DevTools](https://img.shields.io/badge/Chrome_DevTools-4285F4?style=for-the-badge&logo=google-chrome&logoColor=white) |           ![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)            |      ![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)       |
-|             ![WebKit](https://img.shields.io/badge/WebKit-005F88?style=for-the-badge&logo=webkit&logoColor=white)              |             ![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white)             | ![Terminal](https://img.shields.io/badge/Terminal-4D4D4D?style=for-the-badge&logo=gnometerminal&logoColor=white) |
-|      ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)                  |                                                                                                                               |  ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)       |
+| **Linguagens** | **Frontend** | **Backend** | **DevOps & Ferramentas** |
+|:---:|:---:|:---:|:---:|
+| ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) | ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white) | ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white) | ![Docker](https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white) |
+| ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) | ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) | ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) | ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white) |
+| ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white) | ![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black) | ![Bun](https://img.shields.io/badge/Bun-000000?style=for-the-badge&logo=bun&logoColor=white) | ![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white) |
+| ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) | ![Three.js](https://img.shields.io/badge/Three.js-000000?style=for-the-badge&logo=three.js&logoColor=white) | ![C](https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black) | ![Arch Linux](https://img.shields.io/badge/Arch_Linux-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white) |
+| ![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white) | ![Chart.js](https://img.shields.io/badge/Chart.js-F5788D?style=for-the-badge&logo=chart.js&logoColor=white) | ![Shell](https://img.shields.io/badge/Shell-4EAA25?style=for-the-badge&logo=gnometerminal&logoColor=white) | ![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white) |
 
 </div>
 
 ---
 
-## 📊 Estatísticas GitHub
+## 🚀 Projetos
+
+### 🧑‍💻 Pessoais
+
+| Projeto | Descrição | Stack | Links |
+|:---|:---|:---|:---|
+| **FreelancerDeiviTech** | Loja digital completa com calculadora de preços, 6 categorias de serviços e integração WhatsApp. | HTML5, Tailwind, JS | [🌐 Demo](https://deivisan.github.io/FreelancerDeiviTech/) · [📁 Code](https://github.com/Deivisan/FreelancerDeiviTech) |
+| **Experimentos** | IA para geração de ideias de negócio com análise de mercado. Interface 3D, Lighthouse 95+. | JS, Three.js, Gemini API | [🌐 Demo](https://deivisan.github.io/Experimentos/DT%7EIdealizador.html) · [📁 Code](https://github.com/deivisan/Experimentos) |
+| **Eventos-FSA** | Plataforma de eventos para Feira de Santana/BA. 5 visões, backend integrado, Docker. | JS, Docker, Node.js | [🌐 Demo](https://deivisan.github.io/Eventos-FSA/) · [📁 Code](https://github.com/Deivisan/Eventos-FSA) |
+| **SELECOES-MIDU** | Metodologia moderna para processos seletivos. TypeScript + Vite + Tailwind. | TS, Vite, Tailwind, Bun | [🌐 Demo](https://deivisan.github.io/SELECOES-MIDU/) · [📁 Code](https://github.com/Deivisan/SELECOES-MIDU) |
+| **Curriculo-Deivison** | Portfólio responsivo com animações CSS, otimizado para mobile e impressão. | HTML5, CSS3, JS | [🌐 Demo](https://deivisan.github.io/Curriculo-Deivison/) · [📁 Code](https://github.com/deivisan/Curriculo-Deivison) |
+| **caraprojetada** | Aplicativo mobile Flutter para análise de projetos. | Flutter, Dart | [📁 Code](https://github.com/Deivisan/caraprojetada) |
+| **DeiviBox** | Ferramenta de gerenciamento IoT em C. Integração com hardware, MCP + CI/CD. | C, MCP | [📁 Code](https://github.com/Deivisan/DeiviBox) |
+| **Librapp** | Sistema integrado de bibliotecas com frontend moderno e banco de dados. | JS, HTML5 | [📁 Code](https://github.com/Deivisan/Librapp) |
+| **qcy-ble-linux** | Controle bluetooth para fones QCY H3S via SPP/RFCOMM no Arch Linux. | TS, BLE | [📁 Code](https://github.com/Deivisan/qcy-ble-linux) |
+| **UFRB-SOFTWARE-STORE** | Loja de software acadêmica para a UFRB com TypeScript. | TS, Vite | [📁 Code](https://github.com/Deivisan/UFRB-SOFTWARE-STORE) |
+| **PsyConnect** | Plataforma de conexão entre psicólogos e pacientes. | TS | [📁 Code](https://github.com/Deivisan/PsyConnect) |
+
+### 🏢 DeiviTech
+
+| Projeto | Descrição | Stack | Links |
+|:---|:---|:---|:---|
+| **DeiviTech-Formatacao** | Site profissional para serviços de formatação, hardware e análise IA. 5 páginas, combos inteligentes, carrinho WhatsApp. | HTML5, Tailwind, JS, Chart.js | [🌐 Demo](https://deivisan.github.io/DeiviTech-Formatacao/) · [📁 Code](https://github.com/Deivisan/DeiviTech-Formatacao) |
+| **DeiviTech-Monte-Seu-Notebook** | Configurador de notebooks com cálculo dinâmico, modo básico/avançado. | JS, HTML5, CSS3 | [🌐 Demo](https://deivisan.github.io/DeiviTech-Monte-Seu-Notebook/) · [📁 Code](https://github.com/Deivisan/DeiviTech-Monte-Seu-Notebook) |
+| **DeiviTech-Filantropia** | Plataforma de responsabilidade social: inclusão digital, ONGs, voluntariado. | HTML5, CSS3, JS | [🌐 Demo](https://deivisan.github.io/DeiviTech-Filantropia/) · [📁 Code](https://github.com/Deivisan/DeiviTech-Filantropia) |
+| **Metodologia-Scrape** | Ferramenta de scraping inteligente para coleta de dados web. | HTML, Python | [📁 Code](https://github.com/Deivisan/Metodologia-Scrape) |
+| **DeiviToolBox** | Coleção de scripts Shell para automação de infraestrutura. | Shell | [📁 Code](https://github.com/Deivisan/DeiviToolBox) |
+
+---
+
+## 🛒 Marketplace
+
+| Plataforma | Link | Descrição |
+|:---|:---|:---|
+| 📱 [OLX - Produtos Tech](https://www.olx.com.br/perfil/deivilsan) | Equipamentos de informática e acessórios |
+| 🛍️ [Mercado Livre](https://perfil.mercadolivre.com.br/DEIVISAN) | Produtos digitais |
+
+---
+
+## 📫 Contato
 
 <div align="center">
 
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=Deivisan&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true" alt="GitHub Stats"/>
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs?username=Deivisan&layout=compact&langs_count=7&theme=tokyonight" alt="Top Languages"/>
-
-</div>
-
-<div align="center">
-
-<img src="https://streak-stats.demolab.com?user=Deivisan&theme=tokyonight" alt="GitHub Streak"/>
-
-</div>
-
-<div align="center">
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Deivisan&theme=tokyo-night&hide_border=true&area=true" alt="GitHub Activity Graph"/>
-
-</div>
-
-<div align="center">
-
-<img src="https://github-profile-trophy.vercel.app/?username=Deivisan&theme=tokyonight&no-frame=true&row=1&column=7" alt="GitHub Trophies"/>
-
-</div>
-
----
-
-## 🚀 Portfólio de Projetos
-
-### 🛒 **FreelancerDeiviTech - Loja Digital Principal**
-
-**🌐 [Ver Loja Online](https://deivisan.github.io/FreelancerDeiviTech/)** | **📁 [Ver Código](https://github.com/Deivisan/FreelancerDeiviTech)**
-
-Loja digital completa com calculadora de preços interativa, 6 categorias de serviços e integração WhatsApp.
-
-- **💻 Desenvolvimento Web:** Landing Pages e sites completos
-- **🛒 E-commerce:** Lojas virtuais profissionais
-- **🎨 Design Gráfico:** Logotipos e identidade visual
-- **📱 Apps Mobile:** Desenvolvimento Android/iOS
-- **🤖 Automações:** Scripts Python personalizados
-- **🔧 Suporte Técnico:** Formatação e manutenção
-
-**💡 Tecnologias:** HTML5, Tailwind CSS, JavaScript, WhatsApp API
-
----
-
-### 🎯 **Soluções Profissionais DeiviTech**
-
-#### 💻 **DeiviTech Formatação**
-
-**🌐 [Ver Site](https://deivisan.github.io/DeiviTech-Formatacao/)** | **📁 [Ver Código](https://github.com/Deivisan/DeiviTech-Formatacao)**
-
-Site profissional para serviços de formatação, hardware e análise IA.
-
-- 5 páginas modulares com Sistema de Combos
-- Análise IA com 3 métodos diferentes
-- Charts Interativos para comparação
-- Carrinho Inteligente com cálculos dinâmicos
-
-#### 🛠️ **DeiviTech - Monte Seu Notebook**
-
-**🌐 [Ver Site](https://deivisan.github.io/DeiviTech-Monte-Seu-Notebook/)** | **📁 [Ver Código](https://github.com/deivisan/DeiviTech-Monte-Seu-Notebook)**
-
-Sistema web interativo para personalização de notebooks.
-
-- Configurador dinâmico de componentes
-- Calculadora avançada em tempo real
-- Modo básico/avançado adaptável
-
-#### 📄 **Currículo Digital Interativo**
-
-**🌐 [Ver Site](https://deivisan.github.io/Curriculo-Deivison/)** | **📁 [Ver Código](https://github.com/deivisan/Curriculo-Deivison)**
-
-Portfólio profissional responsivo com design moderno e animações CSS.
-
-- Design profissional responsivo
-- Otimizado para dispositivos móveis e impressão
-- Animações CSS suaves e elegantes
-
----
-
-### 🤝 **DeiviTech Filantropia - Responsabilidade Social**
-
-**🌐 [Ver Site](https://deivisan.github.io/DeiviTech-Filantropia/)** | **📁 [Ver Código](https://github.com/deivisan/DeiviTech-Filantropia)**
-
-**Plataforma dedicada a projetos de responsabilidade social e ações filantrópicas da DeiviTech.**
-
-#### 🎯 **Missão Social:**
-
-- **💙 Inclusão Digital:** Projetos de democratização tecnológica
-- **🤝 Parcerias ONGs:** Colaboração com instituições beneficentes
-- **📢 Ações Sociais:** Divulgação e coordenação de projetos
-- **👥 Voluntariado:** Conexão entre voluntários e projetos
-
-**✨ Este projeto representa o compromisso da DeiviTech em usar a tecnologia como ferramenta de transformação social positiva.**
-
----
-
-### 🧠 **Idealizador do Futuro - IA Revolucionária**
-
-**🌐 [Ver Demo](https://deivisan.github.io/Experimentos/DT%7EIdealizador.html)** | **📁 [Ver Código](https://github.com/deivisan/Experimentos)**
-
-IA revolucionária para geração de ideias de negócio com análise de mercado em tempo real.
-
-- Geração inteligente de ideias personalizadas
-- Análise de mercado em tempo real
-- Interface 3D imersiva com Three.js
-- Performance 95+ Lighthouse Score
-
-**💡 Tecnologias:** Google Gemini API, Three.js, Chart.js, HTML5, JavaScript
-
----
-
-### 🎪 **Eventos FSA - Plataforma de Eventos de Feira de Santana**
-
-**🌐 [Ver Site](https://deivisan.github.io/Eventos-FSA/)** | **📁 [Ver Código](https://github.com/Deivisan/Eventos-FSA)**
-
-Plataforma moderna para divulgação e gerenciamento de eventos em Feira de Santana/BA.
-
-- Interface multi-perspectiva com 5 diferentes visões
-- Sistema de backend integrado
-- Containerização com Docker
-- Design responsivo e moderno
-
-**💡 Tecnologias:** HTML5, CSS3, JavaScript, Docker, Node.js
-
----
-
-### 🧪 **Laboratório de Experimentos**
-
-#### 🔧 **Automações & Scripts**
-
-Coleção de automações Python para otimização de tarefas e produtividade incluídas neste repositório.
-
-- Scripts de organização de arquivos
-- Automações de tarefas repetitivas
-- Ferramentas de produtividade
-
-**💡 Tecnologias:** Python, Scripts de automação
-
----
-
-### 🎯 **SELECOES-MIDU - Metodologia de Seleções**
-
-**🌐 [Ver Plataforma Online](https://deivisan.github.io/SELECOES-MIDU/)** | **📁 [Ver Código](https://github.com/Deivisan/SELECOES-MIDU)**
-
-Metodologia moderna para processos de seleção baseada nos desafios MIDU.
-
-- Sistema de gerenciamento de candidatos
-- Interface multi-perspectiva responsiva
-- Backend TypeScript com Vite
-- Design moderno com Tailwind CSS
-
-**💡 Tecnologias:** TypeScript, Vite, Tailwind CSS, Bun
-
----
-
-## 🛒 Marketplace & Serviços
-
-### 🏪 **Marketplace Online**
-
-- **📱 [OLX - Produtos Tech](https://www.olx.com.br/perfil/deivilsan)** - Equipamentos de informática e acessórios
-- **🛍️ [Mercado Livre](https://perfil.mercadolivre.com.br/DEIVISAN)** - Produtos digitais *(em desenvolvimento)*
-
----
-
-## 🤝 Contatos Profissionais
-
-<div align="center">
-
+[![Open To Work](https://img.shields.io/badge/✅-Open_To_Work-00A86B?style=for-the-badge&logo=openbadges&logoColor=white)](https://linkedin.com/in/deivisonlsantana)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/deivisonlsantana)
 [![Email](https://img.shields.io/badge/Email-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white)](mailto:deivilsantana@outlook.com)
 [![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/5575981231019)
-[![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=todoist&logoColor=white)](https://deivisan.github.io/)
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/deivisan)
+[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=todoist&logoColor=white)](https://deivisan.github.io/)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Deivisan)
 
 </div>
 
 ---
 
+<details>
+<summary>📈 Mais estatísticas</summary>
+
+<br>
+
 <div align="center">
 
-## 🎯 Missão Profissional
+[![Trophies](https://github-profile-trophy.vercel.app/?username=Deivisan&theme=tokyonight&no-frame=true&row=2&column=4&no-bg=true&margin-w=10&margin-h=10)](https://github.com/Deivisan)
+![Profile Views](https://komarev.com/ghpvc/?username=Deivisan&style=for-the-badge&color=tokyonight)
 
-💡 **Aprender** programação de forma prática e aplicada
-🌍 **Criar** projetos que impactem positivamente outras pessoas
-📚 **Compartilhar** conhecimento e experiências da jornada
-🤝 **Colaborar** ativamente com a comunidade de desenvolvimento
-💙 **Transformar** vidas através da tecnologia e responsabilidade social
+</div>
 
----
+</details>
 
-**⭐ Se algum projeto foi útil, deixe uma estrela! Cada ⭐ motiva mais inovação!**
+<div align="center">
 
-*Criado com ❤️ e muito ☕ por Deivison Santana*
-*Desenvolvedor Junior em constante evolução 🚀*
+⭐ *O código é a ferramenta, a criatividade o limite.*
 
 </div>
