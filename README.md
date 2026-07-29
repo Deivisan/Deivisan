@@ -14,6 +14,7 @@
 [![Email](https://img.shields.io/badge/Email-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white)](mailto:deivilsantana@outlook.com)
 [![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/5575981231019)
 [![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=todoist&logoColor=white)](https://deivisan.github.io/)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Deivisan)
 
 </div>
 
@@ -33,15 +34,14 @@ Full-stack developer e fundador da **DeiviTech**. Construo soluções web, autom
 
 | | |
 |:---:|:---:|
-| | **🔥 Streak de Commits** |
-| [![GitHub Streak](https://streak-stats.demolab.com?user=Deivisan&theme=tokyonight&date_format=j/n/Y&hide_total_contributions=true)](https://git.io/streak-stats) | **📈 Gráfico de Atividades** |
-| | [![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=Deivisan&theme=tokyo-night&hide_border=true&area=true&custom_title=Contribui%C3%A7%C3%B5es%20%C3%BAltimos%2031%20dias)](https://github.com/Deivisan) |
-| **🗂️ Top Linguagens** | **⚙️ Estatísticas** |
+| [![GitHub Streak](https://streak-stats.demolab.com?user=Deivisan&theme=tokyonight&date_format=j/n/Y&hide_total_contributions=true)](https://git.io/streak-stats) | [![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=Deivisan&theme=tokyo-night&hide_border=true&area=true)](https://github.com/Deivisan) |
+| **🔥 Streak de Commits** | **📈 Contribuições** |
 | [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs?username=Deivisan&layout=compact&langs_count=8&theme=tokyonight)](https://github.com/Deivisan) | [![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Deivisan&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide=stars&hide_title=true&custom_title=Commits)](https://github.com/Deivisan) |
+| **🗂️ Top Linguagens** | **⚙️ Estatísticas** |
 
 ### 🏆 Troféus
 
-[![Trophies](https://github-profile-trophy.vercel.app/?username=Deivisan&theme=tokyonight&no-frame=true&row=2&column=4&no-bg=true&margin-w=10&margin-h=10&column=4)](https://github.com/Deivisan)
+[![Trophies](https://github-profile-trophy.vercel.app/?username=Deivisan&theme=tokyonight&no-frame=true&row=2&column=4&no-bg=true&margin-w=10&margin-h=10)](https://github.com/Deivisan)
 
 </div>
 
@@ -69,17 +69,11 @@ Full-stack developer e fundador da **DeiviTech**. Construo soluções web, autom
 
 | Projeto | Descrição | Stack | Links |
 |:---|:---|:---|:---|
-| **FreelancerDeiviTech** | Loja digital completa com calculadora de preços, 6 categorias de serviços e integração WhatsApp. | HTML5, Tailwind, JS | [🌐 Demo](https://deivisan.github.io/FreelancerDeiviTech/) · [📁 Code](https://github.com/Deivisan/FreelancerDeiviTech) |
-| **Experimentos** | IA para geração de ideias de negócio com análise de mercado. Interface 3D, Lighthouse 95+. | JS, Three.js, Gemini API | [🌐 Demo](https://deivisan.github.io/Experimentos/DT%7EIdealizador.html) · [📁 Code](https://github.com/deivisan/Experimentos) |
+| **FreelancerDeiviTech** | Loja digital com calculadora de preços, 6 categorias e integração WhatsApp. | HTML5, Tailwind, JS | [🌐 Demo](https://deivisan.github.io/FreelancerDeiviTech/) · [📁 Code](https://github.com/Deivisan/FreelancerDeiviTech) |
+| **Experimentos** | IA para geração de ideias com análise de mercado. Interface 3D, Lighthouse 95+. | JS, Three.js, Gemini | [🌐 Demo](https://deivisan.github.io/Experimentos/DT%7EIdealizador.html) · [📁 Code](https://github.com/deivisan/Experimentos) |
 | **Eventos-FSA** | Plataforma de eventos para Feira de Santana/BA. 5 visões, backend integrado, Docker. | JS, Docker, Node.js | [🌐 Demo](https://deivisan.github.io/Eventos-FSA/) · [📁 Code](https://github.com/Deivisan/Eventos-FSA) |
-| **SELECOES-MIDU** | Metodologia moderna para processos seletivos. TypeScript + Vite + Tailwind. | TS, Vite, Tailwind, Bun | [🌐 Demo](https://deivisan.github.io/SELECOES-MIDU/) · [📁 Code](https://github.com/Deivisan/SELECOES-MIDU) |
+| **SELECOES-MIDU** | Metodologia para processos seletivos. TypeScript + Vite + Tailwind. | TS, Vite, Tailwind, Bun | [🌐 Demo](https://deivisan.github.io/SELECOES-MIDU/) · [📁 Code](https://github.com/Deivisan/SELECOES-MIDU) |
 | **Curriculo-Deivison** | Portfólio responsivo com animações CSS, otimizado para mobile e impressão. | HTML5, CSS3, JS | [🌐 Demo](https://deivisan.github.io/Curriculo-Deivison/) · [📁 Code](https://github.com/deivisan/Curriculo-Deivison) |
-| **caraprojetada** | Aplicativo mobile Flutter para análise de projetos. | Flutter, Dart | [📁 Code](https://github.com/Deivisan/caraprojetada) |
-| **DeiviBox** | Ferramenta de gerenciamento IoT em C. Integração com hardware, MCP + CI/CD. | C, MCP | [📁 Code](https://github.com/Deivisan/DeiviBox) |
-| **Librapp** | Sistema integrado de bibliotecas com frontend moderno e banco de dados. | JS, HTML5 | [📁 Code](https://github.com/Deivisan/Librapp) |
-| **qcy-ble-linux** | Controle bluetooth para fones QCY H3S via SPP/RFCOMM no Arch Linux. | TS, BLE | [📁 Code](https://github.com/Deivisan/qcy-ble-linux) |
-| **UFRB-SOFTWARE-STORE** | Loja de software acadêmica para a UFRB com TypeScript. | TS, Vite | [📁 Code](https://github.com/Deivisan/UFRB-SOFTWARE-STORE) |
-| **PsyConnect** | Plataforma de conexão entre psicólogos e pacientes. | TS | [📁 Code](https://github.com/Deivisan/PsyConnect) |
 
 ### 🏢 DeiviTech
 
@@ -88,8 +82,6 @@ Full-stack developer e fundador da **DeiviTech**. Construo soluções web, autom
 | **DeiviTech-Formatacao** | Site profissional para serviços de formatação, hardware e análise IA. 5 páginas, combos inteligentes, carrinho WhatsApp. | HTML5, Tailwind, JS, Chart.js | [🌐 Demo](https://deivisan.github.io/DeiviTech-Formatacao/) · [📁 Code](https://github.com/Deivisan/DeiviTech-Formatacao) |
 | **DeiviTech-Monte-Seu-Notebook** | Configurador de notebooks com cálculo dinâmico, modo básico/avançado. | JS, HTML5, CSS3 | [🌐 Demo](https://deivisan.github.io/DeiviTech-Monte-Seu-Notebook/) · [📁 Code](https://github.com/Deivisan/DeiviTech-Monte-Seu-Notebook) |
 | **DeiviTech-Filantropia** | Plataforma de responsabilidade social: inclusão digital, ONGs, voluntariado. | HTML5, CSS3, JS | [🌐 Demo](https://deivisan.github.io/DeiviTech-Filantropia/) · [📁 Code](https://github.com/Deivisan/DeiviTech-Filantropia) |
-| **Metodologia-Scrape** | Ferramenta de scraping inteligente para coleta de dados web. | HTML, Python | [📁 Code](https://github.com/Deivisan/Metodologia-Scrape) |
-| **DeiviToolBox** | Coleção de scripts Shell para automação de infraestrutura. | Shell | [📁 Code](https://github.com/Deivisan/DeiviToolBox) |
 
 ---
 
@@ -106,7 +98,6 @@ Full-stack developer e fundador da **DeiviTech**. Construo soluções web, autom
 
 <div align="center">
 
-[![Open To Work](https://img.shields.io/badge/✅-Open_To_Work-00A86B?style=for-the-badge&logo=openbadges&logoColor=white)](https://linkedin.com/in/deivisonlsantana)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/deivisonlsantana)
 [![Email](https://img.shields.io/badge/Email-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white)](mailto:deivilsantana@outlook.com)
 [![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/5575981231019)
@@ -120,11 +111,8 @@ Full-stack developer e fundador da **DeiviTech**. Construo soluções web, autom
 <details>
 <summary>📈 Mais estatísticas</summary>
 
-<br>
-
 <div align="center">
 
-[![Trophies](https://github-profile-trophy.vercel.app/?username=Deivisan&theme=tokyonight&no-frame=true&row=2&column=4&no-bg=true&margin-w=10&margin-h=10)](https://github.com/Deivisan)
 ![Profile Views](https://komarev.com/ghpvc/?username=Deivisan&style=for-the-badge&color=tokyonight)
 
 </div>
